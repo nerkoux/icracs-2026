@@ -36,7 +36,7 @@ export default function Navbar() {
               className="flex items-center space-x-3"
             >
               <Image
-                src="/pietLogoUpdated.jpg.png"
+                src="/pietLogoUpdated.jpg"
                 alt="PIET Logo"
                 width={240}
                 height={240}
@@ -95,7 +95,7 @@ export default function Navbar() {
                   <div className="flex items-center justify-center pt-6 pb-8 border-b border-gray-100">
                     <div className="flex items-center space-x-3">
                       <Image
-                        src="/pietLogoUpdated.jpg.png"
+                        src="/pietLogoUpdated.jpg"
                         alt="PIET Logo"
                         width={50}
                         height={50}
