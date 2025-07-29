@@ -276,7 +276,7 @@ export default function RegistrationPage() {
                       <Phone className="h-5 w-5 text-blue-600 mt-1" />
                       <div>
                         <p className="font-semibold">Dr. Budesh Kanwar</p>
-                        <p className="text-gray-600">8127741447, 7458080822</p>
+                        <p className="text-gray-600">9460503316</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
