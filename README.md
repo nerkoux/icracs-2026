@@ -179,6 +179,6 @@ For website issues or updates, please contact the technical team at PIET.
 
 ---
 
-**Conference Website:** [ICRACS 2026](https://icracs2026.com)  
+**Conference Website:** [ICRACS 2026](https://icracs.poornima.org)  
 **Host Institution:** Poornima Institute of Engineering and Technology  
 **Location:** Sitapura, Jaipur, Rajasthan, India
