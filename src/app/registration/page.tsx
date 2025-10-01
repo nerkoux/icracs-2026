@@ -2,7 +2,6 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import {
   Table,
   TableBody,
@@ -15,92 +14,91 @@ import { Download, ExternalLink, Phone, Mail, MapPin } from "lucide-react";
 
 const feeStructure = [
   {
-    category: "Attendee",
-    regularFee: "₹1,500",
-    afterDeadline: "₹2,500"
-  },
-  {
-    category: "UG Student Author (Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "₹5,000",
-    afterDeadline: "₹6,000"
-  },
-  {
-    category: "UG Student Author (Non-Member- ACM/ISTE/IEEE/FIP)",
+    category: "Student Author (IEEE/CIS Member)",
     regularFee: "₹6,000",
-    afterDeadline: "₹7,000"
+    afterDeadline: "₹7,500"
   },
   {
-    category: "Post Graduate Scholar Author (Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "₹7,000",
-    afterDeadline: "₹8,000"
-  },
-  {
-    category: "Post Graduate Scholar Author (Non-Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "₹8,000",
+    category: "Student Author (Non-Member)",
+    regularFee: "₹7,500",
     afterDeadline: "₹9,000"
   },
   {
-    category: "Author-Faculty or Research Scholars (Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "₹9,000",
-    afterDeadline: "₹11,000"
+    category: "Research Scholar (IEEE/CIS Member)",
+    regularFee: "₹8,000",
+    afterDeadline: "₹10,000"
   },
   {
-    category: "Author-Faculty or Research Scholars (Non-Member- ACM/ISTE/IEEE/FIP)",
+    category: "Research Scholar (Non-Member)",
+    regularFee: "₹9,500",
+    afterDeadline: "₹11,500"
+  },
+  {
+    category: "Faculty/Academic (IEEE/CIS Member)",
     regularFee: "₹10,000",
-    afterDeadline: "₹12,000"
+    afterDeadline: "₹12,500"
   },
   {
-    category: "Corporate/Industry Professional",
-    regularFee: "₹11,000",
-    afterDeadline: "₹13,000"
+    category: "Faculty/Academic (Non-Member)",
+    regularFee: "₹12,000",
+    afterDeadline: "₹14,500"
   },
   {
-    category: "Foreign Delegate (Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "$180",
-    afterDeadline: "$200"
+    category: "Industry Professional (IEEE/CIS Member)",
+    regularFee: "₹12,000",
+    afterDeadline: "₹15,000"
   },
   {
-    category: "Foreign Delegate (Non-Member- ACM/ISTE/IEEE/FIP)",
-    regularFee: "$220",
+    category: "Industry Professional (Non-Member)",
+    regularFee: "₹15,000",
+    afterDeadline: "₹18,000"
+  },
+  {
+    category: "International Delegate (IEEE/CIS Member)",
+    regularFee: "$200",
     afterDeadline: "$250"
+  },
+  {
+    category: "International Delegate (Non-Member)",
+    regularFee: "$250",
+    afterDeadline: "$300"
+  },
+  {
+    category: "Conference Attendee Only",
+    regularFee: "₹2,000",
+    afterDeadline: "₹2,500"
   }
 ];
 
 const importantDates = [
   {
-    event: "Paper Submission",
-    oldDate: "February 15, 2025",
-    newDate: "March 31, 2025",
-    status: "extended"
+    event: "Paper Submission Deadline",
+    date: "February 17, 2026",
+    status: "deadline"
   },
   {
     event: "Notification of Acceptance",
-    oldDate: "March 01, 2025",
-    newDate: "April 01, 2025",
-    status: "extended"
+    date: "March 10, 2026",
+    status: "notification"
+  },
+  {
+    event: "Camera-Ready Submission",
+    date: "March 15, 2026",
+    status: "camera-ready"
   },
   {
     event: "Early Bird Registration",
-    oldDate: "March 16, 2025",
-    newDate: "April 03, 2025",
-    status: "extended"
+    date: "March 21, 2026",
+    status: "early-bird"
   },
   {
-    event: "Late Registration",
-    oldDate: "March 21, 2025",
-    newDate: "April 07, 2025",
-    status: "extended"
-  },
-  {
-    event: "Revised Paper Submission (If Applicable)",
-    oldDate: "",
-    newDate: "April 10, 2025",
-    status: "new"
+    event: "Regular Registration",
+    date: "April 10, 2026",
+    status: "regular"
   },
   {
     event: "Conference Dates",
-    oldDate: "",
-    newDate: "April 15-16, 2026",
+    date: "April 17-18, 2026",
     status: "confirmed"
   }
 ];
@@ -129,26 +127,24 @@ export default function RegistrationPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {importantDates.map((date, index) => (
                     <div key={index} className={`p-4 rounded-lg border-l-4 ${
-                      date.status === 'extended' ? 'bg-yellow-50 border-yellow-500' :
-                      date.status === 'new' ? 'bg-green-50 border-green-500' :
-                      'bg-blue-50 border-blue-500'
+                      date.status === 'deadline' ? 'bg-red-50 border-red-500' :
+                      date.status === 'notification' ? 'bg-yellow-50 border-yellow-500' :
+                      date.status === 'camera-ready' ? 'bg-orange-50 border-orange-500' :
+                      date.status === 'early-bird' ? 'bg-green-50 border-green-500' :
+                      date.status === 'confirmed' ? 'bg-blue-50 border-blue-500' :
+                      'bg-gray-50 border-gray-500'
                     }`}>
                       <h4 className="font-semibold text-gray-900 mb-2">{date.event}</h4>
-                      {date.oldDate && (
-                        <p className="text-sm text-gray-500 line-through">{date.oldDate}</p>
-                      )}
                       <p className={`font-bold ${
-                        date.status === 'extended' ? 'text-yellow-600' :
-                        date.status === 'new' ? 'text-green-600' :
-                        'text-blue-600'
+                        date.status === 'deadline' ? 'text-red-600' :
+                        date.status === 'notification' ? 'text-yellow-600' :
+                        date.status === 'camera-ready' ? 'text-orange-600' :
+                        date.status === 'early-bird' ? 'text-green-600' :
+                        date.status === 'confirmed' ? 'text-blue-600' :
+                        'text-gray-600'
                       }`}>
-                        {date.newDate}
+                        {date.date}
                       </p>
-                      {date.status === 'extended' && (
-                        <Badge variant="secondary" className="mt-1 bg-yellow-100 text-yellow-800">
-                          Extended
-                        </Badge>
-                      )}
                     </div>
                   ))}
                 </div>

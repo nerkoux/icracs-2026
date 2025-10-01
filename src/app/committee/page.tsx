@@ -7,64 +7,91 @@ import { Badge } from "@/components/ui/badge";
 const committeeData = {
   honoraryChair: [
     {
-      name: "Prof. Brij Gupta",
-      title: "Distinguished Professor of Computer Science",
-      affiliation: "Director, Center for AI and Cyber Security | IITian | Board of Governors, IEEE CT Society",
-      description: "Editor-in-Chief (SCIE Indexed journal) | Clarivate Highly Cited Researcher (0.1%)"
+      name: "Dr. Brij Bhushan Gupta",
+      title: "Distinguished Professor of Computer Science | Director, Center for AI and Cyber Security",
+      affiliation: "Board of Governors, IEEE CT Society",
+      description: "IEEE Senior Member"
     }
   ],
   generalChair: [
     {
       name: "Dr. Dharm Singh", 
       title: "Professor of Computer Science",
-      affiliation: "Namibia University of Science and Technology (NUST)"
+      affiliation: "Namibia University of Science and Technology (NUST)",
+      description: "IEEE Senior Member"
     }
   ],
   conferenceChair: [
     {
       name: "Dr. Dinesh Goyal",
-      title: "Principal & Professor",
+      title: "Professor, Principal",
       affiliation: "Poornima Institute of Engineering & Technology",
-      description: "PhD in Computer Science, 15+ years experience in AI research"
+      description: "IEEE Senior Member"
     }
   ],
   programChair: [
     {
-      name: "Dr. Budesh Kanwar",
-      title: "Professor & Head",
-      affiliation: "Department of Artificial Intelligence & Data Science, PIET",
-      description: "IEEE Senior Member, Expert in Machine Learning and Computer Vision"
+      name: "Dr. Budesh Kanwer",
+      title: "Professor & Head, Department of Artificial Intelligence & Data Science",
+      affiliation: "Poornima Institute of Engineering & Technology",
+      description: "CIS & IEEE Senior Member"
     }
   ],
   technicalCommittee: [
     {
-      name: "Prof. Joaquim Jorge",
+      name: "Dr. Valentina E. Balas",
+      title: "Full Professor, Department of Automatics and Applied Software",
+      affiliation: "Aurel Vlaicu University of Arad, Romania",
+      description: "IEEE Fellow"
+    },
+    {
+      name: "Dr. Joaquim Jorge",
       title: "UNESCO Chair on AI & XR",
       affiliation: "Eurographics & IEEE Fellow"
     },
     {
-      name: "Prof. Saurabh Sinha",
-      title: "Professor, Executive Dean",
-      affiliation: "University of Canterbury | Chartered Professional Engineer | Board Member, IEEE Foundation"
+      name: "Prof. Seeram Ramakrishna",
+      title: "Vice President Research Strategy, Professor",
+      affiliation: "National University of Singapore (NUS)",
+      description: "Distinguished Researcher"
     },
     {
-      name: "Dr. Sandeep Gupta",
+      name: "Prof. San Murugesan",
+      title: "Adjunct Professor, Western Sydney University",
+      affiliation: "Director, BRITE Professional Services",
+      description: "Golden Core Member, IEEE"
+    },
+    {
+      name: "Prof. Raman M. Unnikrishnan",
+      title: "Dean Professor Fellow IEEE",
+      affiliation: "California State University, United States",
+      description: "IEEE Fellow"
+    },
+    {
+      name: "Dr. Naveen Sharma",
+      title: "Professor and Chair, Software Engineering Department",
+      affiliation: "Rochester Institute of Technology, NY, USA",
+      description: "Distinguished Academic"
+    },
+    {
+      name: "Prof. R.K. Joshi",
       title: "Professor",
-      affiliation: "Department of Artificial Intelligence & Data Science, PIET",
-      description: "Specialist in Smart Systems and IoT Applications"
+      affiliation: "Department of Computer Science & Engineering, IIT Bombay",
+      description: "Distinguished Researcher"
     },
     {
-      name: "Dr. Saurabh Raj",
-      title: "Assistant Professor",
-      affiliation: "PIET",
-      description: "IEEE Member, IoT, Sensors"
+      name: "Dr. Puneet Goyal",
+      title: "Associate Professor",
+      affiliation: "Department of Computer Science & Engineering, IIT Ropar",
+      description: "IIT Faculty"
     }
   ],
   publicityChair: [
     {
-      name: "Prof. Marcin Paprzycki",
+      name: "Dr. Marcin Paprzycki",
       title: "Associate Professor",
-      affiliation: "Systems Research Institute Polish Academy of Sciences, Warsaw, Poland"
+      affiliation: "Systems Research Institute Polish Academy of Sciences",
+      description: "Senior Member IEEE"
     },
     {
       name: "Dr. Ankit Agrawal",
@@ -72,14 +99,16 @@ const committeeData = {
       affiliation: "Northwestern University, Evanston, Illinois, United States"
     },
     {
-      name: "Dr. Payal Bansal",
-      title: "Senior Member IEEE, Professor",
-      affiliation: "Poornima Institute of Engineering & Technology"
+      name: "Ms. Alka Rani",
+      title: "Assistant Professor",
+      affiliation: "Poornima Institute of Engineering & Technology",
+      description: "Member IEEE"
     },
     {
-      name: "Ms. Alka Rani",
-      title: "Member IEEE, Assistant Professor",
-      affiliation: "Poornima Institute of Engineering & Technology"
+      name: "Dr. Hitesh Mehta",
+      title: "Founder Director",
+      affiliation: "Aahan (Inc) Pte Ltd, Singapore, CEO of Eagle Photonics Pvt Ltd",
+      description: "SMIEEE"
     }
   ],
   financeChair: [
@@ -87,97 +116,114 @@ const committeeData = {
       name: "Dr. Uday Pratap Singh",
       title: "Associate Professor",
       affiliation: "Poornima Institute of Engineering & Technology"
+    },
+    {
+      name: "Dr. Pradeep Singh Bhati",
+      title: "Professor",
+      affiliation: "Jai Narain Vyas University",
+      description: "Expert in Computer Science applications, IEEE Member"
     }
   ],
   internationalAdvisory: [
     {
       name: "Manfred (Fred) Schindler",
       title: "2024 IEEE VP Technical Activities",
-      affiliation: "RF, Microwave, and Semiconductor Engineering | IEEE Fellow"
+      affiliation: "RF, Microwave, and Semiconductor Engineering",
+      description: "IEEE Fellow"
     },
     {
       name: "Ravi Kumar ARYA",
       title: "Director",
-      affiliation: "Xiangshan Laboratory Wireless Group, Xiangshan Laboratory, Zhongshan Institute, China"
+      affiliation: "Xiangshan Laboratory Wireless Group, Xiangshan Laboratory, China",
+      description: "Senior Member IEEE"
     },
     {
-      name: "Prof. Witold Pedrycz",
+      name: "Dr. Witold Pedrycz",
       title: "Professor",
-      affiliation: "University of Alberta, Edmonton, Alberta, Canada"
+      affiliation: "University of Alberta Edmonton, Alberta, Canada",
+      description: "Senior Member IEEE"
     },
     {
-      name: "Prof. Janusz Kacprzyk",
-      title: "Professor of Computer Science",
-      affiliation: "Systems Research Institute, Polish Academy of Sciences, Warsaw University of Technology, Poland"
+      name: "Dr. Janusz Kacprzyk",
+      title: "Professor",
+      affiliation: "Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland",
+      description: "Senior Member IEEE"
+    },
+    {
+      name: "Dr. Piero P. Bonissone",
+      title: "IEEE Life Fellow",
+      affiliation: "Former President IEEE Computational Intelligence Society",
+      description: "24 years of IEEE CIS leadership, Advanced Analytics Advisor"
     }
   ],
   nationalAdvisory: [
     {
       name: "Dr. Veerpratap Meena",
       title: "Assistant Professor",
-      affiliation: "NIT Jamshedpur | IEEE Systems Council Systems Education Technical Committee Chair"
+      affiliation: "NIT Jamshedpur",
+      description: "IEEE Systems Council Systems Education Technical Committee Chair"
     },
     {
       name: "Dr. Nilanjan Dey",
-      title: "Professor, PhD., SMIEEE",
-      affiliation: "Department of Computer Science and Engineering, Techno International New Town, Kolkata, India"
+      title: "Professor",
+      affiliation: "Department of Computer Science and Engineering, Techno International New Town, Kolkata",
+      description: "Senior Member IEEE"
     },
     {
       name: "Dr. Deepak Garg",
-      title: "VC | AI Expert | Growth Specialist",
-      affiliation: "Technology Leader"
+      title: "Professor, Vice Chancellor",
+      affiliation: "SR University, Director - leadingindia.ai",
+      description: "Senior Member IEEE"
     },
     {
       name: "Dr. Akash Saxena",
       title: "Professor",
-      affiliation: "Ranked amongst top 2% scientists of AI by Elsevier and Stanford university | Senior Member IEEE"
+      affiliation: "Ranked amongst top 2% scientists by Elsevier and Stanford university",
+      description: "Senior Member IEEE, Fellow IETE"
     },
     {
       name: "Dr. Ghanshyam Singh",
       title: "Professor",
-      affiliation: "Department of Electronics and Communication Engineering, MNIT Jaipur"
-    },
-    {
-      name: "Dr. Pankaj Dadheech",
-      title: "Professor",
-      affiliation: "Swami Keshvanand Institute of Technology Management and Gramothan (SKIT)"
+      affiliation: "Department of Electronics and Communication Engineering, MNIT Jaipur",
+      description: "Senior Member IEEE"
     }
   ],
   cisInvolvement: [
     {
-      name: "Dr. Budesh Kanwar",
-      title: "Professor & Head, IEEE Senior Member, CIS Member",
-      affiliation: "Department of AI & DS, PIET",
-      description: "Expert in Machine Learning and Computer Vision"
+      name: "Prof. Valentina E. Balas",
+      title: "CIS Task Force Chair, Interdisciplinary Emergent Technologies",
+      affiliation: "Professor, Aurel Valicu University of Arad, Romania",
+      description: "IEEE CIS active member (Neural Networks & Soft Computing)"
     },
     {
-      name: "Dr. Saurabh Raj",
-      title: "Associate Professor, IEEE Member, CIS Member",
-      affiliation: "Department of AI & DS, PIET",
-      description: "Expert IoT, Sensors"
+      name: "Dr. Abhishek Gupta",
+      title: "Associate Professor",
+      affiliation: "Department of Electrical Engineering, Indian Institute of Technology Kanpur",
+      description: "Young Faculty Fellow, Editor IEEE Trans. Wireless Commun."
     },
     {
-      name: "Ms. Bhawana Purohit",
-      title: "Assistant Professor, IEEE Member, CIS Member",
-      affiliation: "Department of AI & DS, PIET",
-      description: "Workshop Coordinator"
+      name: "Dr. Budesh Kanwer",
+      title: "Program Chair",
+      affiliation: "Professor & Head, Department of AI & Data Science, PIET",
+      description: "IEEE Senior Member, CIS Member"
     },
     {
       name: "Dr. Sandeep Gupta",
-      title: "Professor, IEEE Member, CIS Member",
-      affiliation: "Department of AI & DS, PIET",
-      description: "Specialist in Smart Systems and IoT Applications"
+      title: "Core Technical Program Committee",
+      affiliation: "Professor, Department of AI & Data Science, PIET",
+      description: "IEEE Member, CIS Member"
     },
     {
-      name: "Dr. Ashish Laddha",
-      title: "Associate Professor, IEEE Member",
-      affiliation: "PIET"
+      name: "Prof. M.N. Hoda",
+      title: "IEEE Delhi Section Leadership",
+      affiliation: "Director, BVICAM, Executive Vice Chairperson, IEEE Delhi Section",
+      description: "Closely engaged with IEEE CIS activities in Region 10"
     },
     {
-      name: "Mr. Kartikey Sharma",
-      title: "IEEE CIS Student Member",
-      affiliation: "Poornima Institute of Engineering & Technology",
-      description: "Student Activities Coordinator, Computer Vision and Pattern Recognition"
+      name: "Dr. A. Murali M. Rao",
+      title: "Past Chair, IEEE CS, Delhi Section",
+      affiliation: "IEEE Senior Member",
+      description: "Active in IEEE CS & CIS Delhi Section initiatives"
     }
   ]
 };

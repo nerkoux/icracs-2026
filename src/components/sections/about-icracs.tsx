@@ -4,54 +4,56 @@ import { Brain, Eye, Zap, Shield, Users, TrendingUp } from "lucide-react";
 const focusAreas = [
   {
     icon: <Brain className="h-6 w-6" />,
-    title: "Artificial Intelligence and Machine Learning",
-    description: "Deep learning, neural networks, and advanced AI algorithms"
+    title: "Neural Networks and Deep Learning Applications",
+    description: "Deep learning architectures, neural network optimization, convolutional and recurrent networks, transformers, and generative models"
   },
   {
     icon: <Eye className="h-6 w-6" />,
-    title: "Computer Vision and Image Processing", 
-    description: "Pattern recognition, image analysis, and visual computing"
+    title: "Computer Vision and Pattern Recognition", 
+    description: "Object detection and recognition, image processing, video analysis, medical imaging, biometric systems, and 3D vision"
   },
   {
     icon: <Zap className="h-6 w-6" />,
-    title: "Smart Energy Systems and Grid Intelligence",
-    description: "AI-powered energy management and smart grid technologies"
+    title: "Smart Systems and IoT Applications",
+    description: "Intelligent IoT systems, smart city infrastructure, industrial automation, energy management, and cyber-physical systems"
   },
   {
     icon: <Shield className="h-6 w-6" />,
-    title: "Security and Privacy in Smart Systems",
-    description: "Cybersecurity, privacy protection, and secure AI systems"
+    title: "Computational Intelligence for Security",
+    description: "AI-driven cybersecurity, privacy-preserving machine learning, adversarial systems, and intelligent threat detection"
   }
 ];
 
 const topics = [
-  "Software Agents and Multi-Agent Systems",
-  "Edge Data Authentication", 
-  "Web Intelligence and Intrusion Detection",
-  "High Performance Computing and Cyber Security",
-  "Hybridisation of Intelligent Networks",
-  "Web and Grid Computing",
-  "Soft and Cognitive Computing",
-  "Parallel and Distributed Computing",
-  "Security Frameworks and Protocols",
-  "Advanced Intelligent Systems in Access Control",
-  "IoT and Smart City Applications",
-  "Renewable Energy Integration through AI",
-  "Human-Computer Interaction in Smart Environments"
+  "Neural Networks and Deep Learning Applications", 
+  "Evolutionary Computation and Bio-inspired Algorithms",
+  "Computer Vision and Pattern Recognition",
+  "Computational Intelligence for Smart Energy Systems",
+  "IoT and Smart City Applications with CI Techniques",
+  "Swarm Intelligence and Multi-agent Systems",
+  "Genetic Algorithms for Optimization Problems",
+  "Reinforcement Learning in Smart Environments",
+  "Hybrid Intelligent Systems",
+  "Security and Privacy through Computational Intelligence",
+  "Quantum Machine Learning",
+  "Neuromorphic Computing",
+  "Edge AI and Distributed Intelligence",
+  "Explainable AI and Ethics",
+  "Brain-Computer Interfaces"
 ];
 
 const stats2025 = [
-  { label: "Total Submissions", value: "285", color: "blue" },
-  { label: "Accepted Papers", value: "53", color: "green" },
-  { label: "Acceptance Rate", value: "18%", color: "purple" },
+  { label: "Total Submissions", value: "831", color: "blue" },
+  { label: "Accepted Papers", value: "202", color: "green" },
+  { label: "Acceptance Rate", value: "24%", color: "purple" },
   { label: "Countries Represented", value: "8", color: "orange" }
 ];
 
 const projections2026 = [
-  { label: "Expected Submissions", value: "400+", color: "blue" },
-  { label: "Target Accepted Papers", value: "75-90", color: "green" },
-  { label: "Target Acceptance Rate", value: "18-20%", color: "purple" },
-  { label: "Expected Countries", value: "15+", color: "orange" }
+  { label: "Expected Submissions", value: "1500+", color: "blue" },
+  { label: "Target Accepted Papers", value: "250", color: "green" },
+  { label: "Target Acceptance Rate", value: "16-18%", color: "purple" },
+  { label: "Expected Participants", value: "1000+", color: "orange" }
 ];
 
 export default function AboutICRACS() {
@@ -72,20 +74,21 @@ export default function AboutICRACS() {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                Recent years have witnessed the evolution of Artificial Intelligence techniques like deep learning, 
-                machine learning, pattern recognition, Natural language processing, and computer vision and their 
-                revolutionary applications in emerging smart city and industrial automation applications.
+                ICRACS2026 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision, and 
+                Smart Systems in emerging technologies. The conference addresses the critical integration of AI techniques 
+                including deep learning, machine learning, pattern recognition, natural language processing, and computer 
+                vision in smart city infrastructure, industrial automation, and energy systems.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                ICRACS 2026 serves as a premier platform for researchers, academicians, and industry professionals 
-                to share innovative AI solutions that enhance the efficiency, stability, robustness, and security 
-                of smart systems. The conference addresses the critical integration of AI techniques in smart city 
-                infrastructure, industrial automation, and energy systems.
+                The conference serves as a premier platform for researchers, academicians, and industry professionals 
+                to share innovative AI solutions that enhance efficiency, stability, robustness, and security of smart 
+                systems through computational intelligence paradigms. With IEEE CIS technical co-sponsorship, ICRACS2026 
+                maintains the highest standards of technical excellence and global reach.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                As AI techniques continue to revolutionize energy generation, transmission, and consumption in smart 
-                cities and industrial infrastructure, ICRACS provides a vital forum for exploring the integration 
-                of renewable energy sources into smart grids using cutting-edge AI technologies.
+                Beyond traditional paper presentations, the conference features specialized workshops on &ldquo;Computational 
+                Intelligence for Sustainable Energy Systems&rdquo; and panel discussions on &ldquo;Neural Networks for Computer Vision&rdquo;, 
+                creating a comprehensive platform for knowledge exchange and collaboration across the global CIS community.
               </p>
             </CardContent>
           </Card>

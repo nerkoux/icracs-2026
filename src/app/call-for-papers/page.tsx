@@ -5,57 +5,117 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Download, Phone, Mail } from "lucide-react";
 
-const conferenceTopics = [
-  "Artificial Intelligence and Machine Learning",
-  "Computer Vision and Image Processing", 
-  "Smart Energy Systems and Grid Intelligence",
-  "IoT and Smart City Applications",
-  "Deep Learning and Neural Networks",
-  "Pattern Recognition and Data Analytics",
-  "Intelligent Automation Systems",
-  "Renewable Energy Integration through AI",
-  "Security and Privacy in Smart Systems",
-  "Human-Computer Interaction in Smart Environments",
-  "Software Agents and Multi-Agent Systems",
-  "Edge Data Authentication",
-  "Web Intelligence and Intrusion Detection",
-  "High Performance Computing and Cyber Security Issues",
-  "Hybridisation of Intelligent Networks",
-  "Web and Grid Computing",
-  "Soft and Cognitive Computing",
-  "Parallel and Distributed Computing",
-  "Security Frameworks and Protocols",
-  "Advanced Intelligent Systems in Access Control",
-  "Natural Language Processing",
-  "Robotics and Autonomous Systems",
-  "Quantum Computing Applications in AI",
-  "Blockchain Technology in Smart Systems",
-  "Federated Learning and Distributed AI"
+const conferenceTracks = [
+  {
+    title: "Track 1: Neural Networks and Deep Learning",
+    topics: [
+      "Deep learning architectures",
+      "Neural network optimization", 
+      "Convolutional and recurrent networks",
+      "Transformers and attention mechanisms",
+      "Generative models",
+      "Advanced training techniques for intelligent systems"
+    ]
+  },
+  {
+    title: "Track 2: Computer Vision and Pattern Recognition",
+    topics: [
+      "Object detection and recognition",
+      "Image processing and analysis",
+      "Video analysis and understanding",
+      "Medical imaging applications",
+      "Biometric systems",
+      "3D vision and visual perception applications"
+    ]
+  },
+  {
+    title: "Track 3: Smart Systems and IoT Applications",
+    topics: [
+      "Intelligent IoT systems",
+      "Smart city infrastructure",
+      "Industrial automation",
+      "Energy management systems",
+      "Healthcare applications",
+      "Computational intelligence in cyber-physical systems"
+    ]
+  },
+  {
+    title: "Track 4: Computational Intelligence for Security and Privacy",
+    topics: [
+      "AI-driven cybersecurity",
+      "Privacy-preserving machine learning",
+      "Adversarial systems and defenses",
+      "Blockchain integration with AI",
+      "Biometric security systems",
+      "Intelligent threat detection mechanisms"
+    ]
+  },
+  {
+    title: "Track 5: Reinforcement Learning and Intelligent Control",
+    topics: [
+      "Reinforcement learning algorithms",
+      "Multi-agent systems",
+      "Intelligent control strategies",
+      "Robotics applications",
+      "Game-theoretic learning",
+      "Adaptive control in smart environments"
+    ]
+  },
+  {
+    title: "Track 6: Emerging Technologies and Applications",
+    topics: [
+      "Quantum machine learning",
+      "Neuromorphic computing",
+      "Edge AI and distributed intelligence",
+      "Explainable AI and interpretability",
+      "AI ethics and responsible AI",
+      "Brain-computer interfaces"
+    ]
+  }
+];
+
+const reviewProcess = [
+  {
+    title: "THREE-LAYER PEER REVIEW",
+    description: "All submissions undergo three-layer peer review: editorial review, TPC review, and external expert review with conflict of interest declarations."
+  },
+  {
+    title: "IEEE CIS STANDARDS", 
+    description: "Review criteria aligned with IEEE CIS standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
+  },
+  {
+    title: "EXPERT REVIEWERS",
+    description: "200+ qualified reviewers from IEEE CIS community with automated expertise matching and performance tracking."
+  },
+  {
+    title: "PLAGIARISM DETECTION",
+    description: "All submissions screened using Turnitin with maximum 15% similarity threshold and self-plagiarism verification."
+  },
+  {
+    title: "MULTI-STAGE PROCESS",
+    description: "Initial screening → Comprehensive review → Optional rebuttal → Final decision → Meta-review for borderline cases."
+  },
+  {
+    title: "QUALITY METRICS",
+    description: "Target 98%+ review completion rate with statistical analysis of inter-reviewer agreement and quality scoring."
+  }
 ];
 
 const submissionGuidelines = [
   {
     title: "Paper Format",
-    description: "Papers must be formatted according to the conference template and should not exceed 8 pages including references."
+    description: "Papers must follow IEEE conference format and should not exceed 8 pages including references."
   },
   {
-    title: "Originality", 
-    description: "All submissions must be original work that has not been published elsewhere or submitted to other conferences/journals."
+    title: "Acceptance Rate", 
+    description: "Target acceptance rate: 16-18% with rigorous peer review to maintain high standards."
   },
   {
-    title: "Peer Review",
-    description: "All papers will undergo a rigorous double-blind peer review process by subject matter experts."
+    title: "IEEE Standards",
+    description: "All submissions must comply with IEEE ethical guidelines and originality requirements."
   },
   {
-    title: "Language",
-    description: "Papers must be written in English with proper grammar and technical clarity."
-  },
-  {
-    title: "Plagiarism",
-    description: "All submissions will be checked for plagiarism. Papers with significant similarity will be rejected."
-  },
-  {
-    title: "Presentation",
+    title: "Presentation Requirement",
     description: "At least one author must register and present the paper at the conference if accepted."
   }
 ];
@@ -63,17 +123,17 @@ const submissionGuidelines = [
 const importantDates = [
   {
     event: "Paper Submission Deadline",
-    date: "February 15, 2026",
+    date: "February 17, 2026",
     status: "deadline"
   },
   {
     event: "Notification of Acceptance", 
-    date: "March 01, 2026",
+    date: "March 10, 2026",
     status: "notification"
   },
   {
     event: "Camera-Ready Submission",
-    date: "March 16, 2026", 
+    date: "March 15, 2026", 
     status: "camera-ready"
   },
   {
@@ -83,7 +143,7 @@ const importantDates = [
   },
   {
     event: "Conference Dates",
-    date: "April 15-16, 2026",
+    date: "April 17-18, 2026",
     status: "conference"
   }
 ];
@@ -157,19 +217,26 @@ export default function CallForPapersPage() {
             </Card>
           </div>
 
-          {/* Topics of Interest */}
+          {/* Conference Tracks */}
           <div className="mb-12">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Topics of Interest</CardTitle>
-                <p className="text-gray-600">The topics of the conference include, but are not limited to:</p>
+                <CardTitle className="text-2xl">Conference Tracks</CardTitle>
+                <p className="text-gray-600">ICRACS2026 features six specialized tracks aligned with IEEE CIS focus areas:</p>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {conferenceTopics.map((topic, index) => (
-                    <div key={index} className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{topic}</span>
+                <div className="space-y-6">
+                  {conferenceTracks.map((track, index) => (
+                    <div key={index} className="p-4 bg-gray-50 rounded-lg border-l-4 border-blue-500">
+                      <h4 className="font-semibold text-blue-900 mb-3">{track.title}</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        {track.topics.map((topic, topicIndex) => (
+                          <div key={topicIndex} className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0" />
+                            <span className="text-sm text-gray-700">{topic}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -189,6 +256,26 @@ export default function CallForPapersPage() {
                     <div key={index} className="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
                       <h4 className="font-semibold text-blue-900 mb-2">{guideline.title}</h4>
                       <p className="text-gray-700 text-sm">{guideline.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Quality Assurance and Review Process */}
+          <div className="mb-12">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Quality Assurance & Review Process</CardTitle>
+                <p className="text-gray-600">Rigorous peer review system aligned with IEEE CIS standards</p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {reviewProcess.map((process, index) => (
+                    <div key={index} className="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                      <h4 className="font-semibold text-purple-900 mb-2">{process.title}</h4>
+                      <p className="text-gray-700 text-sm">{process.description}</p>
                     </div>
                   ))}
                 </div>
@@ -247,25 +334,58 @@ export default function CallForPapersPage() {
             </Card>
           </div>
 
-          {/* Publication Opportunities */}
+          {/* Publication Strategy */}
           <div className="mb-12">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Publication Opportunities</CardTitle>
+                <CardTitle className="text-2xl">Publication Strategy</CardTitle>
+                <p className="text-gray-600">IEEE CIS Technical Co-Sponsorship ensures high-quality publication venues</p>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="text-center p-6 bg-blue-50 rounded-lg border border-blue-200">
-                    <h4 className="font-semibold text-blue-900 mb-2">AIP Conference Proceedings</h4>
-                    <p className="text-sm text-gray-600">Selected papers will be published in AIP Conference Proceedings (Scopus Indexed)</p>
+                <div className="space-y-6">
+                  <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
+                    <h4 className="font-bold text-blue-900 mb-3 text-lg">Primary Publication</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-blue-800">IEEE Xplore Digital Library</p>
+                          <p className="text-sm text-gray-700">All accepted papers published in IEEE Conference Proceedings</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-blue-800">SCOPUS Indexing</p>
+                          <p className="text-sm text-gray-700">Conference proceedings eligible for SCOPUS indexing</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="font-semibold text-blue-800">DOI Assignment</p>
+                          <p className="text-sm text-gray-700">Each paper receives a unique DOI identifier</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-center p-6 bg-green-50 rounded-lg border border-green-200">
-                    <h4 className="font-semibold text-green-900 mb-2">CRC Publications</h4>
-                    <p className="text-sm text-gray-600">Outstanding papers may be invited for CRC Press publications</p>
-                  </div>
-                  <div className="text-center p-6 bg-purple-50 rounded-lg border border-purple-200">
-                    <h4 className="font-semibold text-purple-900 mb-2">IJTE-ISTE Publications</h4>
-                    <p className="text-sm text-gray-600">Quality papers will be considered for IJTE-ISTE journal publication</p>
+                  
+                  <div className="p-6 bg-green-50 rounded-lg border border-green-200">
+                    <h4 className="font-bold text-green-900 mb-3 text-lg">Publication Timeline</h4>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-700">Camera-ready submissions deadline</span>
+                        <span className="font-semibold text-green-800">March 15, 2026</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-700">Conference proceedings available</span>
+                        <span className="font-semibold text-green-800">Within 30 days post-conference</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-700">Final proceedings in IEEE Xplore</span>
+                        <span className="font-semibold text-green-800">By May 30, 2026</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>

@@ -75,7 +75,7 @@ export default function HeroSection() {
               </div>
               <div className="flex items-center space-x-2 mb-3">
                 <Calendar className="h-5 w-5 text-blue-400" />
-                <span className="text-lg">April 15-16, 2026</span>
+                <span className="text-lg">April 17-18, 2026</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400" />
@@ -105,16 +105,16 @@ export default function HeroSection() {
                       <p className="text-sm text-gray-600">Deadline</p>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-red-600">Feb 15, 2026</p>
+                      <p className="font-bold text-red-600">Feb 17, 2026</p>
                     </div>
                   </div>
 
                   <div className="flex justify-between items-center p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
                     <div>
-                      <p className="font-semibold text-gray-900">Notification of Acceptance</p>
+                      <p className="font-semibold text-gray-900">Camera-ready Submission</p>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-yellow-600">Mar 01, 2026</p>
+                      <p className="font-bold text-yellow-600">Mar 15, 2026</p>
                     </div>
                   </div>
 
@@ -141,7 +141,7 @@ export default function HeroSection() {
                       <p className="font-semibold text-gray-900">Conference Dates</p>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-blue-600">Apr 15-16, 2026</p>
+                      <p className="font-bold text-blue-600">Apr 17-18, 2026</p>
                     </div>
                   </div>
                 </div>
