@@ -8,11 +8,15 @@ import { Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const images = [
-  "/1.jpg",
-  "/2.jpg", 
-  "/3.jpg",
-  "/4.png",
-  "/5.jpg"
+  "/highresimages/1.jpeg",
+  "/highresimages/2.jpeg", 
+  "/highresimages/3.jpeg",
+  "/highresimages/4.jpeg",
+  "/highresimages/5.jpeg",
+  "/highresimages/6.jpeg",
+  "/highresimages/7.jpeg",
+  "/highresimages/8.jpeg",
+  "/highresimages/9.jpeg"
 ];
 
 export default function HeroSection() {
