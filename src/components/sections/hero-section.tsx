@@ -60,10 +60,10 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
                 <span className="text-blue-400">ICRACS</span> 2026
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-200">
-                3rd International Conference on Recent Advances in
+              <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
+                International Conference on Recent Advances in
               </h2>
-              <h3 className="text-lg md:text-xl font-medium text-blue-300">
+              <h3 className="text-lg md:text-xl font-medium text-white">
                 Artificial Intelligence, Computer Vision & Smart Systems
               </h3>
             </div>

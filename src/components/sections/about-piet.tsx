@@ -122,7 +122,7 @@ export default function AboutPIET() {
               <CardTitle className="text-2xl text-blue-900 text-center">
                 Department of Artificial Intelligence & Data Science
               </CardTitle>
-              <p className="text-center text-blue-700">Founded in 2022</p>
+              <p className="text-center text-blue-700">Founded in 2021</p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
