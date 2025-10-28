@@ -286,14 +286,14 @@ export default function RegistrationPage() {
                     <div className="flex items-start space-x-3">
                       <Phone className="h-5 w-5 text-blue-600 mt-1" />
                       <div>
-                        <p className="font-semibold">Dr. Saurabh Raj</p>
-                        <p className="text-gray-600">8127741447, 7458080822</p>
+                        <p className="font-semibold">Dr. Shipra Bhatia</p>
+                        <p className="text-gray-600">7568645848</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <Mail className="h-5 w-5 text-blue-600 mt-1" />
                       <div>
-                        <p className="text-gray-600">saurabh.raj@poornima.org</p>
+                        <p className="text-gray-600">shipra.bhatia@poornima.org</p>
                       </div>
                     </div>
                   </div>

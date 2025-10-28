@@ -109,10 +109,10 @@ export default function NotFound() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Technical Support</p>
-                  <p className="text-gray-200">Dr. Saurabh Raj</p>
+                  <p className="text-gray-200">Dr. Shipra Bhatia</p>
                   <div className="flex items-center mt-1">
                     <Phone className="h-4 w-4 mr-2 text-blue-400" />
-                    <span className="text-blue-400">8127741447</span>
+                    <span className="text-blue-400">7568645848</span>
                   </div>
                 </div>
               </div>

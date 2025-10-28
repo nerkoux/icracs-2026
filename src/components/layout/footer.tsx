@@ -47,7 +47,7 @@ export default function Footer() {
                 <Phone className="h-4 w-4 mt-1 text-blue-400" />
                 <div className="text-sm">
                   <p>Dr. Budesh Kanwar: 9460503316</p>
-                  <p>Dr. Saurabh Raj: 8127741447</p>
+                  <p>Dr. Shipra Bhatia: 7568645848</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
