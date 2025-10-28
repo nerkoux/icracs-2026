@@ -68,7 +68,8 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-700 text-center">
           <p className="text-gray-300 text-sm mb-2">
-            * The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            * The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+            This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
           <p className="text-gray-300 text-sm">
             © 2026 ICRACS. All rights reserved. | Designed & Developed by{" "}
