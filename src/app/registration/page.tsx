@@ -173,13 +173,17 @@ export default function RegistrationPage() {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="flex items-center space-x-2">
-                    <ExternalLink className="h-4 w-4" />
-                    <span>CMT Link: ICRACS2026</span>
+                  <Button asChild className="flex items-center space-x-2">
+                    <a href="https://cmt3.research.microsoft.com/ICRACS2026/Submission/Index" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                      <span>CMT Link: ICRACS2026</span>
+                    </a>
                   </Button>
-                  <Button variant="outline" className="flex items-center space-x-2">
-                    <Download className="h-4 w-4" />
-                    <span>Download Sample Paper</span>
+                  <Button asChild variant="outline" className="flex items-center space-x-2">
+                    <a href="#">
+                      <Download className="h-4 w-4" />
+                      <span>Download Sample Paper</span>
+                    </a>
                   </Button>
                 </div>
               </CardContent>
