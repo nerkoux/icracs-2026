@@ -14,59 +14,29 @@ import { Download, ExternalLink, Phone, Mail, MapPin } from "lucide-react";
 
 const feeStructure = [
   {
-    category: "Student Author (IEEE/CIS Member)",
+    category: "Student Author",
     regularFee: "₹7,000",
     afterDeadline: "₹8,000"
   },
   {
-    category: "Student Author (Non-Member)",
-    regularFee: "₹7,500",
-    afterDeadline: "₹9,000"
-  },
-  {
-    category: "Research Scholar (IEEE/CIS Member)",
+    category: "Research Scholar",
     regularFee: "₹9,000",
     afterDeadline: "₹10,000"
   },
   {
-    category: "Research Scholar (Non-Member)",
-    regularFee: "₹9,500",
-    afterDeadline: "₹11,500"
-  },
-  {
-    category: "Faculty/Academic (IEEE/CIS Member)",
+    category: "Faculty/Academic",
     regularFee: "₹10,000",
     afterDeadline: "₹11,000"
   },
   {
-    category: "Faculty/Academic (Non-Member)",
-    regularFee: "₹12,000",
-    afterDeadline: "₹14,500"
-  },
-  {
-    category: "Industry Professional (IEEE/CIS Member)",
+    category: "Industry Professional",
     regularFee: "₹11,000",
     afterDeadline: "₹12,000"
   },
   {
-    category: "Industry Professional (Non-Member)",
-    regularFee: "₹15,000",
-    afterDeadline: "₹18,000"
-  },
-  {
-    category: "International Delegate (IEEE/CIS Member)",
+    category: "International Delegate",
     regularFee: "$200",
     afterDeadline: "$250"
-  },
-  {
-    category: "International Delegate (Non-Member)",
-    regularFee: "$250",
-    afterDeadline: "$300"
-  },
-  {
-    category: "Conference Attendee Only",
-    regularFee: "₹2,000",
-    afterDeadline: "₹2,500"
   }
 ];
 
