@@ -57,107 +57,53 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
+        {/* Hero content: main info on left. The "Important Dates" card was removed per request. */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Main Content */}
           <div className="text-white">
-            <div className="mb-6">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                <span className="text-blue-400">ICRACS</span> 2026
-              </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-                International Conference on Recent Advances in
-              </h2>
-              <h3 className="text-lg md:text-xl font-medium text-white">
-                Artificial Intelligence, Computer Vision & Smart Systems
-              </h3>
-            </div>
+        <div className="mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            <span className="text-blue-400">ICRACS</span> 2026
+          </h1>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
+            International Conference on Recent Advances in
+          </h2>
+          <h3 className="text-lg md:text-xl font-medium text-white">
+            Artificial Intelligence, Computer Vision & Smart Systems
+          </h3>
+        </div>
 
-            <div className="mb-8">
-              <div className="flex items-center space-x-2 mb-3">
-                <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-lg">Poornima Institute of Engineering and Technology</span>
-              </div>
-              <div className="flex items-center space-x-2 mb-3">
-                <Calendar className="h-5 w-5 text-blue-400" />
-                <span className="text-lg">April 17-18, 2026</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-lg">Sitapura, Jaipur, Rajasthan</span>
-              </div>
-            </div>
+        <div className="mb-8">
+          <div className="flex items-center space-x-2 mb-3">
+            <MapPin className="h-5 w-5 text-blue-400" />
+            <span className="text-lg">Poornima Institute of Engineering and Technology</span>
+          </div>
+          <div className="flex items-center space-x-2 mb-3">
+            <Calendar className="h-5 w-5 text-blue-400" />
+            <span className="text-lg">April 17-18, 2026</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <MapPin className="h-5 w-5 text-blue-400" />
+            <span className="text-lg">Sitapura, Jaipur, Rajasthan</span>
+          </div>
+        </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Link href="/registration">Register Now</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-black hover:bg-white hover:text-black">
-                <Link href="/call-for-papers">Submit Paper</Link>
-              </Button>
-            </div>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Link href="/registration">Register Now</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-white text-black hover:bg-white hover:text-black">
+            <Link href="/call-for-papers">Submit Paper</Link>
+          </Button>
+        </div>
           </div>
 
-          {/* Right Column - Important Dates */}
+          {/* Right Column removed */}
+          {/* 
           <div className="lg:ml-8">
-            <Card className="bg-white/95 backdrop-blur">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Important Dates</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
-                    <div>
-                      <p className="font-semibold text-gray-900">Paper Submission</p>
-                      <p className="text-sm text-gray-600">Deadline</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-bold text-red-600">Feb 17, 2026</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between items-center p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
-                    <div>
-                      <p className="font-semibold text-gray-900">Camera-ready Submission</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-bold text-yellow-600">Mar 15, 2026</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
-                    <div>
-                      <p className="font-semibold text-gray-900">Early Bird Registration</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-bold text-green-600">Mar 16, 2026</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between items-center p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
-                    <div>
-                      <p className="font-semibold text-gray-900">Late Registration</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-bold text-orange-600">Mar 21, 2026</p>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                    <div>
-                      <p className="font-semibold text-gray-900">Conference Dates</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-bold text-blue-600">Apr 17-18, 2026</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 text-center">
-                  <Button asChild className="w-full">
-                    <Link href="/registration">View Registration Details</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+        ...Important Dates card removed...
           </div>
+          */}
         </div>
       </div>
 

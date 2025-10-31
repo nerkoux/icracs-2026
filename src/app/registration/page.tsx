@@ -15,8 +15,8 @@ import { Download, ExternalLink, Phone, Mail, MapPin } from "lucide-react";
 const feeStructure = [
   {
     category: "Student Author (IEEE/CIS Member)",
-    regularFee: "₹6,000",
-    afterDeadline: "₹7,500"
+    regularFee: "₹7,000",
+    afterDeadline: "₹8,000"
   },
   {
     category: "Student Author (Non-Member)",
@@ -25,7 +25,7 @@ const feeStructure = [
   },
   {
     category: "Research Scholar (IEEE/CIS Member)",
-    regularFee: "₹8,000",
+    regularFee: "₹9,000",
     afterDeadline: "₹10,000"
   },
   {
@@ -36,7 +36,7 @@ const feeStructure = [
   {
     category: "Faculty/Academic (IEEE/CIS Member)",
     regularFee: "₹10,000",
-    afterDeadline: "₹12,500"
+    afterDeadline: "₹11,000"
   },
   {
     category: "Faculty/Academic (Non-Member)",
@@ -45,8 +45,8 @@ const feeStructure = [
   },
   {
     category: "Industry Professional (IEEE/CIS Member)",
-    regularFee: "₹12,000",
-    afterDeadline: "₹15,000"
+    regularFee: "₹11,000",
+    afterDeadline: "₹12,000"
   },
   {
     category: "Industry Professional (Non-Member)",
@@ -117,7 +117,7 @@ export default function RegistrationPage() {
         </section>
 
         <div className="container mx-auto px-4 py-12">
-          {/* Important Dates */}
+          Important Dates
           <div className="mb-12">
             <Card>
               <CardHeader>
@@ -220,6 +220,23 @@ export default function RegistrationPage() {
                       ))}
                     </TableBody>
                   </Table>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Notification */}
+          <div className="mb-12"> 
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Important Note:</CardTitle>
+                <p className="text-gray-600">Any IEEE/ACM Member will be eligible for fee waive of Rs. 2000/250$ as applicable.</p>
+              </CardHeader>
+              <CardContent>
+                  <div className="space-y-4">
+                    <div>
+
+                  </div>
                 </div>
               </CardContent>
             </Card>
