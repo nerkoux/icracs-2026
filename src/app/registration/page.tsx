@@ -200,7 +200,7 @@ export default function RegistrationPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Important Note:</CardTitle>
-                <p className="text-gray-600">Any IEEE/ACM Member will be eligible for fee waive of Rs. 2000/250$ as applicable.</p>
+                <p className="text-gray-600">Any IEEE/ACM Member will be eligible for fee waive of Rs. 2000/25$ as applicable.</p>
               </CardHeader>
               <CardContent>
                   <div className="space-y-4">
