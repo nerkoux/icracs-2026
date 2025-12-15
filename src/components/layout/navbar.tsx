@@ -15,6 +15,7 @@ import { Menu, X } from "lucide-react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Call For Papers", href: "/call-for-papers" },
+  { name: "Call For Special Session", href: "/call-for-special-session" },
   { name: "Agenda", href: "/agenda" },
   { name: "Registration", href: "/registration" },
   { name: "Committee", href: "/committee" },
@@ -39,19 +40,19 @@ export default function Navbar() {
               <Image
                 src="/pietLogoUpdated.png"
                 alt="PIET Logo"
-                width={240}
-                height={240}
+                width={180}
+                height={180}
                 className="object-contain"
               />
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-2">
+            <div className="hidden lg:flex items-center space-x-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600"
+                  className="px-3 py-2 text-xs font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600"
                 >
                   {item.name}
                 </Link>
