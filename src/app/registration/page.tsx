@@ -150,7 +150,7 @@ export default function RegistrationPage() {
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="flex items-center space-x-2">
-                    <a href="#">
+                    <a href="/templates/samplepaper.pdf" target="_blank" rel="noopener noreferrer">
                       <Download className="h-4 w-4" />
                       <span>Download Sample Paper</span>
                     </a>

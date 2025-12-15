@@ -19,8 +19,8 @@ const navigation = [
   { name: "Registration", href: "/registration" },
   { name: "Committee", href: "/committee" },
   { name: "Speakers", href: "/speakers" },
-  { name: "Archive", href: "/archive" },
   { name: "Reviewer", href: "/reviewer" },
+  { name: "Archive", href: "/archive" },
 ];
 
 export default function Navbar() {
