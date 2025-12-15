@@ -324,9 +324,15 @@ export default function CallForPapersPage() {
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="flex items-center space-x-2">
-                    <a href="#">
+                    <a href="/templates/Conference-template-A4.doc">
                       <Download className="h-4 w-4" />
-                      <span>Download Paper Template</span>
+                      <span>Download Word Template</span>
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" className="flex items-center space-x-2">
+                    <a href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn">
+                      <Download className="h-4 w-4" />
+                      <span>Download Latex Template</span>
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="flex items-center space-x-2">

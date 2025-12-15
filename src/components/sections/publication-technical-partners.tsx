@@ -11,11 +11,6 @@ const publicationPartners = [
     name: "CRC Press",
     logo: "/publications-technical/crcpress.jpg",
     description: "Taylor & Francis Group"
-  },
-  {
-    name: "International Journal of Technology and Engineering",
-    logo: "/publications-technical/ijte.png",
-    description: "IJTE Publication"
   }
 ];
 
@@ -50,10 +45,10 @@ export default function PublicationTechnicalPartners() {
           <h3 className="text-2xl font-bold text-center text-blue-900 mb-8">
             *Publication Partners
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {publicationPartners.map((partner, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 hover:border-blue-200">
-                <CardContent className="p-8">
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200">
+              <CardContent className="p-8">
                   <div className="relative h-24 mb-6 flex items-center justify-center">
                     <Image
                       src={partner.logo}

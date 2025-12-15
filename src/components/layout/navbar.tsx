@@ -20,6 +20,7 @@ const navigation = [
   { name: "Committee", href: "/committee" },
   { name: "Speakers", href: "/speakers" },
   { name: "Archive", href: "/archive" },
+  { name: "Reviewer", href: "/reviewer" },
 ];
 
 export default function Navbar() {

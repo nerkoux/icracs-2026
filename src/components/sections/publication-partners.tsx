@@ -11,11 +11,6 @@ const publicationPartners = [
     name: "CRC Publications",
     logo: "/publications-technical/crcpress.jpg",
     note: "*"
-  },
-  {
-    name: "IJTE-ISTE Publications",
-    logo: "/publications-technical/ijte.png",
-    note: "*"
   }
 ];
 

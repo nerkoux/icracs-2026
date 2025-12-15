@@ -7,40 +7,22 @@ import { Building, Award } from "lucide-react";
 
 const keynoteSpeakers = [
   {
-    name: "Prof. (Dr.) Ravi Kumar Arya",
-    title: "Professor",
-    affiliation: "Zhingshan Institute of Changchun University of Science and Technology, China",
-    expertise: ["Wireless Communications", "Signal Processing", "AI in Telecommunications"],
-    bio: "Leading researcher in wireless communications and AI applications in telecommunications systems.",
+    name: "Prof. Brij Gupta",
+    title: "Distinguished Professor",
+    affiliation: "Director, Center for AI and Cyber Security | Board of Governors, IEEE CT Society",
+    expertise: ["Cybersecurity", "AI Security", "Network Security"],
+    bio: "Editor-in-Chief of SCIE Indexed journal and Clarivate Highly Cited Researcher (0.1%).",
     category: "keynote",
-    image: "/speakers/ravikumar.jpg"
+    image: "/speakers/brij-gupta.jpg"
   },
   {
-    name: "Dr. Ankit Agrawal",
-    title: "Research Professor",
-    affiliation: "Department of Electrical and Computer Engineering, McCormick School of Engineering and Applied Science, Northwestern University",
-    expertise: ["Machine Learning", "Data Science", "High Performance Computing"],
-    bio: "Expert in machine learning applications and high-performance computing for large-scale data analysis.",
+    name: "Dr. Dharm Singh",
+    title: "Professor of Computer Science",
+    affiliation: "Namibia University of Science and Technology (NUST)",
+    expertise: ["Computer Science", "Software Engineering", "Distributed Systems"],
+    bio: "Experienced professor with extensive research in computer science and software engineering.",
     category: "keynote",
-    image: "/speakers/Ankitagarwal.jpg"
-  },
-  {
-    name: "Dr. Vijayshri Chaurasiya",
-    title: "Associate Professor",
-    affiliation: "Maulana Azad National Institute of Technology, Bhopal",
-    expertise: ["Computer Vision", "Image Processing", "Pattern Recognition"],
-    bio: "Specialist in computer vision and image processing with focus on pattern recognition applications.",
-    category: "keynote",
-    image: "/speakers/VijayshriChaurasia.jpg"
-  },
-  {
-    name: "Prof. (Dr.) Sandeep Saxena",
-    title: "Professor & Head",
-    affiliation: "JIMS Greater Noida, Senior Member IEEE",
-    expertise: ["Artificial Intelligence", "Machine Learning", "Educational Technology"],
-    bio: "Keynote Speaker, Associate Editor, and Resource Person with extensive experience in AI research and education.",
-    category: "keynote",
-    image: "/speakers/sandeepsaxena.jpg"
+    image: "/speakers/dharmsingh.jpg"
   }
 ];
 
@@ -54,29 +36,50 @@ const pastSpeakers = [
     category: "past",
     year: "ICRACS 2025",
     image: "/speakers/AkashSaxena.jpg"
+  },
+  {
+    name: "Prof. (Dr.) Ravi Kumar Arya",
+    title: "Professor",
+    affiliation: "Zhingshan Institute of Changchun University of Science and Technology, China",
+    expertise: ["Wireless Communications", "Signal Processing", "AI in Telecommunications"],
+    bio: "Leading researcher in wireless communications and AI applications in telecommunications systems.",
+    category: "past",
+    year: "ICRACS 2025",
+    image: "/speakers/ravikumar.jpg"
+  },
+  {
+    name: "Dr. Ankit Agrawal",
+    title: "Research Professor",
+    affiliation: "Department of Electrical and Computer Engineering, McCormick School of Engineering and Applied Science, Northwestern University",
+    expertise: ["Machine Learning", "Data Science", "High Performance Computing"],
+    bio: "Expert in machine learning applications and high-performance computing for large-scale data analysis.",
+    category: "past",
+    year: "ICRACS 2025",
+    image: "/speakers/Ankitagarwal.jpg"
+  },
+  {
+    name: "Dr. Vijayshri Chaurasiya",
+    title: "Associate Professor",
+    affiliation: "Maulana Azad National Institute of Technology, Bhopal",
+    expertise: ["Computer Vision", "Image Processing", "Pattern Recognition"],
+    bio: "Specialist in computer vision and image processing with focus on pattern recognition applications.",
+    category: "past",
+    year: "ICRACS 2025",
+    image: "/speakers/VijayshriChaurasia.jpg"
+  },
+  {
+    name: "Prof. (Dr.) Sandeep Saxena",
+    title: "Professor & Head",
+    affiliation: "JIMS Greater Noida, Senior Member IEEE",
+    expertise: ["Artificial Intelligence", "Machine Learning", "Educational Technology"],
+    bio: "Keynote Speaker, Associate Editor, and Resource Person with extensive experience in AI research and education.",
+    category: "past",
+    year: "ICRACS 2025",
+    image: "/speakers/sandeepsaxena.jpg"
   }
 ];
 
-const invitedSpeakers = [
-  {
-    name: "Prof. Brij Gupta",
-    title: "Distinguished Professor",
-    affiliation: "Director, Center for AI and Cyber Security | Board of Governors, IEEE CT Society",
-    expertise: ["Cybersecurity", "AI Security", "Network Security"],
-    bio: "Editor-in-Chief of SCIE Indexed journal and Clarivate Highly Cited Researcher (0.1%).",
-    category: "invited",
-    image: "/speakers/brij-gupta.jpg"
-  },
-  {
-    name: "Dr. Dharm Singh",
-    title: "Professor of Computer Science",
-    affiliation: "Namibia University of Science and Technology (NUST)",
-    expertise: ["Computer Science", "Software Engineering", "Distributed Systems"],
-    bio: "Experienced professor with extensive research in computer science and software engineering.",
-    category: "invited",
-    image: "/speakers/dharmsingh.jpg"
-  }
-];
+const invitedSpeakers: Speaker[] = [];
 
 interface Speaker {
   name: string;
@@ -219,22 +222,24 @@ export default function SpeakersPage() {
           </div>
 
           {/* Invited Speakers Section */}
-          <div className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Invited Speakers</h2>
-              <p className="text-lg text-gray-600">Special invited talks from renowned experts</p>
+          {invitedSpeakers.length > 0 && (
+            <div className="mb-16">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Invited Speakers</h2>
+                <p className="text-lg text-gray-600">Special invited talks from renowned experts</p>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {invitedSpeakers.map((speaker, index) => (
+                  <SpeakerCard 
+                    key={index} 
+                    speaker={speaker} 
+                    colorScheme="green"
+                  />
+                ))}
+              </div>
             </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {invitedSpeakers.map((speaker, index) => (
-                <SpeakerCard 
-                  key={index} 
-                  speaker={speaker} 
-                  colorScheme="green"
-                />
-              ))}
-            </div>
-          </div>
+          )}
 
           {/* Past Speakers Section */}
           <div className="mb-16">
