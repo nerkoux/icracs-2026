@@ -122,27 +122,6 @@ export default function CallForSpecialSessionPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-center mb-6">
-                <p className="text-gray-700 mb-4">
-                  Submit your proposal using the form below or download the proposal format template.
-                </p>
-                <div className="flex justify-center">
-                  <Button 
-                    asChild
-                    variant="outline"
-                    className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-6 text-lg"
-                  >
-                    <a 
-                      href="/templates/ICIMMI_2024_Sample_Call_for_Papers_for_Special_Session_2024.pdf"
-                      download
-                    >
-                      <Download className="h-5 w-5 mr-2" />
-                      Proposal Format
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
               {/* Embedded Google Form */}
               <div className="w-full mt-8">
                 <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 text-center mb-4">
