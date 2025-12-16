@@ -23,6 +23,15 @@ const keynoteSpeakers = [
     bio: "Experienced professor with extensive research in computer science and software engineering.",
     category: "keynote",
     image: "/speakers/dharmsingh.jpg"
+  },
+  {
+    name: "Prof. Valentina E. Balas",
+    title: "Professor of Automatics and Applied Software",
+    affiliation: "University of Arad, Romania",
+    expertise: ["Automatics Software", "Applied Software", "Computational Intelligence"],
+    bio: "Experienced professor with extensive research in Applied Software and Computational Intelligence.",
+    category: "keynote",
+    image: "/speakers/valentina-balas.jpg"
   }
 ];
 

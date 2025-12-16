@@ -30,7 +30,7 @@ const scheduleOverview = [
       { time: "14:00 - 15:15", event: "Track 3: Smart Systems & IoT Applications", type: "technical" },
       { time: "15:15 - 15:30", event: "Tea Break", type: "break" },
       { time: "15:30 - 16:30", event: "Track 4: Computational Intelligence for Security", type: "technical" },
-      { time: "16:30 - 17:30", event: "IEEE CIS Award Ceremony & Closing", type: "ceremony" }
+      { time: "16:30 - 17:30", event: "Award Ceremony & Closing", type: "ceremony" }
     ]
   }
 ];

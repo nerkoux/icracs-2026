@@ -82,13 +82,13 @@ export default function AboutICRACS() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 The conference serves as a premier platform for researchers, academicians, and industry professionals 
                 to share innovative AI solutions that enhance efficiency, stability, robustness, and security of smart 
-                systems through computational intelligence paradigms. With IEEE CIS technical co-sponsorship, ICRACS2026 
+                systems through computational intelligence paradigms. ICRACS2026 
                 maintains the highest standards of technical excellence and global reach.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Beyond traditional paper presentations, the conference features specialized workshops on &ldquo;Computational 
                 Intelligence for Sustainable Energy Systems&rdquo; and panel discussions on &ldquo;Neural Networks for Computer Vision&rdquo;, 
-                creating a comprehensive platform for knowledge exchange and collaboration across the global CIS community.
+                creating a comprehensive platform for knowledge exchange and collaboration across the global community.
               </p>
             </CardContent>
           </Card>

@@ -54,11 +54,6 @@ const committeeData = {
   ],
   organizingCommittee: [
     {
-      name: "Dr. Budesh Kanwar",
-      title: "Professor, Dept. of AI&DS, PIET",
-      affiliation: ""
-    },
-    {
       name: "Dr. Ajay Maurya",
       title: "Professor, Dept. of AI&DS, PIET",
       affiliation: ""

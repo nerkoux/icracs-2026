@@ -116,11 +116,6 @@ export default function CallForSpecialSessionPage() {
 
           {/* Submission Section */}
           <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="text-2xl text-blue-900 text-center">
-                📝 Submit Your Special Session Proposal
-              </CardTitle>
-            </CardHeader>
             <CardContent>
               {/* Embedded Google Form */}
               <div className="w-full mt-8">
