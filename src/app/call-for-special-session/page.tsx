@@ -151,7 +151,7 @@ export default function CallForSpecialSessionPage() {
                   <Calendar className="h-5 w-5 text-purple-600 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Special Session Proposal Submission Deadline:</p>
-                    <p className="text-lg font-bold text-purple-600">15 Dec 2025</p>
+                    <p className="text-lg font-bold text-purple-600">31 Dec 2025</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
