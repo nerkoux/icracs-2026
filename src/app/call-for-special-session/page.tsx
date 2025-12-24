@@ -116,7 +116,32 @@ export default function CallForSpecialSessionPage() {
 
           {/* Submission Section */}
           <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="text-2xl text-blue-900 text-center">
+                📝 Submit Your Special Session Proposal
+              </CardTitle>
+            </CardHeader>
             <CardContent>
+              <div className="text-center mb-6">
+                <p className="text-gray-700 mb-4">
+                  Submit your proposal using the form below or download the proposal format template.
+                </p>
+                <div className="flex justify-center">
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-6 text-lg"
+                  >
+                    <a
+                      href="/templates/ICRACS 2026_Sample_Call_for_Special_Session.pdf"
+                      download
+                    >
+                      <Download className="h-5 w-5 mr-2" />
+                      Proposal Format
+                    </a>
+                  </Button>
+                </div>
+              </div>
               {/* Embedded Google Form */}
               <div className="w-full mt-8">
                 <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 text-center mb-4">
@@ -127,9 +152,9 @@ export default function CallForSpecialSessionPage() {
                     Kindly fill all the necessary details for being a session chair
                   </p>
                 </div>
-                <iframe 
+                <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLScUxR6hWP0-Z_M5-Uc4ayg6ammQLpGXhyBcZVxNsJwMbxpLsg/viewform?embedded=true"
-                  width="100%" 
+                  width="100%"
                   height="600"
                   className="border rounded-lg shadow-sm"
                   title="Special Session Proposal Form"
@@ -165,9 +190,9 @@ export default function CallForSpecialSessionPage() {
                   <BookOpen className="h-5 w-5 text-purple-600 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Conference Website:</p>
-                    <a 
-                      href="https://icracs.poornima.org/" 
-                      target="_blank" 
+                    <a
+                      href="https://icracs.poornima.org/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
