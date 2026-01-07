@@ -3,6 +3,7 @@ import Footer from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Download, Calendar, MapPin, BookOpen, Award, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 interface SpecialSessionChair {
   name: string;
@@ -13,11 +14,11 @@ interface SpecialSessionChair {
   emails?: string[];
   mobile?: string;
   details?: string[];
+  image?: string;
 }
 
 interface SpecialSession {
   title: string;
-  track?: string;
   chairs: SpecialSessionChair[];
 }
 
@@ -34,6 +35,7 @@ export default function CallForSpecialSessionPage() {
           institute: "Poornima University, Jaipur",
           emails: ["prynkmshr@gmail.com", "priyanka.mishra@poornima.edu.in"],
           mobile: "9460929966",
+          image: "/specialsessiondata/drpriyanka.png"
         }
       ]
     },
@@ -44,19 +46,22 @@ export default function CallForSpecialSessionPage() {
           name: "Dr. Varun Malik",
           role: "Session Chair",
           emails: ["varun.malik@chitkara.edu.in"],
-          mobile: "+919958024300"
+          mobile: "+919958024300",
+          image: "/specialsessiondata/varunmalik.png"
         },
         {
           name: "Ms. Kimmi Gupta",
           role: "Session Co-Chair",
           emails: ["kimmi.gupta@bennett.edu.in"],
-          mobile: "+91 73009 48976"
+          mobile: "+91 73009 48976",
+          image: "/specialsessiondata/kimmigupta.png"
         },
         {
           name: "Dr. Mithlesh Arya",
           role: "Associate Professor",
           institute: "Swami Keshvanand Institute of Technology Management and Gramothan Jaipur",
-          emails: ["mithlesh.arya@skit.ac.in"]
+          emails: ["mithlesh.arya@skit.ac.in"],
+          image: "/specialsessiondata/mithilesharya.png"
         }
       ]
     },
@@ -67,35 +72,44 @@ export default function CallForSpecialSessionPage() {
           name: "Dr. Tanmay Kasbe",
           role: "Associate Professor",
           institute: "Shri Vaishnav Vidyapeeth Vishwavidyalaya Indore",
-          emails: ["tanmaykasbe@gmail.com"]
+          emails: ["tanmaykasbe@gmail.com"],
+          image: "/specialsessiondata/drtanmay.png"
         },
         {
           name: "Dr. Sailesh Iyer",
           role: "Principal & Professor",
           institute: "Narnarayan Shastri Institute of Technology-IFSCS (Affiliated to NFSU)",
-          emails: ["drsaileshiyer@gmail.com"]
+          emails: ["drsaileshiyer@gmail.com"],
+          image: "/specialsessiondata/drshailesh.png"
         },
         {
           name: "Dr. Dipti Durgesh Patil",
           role: "Professor",
           details: ["Ph.D. (Computer Engineering)", "Department of Information Technology", "Dean – Student Affairs", "Cummins College of Engineering for Women, Pune"],
-          emails: ["dipti.patil@cumminscollege.in"]
+          emails: ["dipti.patil@cumminscollege.in"],
+          image: "/specialsessiondata/drdipti.png"
         }
       ]
     },
     {
       title: "AI-Driven Computer Vision and Federated Learning for Scalable Healthcare Applications",
-      track: "Machine Learning for Healthcare and Biomedical Applications",
       chairs: [
         {
           name: "Dr. Adithya Padthe, Ph.D.",
           role: "Research Scientist",
-          emails: ["adithya.padthe@gmail.com"]
-        },
+          emails: ["adithya.padthe@gmail.com"],
+          image: "/specialsessiondata/draditya.png"
+        }
+      ]
+    },
+    {
+      title: "Machine Learning for Healthcare and Biomedical Applications",
+      chairs: [
         {
           name: "Dr. Anita",
           role: "Assistant Professor",
-          institute: "JUIT, Solan"
+          institute: "JUIT, Solan",
+          image: "/specialsessiondata/dranita.png"
         }
       ]
     }
@@ -156,6 +170,76 @@ export default function CallForSpecialSessionPage() {
             </CardContent>
           </Card>
 
+          {/* Approved Special Sessions - Moved Above Introduction */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">Approved Special Sessions</h2>
+            <div className="grid grid-cols-1 gap-8">
+              {specialSessions.map((session, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col hover:shadow-xl transition-shadow duration-300">
+                  <div className="bg-red-50 border-b border-red-100 p-4">
+                    <h3 className="text-xl font-bold">
+                      <span className="text-red-600 mr-2">Special Session {index + 1}:</span>
+                      <span className="text-gray-900 italic">{session.title}</span>
+                    </h3>
+                  </div>
+                  <div className="p-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                      {session.chairs.map((chair, i) => (
+                        <div key={i} className="flex flex-col sm:flex-row gap-4 p-4 bg-gray-50 rounded-lg border border-gray-100 items-start">
+                          <div className="flex-shrink-0 mx-auto sm:mx-0">
+                            <div className="h-24 w-24 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden border-2 border-white shadow-md">
+                              {chair.image ? (
+                                <Image
+                                  src={chair.image}
+                                  alt={chair.name}
+                                  width={96}
+                                  height={96}
+                                  className="object-cover w-full h-full"
+                                />
+                              ) : (
+                                <span className="text-3xl font-bold text-blue-700">
+                                  {getInitials(chair.name)}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                          <div className="flex-1 text-center sm:text-left w-full">
+                            <h4 className="font-bold text-lg text-gray-900">{chair.name}</h4>
+                            {chair.role && <p className="text-sm font-bold text-blue-600 mb-1 uppercase tracking-wide">{chair.role}</p>}
+
+                            <div className="text-sm space-y-0.5 text-gray-700 mb-3">
+                              {chair.designation && <p>{chair.designation}</p>}
+                              {chair.department && <p>{chair.department}</p>}
+                              {chair.institute && <p className="italic font-medium text-gray-600">{chair.institute}</p>}
+                              {chair.details && chair.details.map((line, idx) => (
+                                <p key={idx}>{line}</p>
+                              ))}
+                            </div>
+
+                            <div className="space-y-1 border-t border-gray-200 pt-2">
+                              {chair.emails && chair.emails.map((email, idx) => (
+                                <div key={idx} className="flex items-center justify-center sm:justify-start text-xs text-gray-600 break-all">
+                                  <Mail className="h-3 w-3 mr-1.5 flex-shrink-0" />
+                                  <a href={`mailto:${email}`} className="hover:text-blue-600 hover:underline">{email}</a>
+                                </div>
+                              ))}
+                              {chair.mobile && (
+                                <div className="flex items-center justify-center sm:justify-start text-xs text-gray-600">
+                                  <Phone className="h-3 w-3 mr-1.5 flex-shrink-0" />
+                                  <span>{chair.mobile}</span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Introduction */}
           <Card className="mb-8">
             <CardContent className="p-8">
@@ -214,69 +298,6 @@ export default function CallForSpecialSessionPage() {
               </ul>
             </CardContent>
           </Card>
-
-          {/* Approved Special Sessions - Added Section */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">Approved Special Sessions</h2>
-            <div className="grid grid-cols-1 gap-8">
-              {specialSessions.map((session, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col hover:shadow-xl transition-shadow duration-300">
-                  <div className="bg-red-50 border-b border-red-100 p-4">
-                    <h3 className="text-xl font-bold">
-                      <span className="text-red-600 mr-2">Special Session:</span>
-                      <span className="text-gray-900 italic">{session.title}</span>
-                    </h3>
-                    {session.track && (
-                      <div className="mt-2 text-sm font-semibold text-gray-700 border-t border-red-100 pt-2">
-                        <span className="uppercase text-red-500 mr-1">Track:</span> {session.track}
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                      {session.chairs.map((chair, i) => (
-                        <div key={i} className="flex flex-col sm:flex-row gap-4 p-4 bg-gray-50 rounded-lg border border-gray-100 items-start">
-                          <div className="flex-shrink-0 mx-auto sm:mx-0">
-                            <div className="h-24 w-24 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden border-2 border-white shadow-md text-3xl font-bold text-blue-700">
-                              {getInitials(chair.name)}
-                            </div>
-                          </div>
-                          <div className="flex-1 text-center sm:text-left w-full">
-                            <h4 className="font-bold text-lg text-gray-900">{chair.name}</h4>
-                            {chair.role && <p className="text-sm font-bold text-blue-600 mb-1 uppercase tracking-wide">{chair.role}</p>}
-
-                            <div className="text-sm space-y-0.5 text-gray-700 mb-3">
-                              {chair.designation && <p>{chair.designation}</p>}
-                              {chair.department && <p>{chair.department}</p>}
-                              {chair.institute && <p className="italic font-medium text-gray-600">{chair.institute}</p>}
-                              {chair.details && chair.details.map((line, idx) => (
-                                <p key={idx}>{line}</p>
-                              ))}
-                            </div>
-
-                            <div className="space-y-1 border-t border-gray-200 pt-2">
-                              {chair.emails && chair.emails.map((email, idx) => (
-                                <div key={idx} className="flex items-center justify-center sm:justify-start text-xs text-gray-600 break-all">
-                                  <Mail className="h-3 w-3 mr-1.5 flex-shrink-0" />
-                                  <a href={`mailto:${email}`} className="hover:text-blue-600 hover:underline">{email}</a>
-                                </div>
-                              ))}
-                              {chair.mobile && (
-                                <div className="flex items-center justify-center sm:justify-start text-xs text-gray-600">
-                                  <Phone className="h-3 w-3 mr-1.5 flex-shrink-0" />
-                                  <span>{chair.mobile}</span>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* Submission Section */}
           <Card className="mb-8">
