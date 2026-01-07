@@ -23,7 +23,7 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Priyanka Mishra",
-          role: "Chair",
+          role: "Session Chair",
           image: "/specialsessiondata/drpriyanka.png"
         }
       ]
@@ -33,17 +33,17 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Varun Malik",
-          role: "Chair",
+          role: "Session Chair",
           image: "/specialsessiondata/varunmalik.png"
         },
         {
           name: "Ms. Kimmi Gupta",
-          role: "Co-Chair",
+          role: "Session Co-Chair",
           image: "/specialsessiondata/kimmigupta.png"
         },
         {
           name: "Dr. Mithlesh Arya",
-          role: "Co-Chair",
+          role: "Session Co-Chair",
           image: "/specialsessiondata/mithilesharya.png"
         }
       ]
@@ -53,17 +53,17 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Tanmay Kasbe",
-          role: "Chair",
+          role: "Session Chair",
           image: "/specialsessiondata/drtanmay.png"
         },
         {
           name: "Dr. Sailesh Iyer",
-          role: "Co-Chair",
+          role: "Session Co-Chair",
           image: "/specialsessiondata/drshailesh.png"
         },
         {
           name: "Dr. Dipti Durgesh Patil",
-          role: "Co-Chair",
+          role: "Session Co-Chair",
           image: "/specialsessiondata/drdipti.png"
         }
       ]
@@ -73,7 +73,7 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Adithya Padthe",
-          role: "Chair",
+          role: "Session Chair",
           image: "/specialsessiondata/draditya.png"
         }
       ]
@@ -83,7 +83,7 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Anita",
-          role: "Chair",
+          role: "Session Chair",
           image: "/specialsessiondata/dranita.png"
         }
       ]
