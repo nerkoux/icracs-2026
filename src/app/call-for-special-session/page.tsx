@@ -8,12 +8,6 @@ import Image from "next/image";
 interface SpecialSessionChair {
   name: string;
   role: string;
-  designation?: string;
-  department?: string;
-  institute?: string;
-  emails?: string[];
-  mobile?: string;
-  details?: string[];
   image?: string;
 }
 
@@ -30,7 +24,6 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Priyanka Mishra",
           role: "Session Chair",
-          institute: "Poornima University, Jaipur",
           image: "/specialsessiondata/drpriyanka.png"
         }
       ]
@@ -51,7 +44,6 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Mithlesh Arya",
           role: "Associate Professor",
-          institute: "Swami Keshvanand Institute of Technology Management and Gramothan Jaipur",
           image: "/specialsessiondata/mithilesharya.png"
         }
       ]
@@ -62,19 +54,16 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Tanmay Kasbe",
           role: "Associate Professor",
-          institute: "Shri Vaishnav Vidyapeeth Vishwavidyalaya Indore",
           image: "/specialsessiondata/drtanmay.png"
         },
         {
           name: "Dr. Sailesh Iyer",
           role: "Principal & Professor",
-          institute: "Narnarayan Shastri Institute of Technology-IFSCS (Affiliated to NFSU)",
           image: "/specialsessiondata/drshailesh.png"
         },
         {
           name: "Dr. Dipti Durgesh Patil",
           role: "Professor",
-          institute: "Cummins College of Engineering for Women, Pune",
           image: "/specialsessiondata/drdipti.png"
         }
       ]
@@ -95,7 +84,6 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Anita",
           role: "Assistant Professor",
-          institute: "JUIT, Solan",
           image: "/specialsessiondata/dranita.png"
         }
       ]
@@ -193,7 +181,6 @@ export default function CallForSpecialSessionPage() {
                           <div className="flex-1 text-center sm:text-left w-full">
                             <h4 className="font-bold text-lg text-gray-900">{chair.name}</h4>
                             {chair.role && <p className="text-sm font-bold text-blue-600 mb-1 uppercase tracking-wide">{chair.role}</p>}
-                            {chair.institute && <p className="text-sm italic font-medium text-gray-600">{chair.institute}</p>}
                           </div>
                         </div>
                       ))}
