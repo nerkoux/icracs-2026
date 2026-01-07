@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Download, Calendar, MapPin, BookOpen, Award, Mail, Phone } from "lucide-react";
+import { CheckCircle, Download, Calendar, MapPin, BookOpen, Award } from "lucide-react";
 import Image from "next/image";
 
 interface SpecialSessionChair {
@@ -30,11 +30,7 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Priyanka Mishra",
           role: "Session Chair",
-          designation: "Professor",
-          department: "Faculty of Computer Science",
           institute: "Poornima University, Jaipur",
-          emails: ["prynkmshr@gmail.com", "priyanka.mishra@poornima.edu.in"],
-          mobile: "9460929966",
           image: "/specialsessiondata/drpriyanka.png"
         }
       ]
@@ -45,22 +41,17 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Varun Malik",
           role: "Session Chair",
-          emails: ["varun.malik@chitkara.edu.in"],
-          mobile: "+919958024300",
           image: "/specialsessiondata/varunmalik.png"
         },
         {
           name: "Ms. Kimmi Gupta",
           role: "Session Co-Chair",
-          emails: ["kimmi.gupta@bennett.edu.in"],
-          mobile: "+91 73009 48976",
           image: "/specialsessiondata/kimmigupta.png"
         },
         {
           name: "Dr. Mithlesh Arya",
           role: "Associate Professor",
           institute: "Swami Keshvanand Institute of Technology Management and Gramothan Jaipur",
-          emails: ["mithlesh.arya@skit.ac.in"],
           image: "/specialsessiondata/mithilesharya.png"
         }
       ]
@@ -72,21 +63,18 @@ export default function CallForSpecialSessionPage() {
           name: "Dr. Tanmay Kasbe",
           role: "Associate Professor",
           institute: "Shri Vaishnav Vidyapeeth Vishwavidyalaya Indore",
-          emails: ["tanmaykasbe@gmail.com"],
           image: "/specialsessiondata/drtanmay.png"
         },
         {
           name: "Dr. Sailesh Iyer",
           role: "Principal & Professor",
           institute: "Narnarayan Shastri Institute of Technology-IFSCS (Affiliated to NFSU)",
-          emails: ["drsaileshiyer@gmail.com"],
           image: "/specialsessiondata/drshailesh.png"
         },
         {
           name: "Dr. Dipti Durgesh Patil",
           role: "Professor",
-          details: ["Ph.D. (Computer Engineering)", "Department of Information Technology", "Dean – Student Affairs", "Cummins College of Engineering for Women, Pune"],
-          emails: ["dipti.patil@cumminscollege.in"],
+          institute: "Cummins College of Engineering for Women, Pune",
           image: "/specialsessiondata/drdipti.png"
         }
       ]
@@ -97,7 +85,6 @@ export default function CallForSpecialSessionPage() {
         {
           name: "Dr. Adithya Padthe, Ph.D.",
           role: "Research Scientist",
-          emails: ["adithya.padthe@gmail.com"],
           image: "/specialsessiondata/draditya.png"
         }
       ]
@@ -206,30 +193,7 @@ export default function CallForSpecialSessionPage() {
                           <div className="flex-1 text-center sm:text-left w-full">
                             <h4 className="font-bold text-lg text-gray-900">{chair.name}</h4>
                             {chair.role && <p className="text-sm font-bold text-blue-600 mb-1 uppercase tracking-wide">{chair.role}</p>}
-
-                            <div className="text-sm space-y-0.5 text-gray-700 mb-3">
-                              {chair.designation && <p>{chair.designation}</p>}
-                              {chair.department && <p>{chair.department}</p>}
-                              {chair.institute && <p className="italic font-medium text-gray-600">{chair.institute}</p>}
-                              {chair.details && chair.details.map((line, idx) => (
-                                <p key={idx}>{line}</p>
-                              ))}
-                            </div>
-
-                            <div className="space-y-1 border-t border-gray-200 pt-2">
-                              {chair.emails && chair.emails.map((email, idx) => (
-                                <div key={idx} className="flex items-center justify-center sm:justify-start text-xs text-gray-600 break-all">
-                                  <Mail className="h-3 w-3 mr-1.5 flex-shrink-0" />
-                                  <a href={`mailto:${email}`} className="hover:text-blue-600 hover:underline">{email}</a>
-                                </div>
-                              ))}
-                              {chair.mobile && (
-                                <div className="flex items-center justify-center sm:justify-start text-xs text-gray-600">
-                                  <Phone className="h-3 w-3 mr-1.5 flex-shrink-0" />
-                                  <span>{chair.mobile}</span>
-                                </div>
-                              )}
-                            </div>
+                            {chair.institute && <p className="text-sm italic font-medium text-gray-600">{chair.institute}</p>}
                           </div>
                         </div>
                       ))}
