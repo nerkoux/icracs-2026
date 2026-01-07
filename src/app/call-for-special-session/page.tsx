@@ -23,7 +23,7 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Priyanka Mishra",
-          role: "Session Chair",
+          role: "Chair",
           image: "/specialsessiondata/drpriyanka.png"
         }
       ]
@@ -33,17 +33,17 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Varun Malik",
-          role: "Session Chair",
+          role: "Chair",
           image: "/specialsessiondata/varunmalik.png"
         },
         {
           name: "Ms. Kimmi Gupta",
-          role: "Session Co-Chair",
+          role: "Co-Chair",
           image: "/specialsessiondata/kimmigupta.png"
         },
         {
           name: "Dr. Mithlesh Arya",
-          role: "Associate Professor",
+          role: "Co-Chair",
           image: "/specialsessiondata/mithilesharya.png"
         }
       ]
@@ -53,17 +53,17 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Tanmay Kasbe",
-          role: "Associate Professor",
+          role: "Chair",
           image: "/specialsessiondata/drtanmay.png"
         },
         {
           name: "Dr. Sailesh Iyer",
-          role: "Principal & Professor",
+          role: "Co-Chair",
           image: "/specialsessiondata/drshailesh.png"
         },
         {
           name: "Dr. Dipti Durgesh Patil",
-          role: "Professor",
+          role: "Co-Chair",
           image: "/specialsessiondata/drdipti.png"
         }
       ]
@@ -72,8 +72,8 @@ export default function CallForSpecialSessionPage() {
       title: "AI-Driven Computer Vision and Federated Learning for Scalable Healthcare Applications",
       chairs: [
         {
-          name: "Dr. Adithya Padthe, Ph.D.",
-          role: "Research Scientist",
+          name: "Dr. Adithya Padthe",
+          role: "Chair",
           image: "/specialsessiondata/draditya.png"
         }
       ]
@@ -83,7 +83,7 @@ export default function CallForSpecialSessionPage() {
       chairs: [
         {
           name: "Dr. Anita",
-          role: "Assistant Professor",
+          role: "Chair",
           image: "/specialsessiondata/dranita.png"
         }
       ]
