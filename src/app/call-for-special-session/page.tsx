@@ -87,6 +87,21 @@ export default function CallForSpecialSessionPage() {
           image: "/specialsessiondata/dranita.png"
         }
       ]
+    },
+    {
+      title: "Machine Learning and Deep Learning Techniques for IoT Applications",
+      chairs: [
+        {
+          name: "Rajiv Gandhi",
+          role: "Session Chair",
+          image: "/specialsessiondata/rajivgandhi.png"
+        },
+        {
+          name: "Prof. (Dr) Jimmy Singla",
+          role: "Session Co-Chair",
+          image: "/specialsessiondata/jimmysingla.png"
+        }
+      ]
     }
   ];
 
