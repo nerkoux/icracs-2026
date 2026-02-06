@@ -132,7 +132,7 @@ export default function CallForSpecialSessionPage() {
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Call for Special Sessions</h1>
+            <h1 className="text-4xl font-bold mb-4">Special Sessions</h1>
             <p className="text-xl opacity-90 mb-2">ICRACS-2026</p>
             <p className="text-lg opacity-80">3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
           </div>
