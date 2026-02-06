@@ -6,11 +6,6 @@ const publicationPartners = [
     name: "AIP Publishing",
     logo: "/publications-technical/AIP.png",
     description: "American Institute of Physics Publishing"
-  },
-  {
-    name: "CRC Press",
-    logo: "/publications-technical/crcpress.jpg",
-    description: "Taylor & Francis Group"
   }
 ];
 

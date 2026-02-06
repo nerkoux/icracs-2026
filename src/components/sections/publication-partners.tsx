@@ -6,11 +6,6 @@ const publicationPartners = [
     name: "AIP Conference Proceedings",
     logo: "/publications-technical/AIP.png",
     note: "*"
-  },
-  {
-    name: "CRC Publications",
-    logo: "/publications-technical/crcpress.jpg",
-    note: "*"
   }
 ];
 
