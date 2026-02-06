@@ -15,7 +15,7 @@ import { Menu, X } from "lucide-react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Call For Papers", href: "/call-for-papers" },
-  { name: "Call For Special Session", href: "/call-for-special-session" },
+  { name: "Special Session", href: "/call-for-special-session" },
   { name: "Agenda", href: "/agenda" },
   { name: "Registration", href: "/registration" },
   { name: "Committee", href: "/committee" },

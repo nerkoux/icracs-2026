@@ -168,7 +168,7 @@ export default function CallForSpecialSessionPage() {
                   <BookOpen className="h-6 w-6 text-orange-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Publication</h3>
-                    <p className="text-gray-700 text-sm">AIP/CRC Press</p>
+                    <p className="text-gray-700 text-sm">AIP Press</p>
                   </div>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function CallForSpecialSessionPage() {
             </div>
           </div>
 
-          {/* Introduction */}
+          {/* Introduction 
           <Card className="mb-8">
             <CardContent className="p-8">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -238,7 +238,7 @@ export default function CallForSpecialSessionPage() {
             </CardContent>
           </Card>
 
-          {/* Why Host a Special Session */}
+          {/* Why Host a Special Session 
           <Card className="mb-8 bg-gradient-to-br from-green-50 to-blue-50 border-green-200">
             <CardHeader>
               <CardTitle className="text-2xl text-green-900 flex items-center">
@@ -274,13 +274,13 @@ export default function CallForSpecialSessionPage() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Accepted papers from Special Sessions will be included in the official conference proceedings in American Institute of Physics (AIP) Publishing/CRC press (Taylor and Francis) (Proposal is pending for approval)</span>
+                  <span className="text-gray-700">Accepted papers from Special Sessions will be included in the official conference proceedings in American Institute of Physics (AIP) Publishing press (Taylor and Francis) (Proposal is pending for approval)</span>
                 </li>
               </ul>
             </CardContent>
           </Card>
 
-          {/* Submission Section */}
+          {/* Submission Section 
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="text-2xl text-blue-900 text-center">
@@ -308,7 +308,7 @@ export default function CallForSpecialSessionPage() {
                   </Button>
                 </div>
               </div>
-              {/* Embedded Google Form */}
+              {/* Embedded Google Form 
               <div className="w-full mt-8">
                 <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 text-center mb-4">
                   <p className="text-lg font-semibold text-blue-900 mb-2">
@@ -334,7 +334,7 @@ export default function CallForSpecialSessionPage() {
             </CardContent>
           </Card>
 
-          {/* Important Information */}
+          {/* Important Information 
           <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
             <CardContent className="p-8">
               <div className="space-y-4">
@@ -369,6 +369,7 @@ export default function CallForSpecialSessionPage() {
               </div>
             </CardContent>
           </Card>
+          */}
         </div>
       </main>
       <Footer />
