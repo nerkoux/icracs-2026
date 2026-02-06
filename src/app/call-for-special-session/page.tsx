@@ -102,6 +102,21 @@ export default function CallForSpecialSessionPage() {
           image: "/specialsessiondata/jimmysingla.png"
         }
       ]
+    },
+    {
+      title: "Unified AI: Vision, Language, and Learning for Smart Environments.",
+      chairs: [
+        {
+          name: "Dr. Yogesh Kumar Sharma",
+          role: "Session Chair",
+          image: "/specialsessiondata/yogeshkumarsharma.jpeg"
+        },
+        {
+          name: "Dr. Sunayana Kundan Shivthare",
+          role: "Session Co-Chair",
+          image: "/specialsessiondata/sunayanakundanshivthare.jpeg"
+        }
+      ]
     }
   ];
 
