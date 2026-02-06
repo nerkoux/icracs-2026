@@ -76,7 +76,7 @@ export default function HeroSection() {
         <div className="mb-8">
           <div className="flex items-center space-x-2 mb-3">
             <MapPin className="h-5 w-5 text-blue-400" />
-            <span className="text-lg">Poornima Institute of Engineering and Technology</span>
+            <span className="text-lg">Poornima Institute of Engineering and Technology, Sitapura, Jaipur, Rajasthan</span>
           </div>
           <div className="flex items-center space-x-2 mb-3">
             <Calendar className="h-5 w-5 text-blue-400" />
@@ -84,7 +84,7 @@ export default function HeroSection() {
           </div>
           <div className="flex items-center space-x-2">
             <MapPin className="h-5 w-5 text-blue-400" />
-            <span className="text-lg">Sitapura, Jaipur, Rajasthan</span>
+            <span className="text-lg">Hybrid Mode</span>
           </div>
         </div>
 
