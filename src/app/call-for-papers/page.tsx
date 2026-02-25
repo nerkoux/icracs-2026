@@ -10,7 +10,7 @@ const conferenceTracks = [
     title: "Track 1: Neural Networks and Deep Learning",
     topics: [
       "Deep learning architectures",
-      "Neural network optimization", 
+      "Neural network optimization",
       "Convolutional and recurrent networks",
       "Transformers and attention mechanisms",
       "Generative models",
@@ -80,7 +80,7 @@ const reviewProcess = [
     description: "All submissions undergo three-layer peer review: editorial review, TPC review, and external expert review with conflict of interest declarations."
   },
   {
-    title: "IEEE CIS STANDARDS", 
+    title: "IEEE CIS STANDARDS",
     description: "Review criteria aligned with IEEE CIS standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
   },
   {
@@ -107,7 +107,7 @@ const submissionGuidelines = [
     description: "Papers must follow IEEE conference format and should not exceed 8 pages including references."
   },
   {
-    title: "Acceptance Rate", 
+    title: "Acceptance Rate",
     description: "Target acceptance rate: 16-18% with rigorous peer review to maintain high standards."
   },
   {
@@ -127,13 +127,13 @@ const importantDates = [
     status: "deadline"
   },
   {
-    event: "Notification of Acceptance", 
+    event: "Notification of Acceptance",
     date: "March 10, 2026",
     status: "notification"
   },
   {
     event: "Camera-Ready Submission",
-    date: "March 15, 2026", 
+    date: "March 15, 2026",
     status: "camera-ready"
   },
   {
@@ -171,21 +171,19 @@ export default function CallForPapersPage() {
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {importantDates.map((date, index) => (
-                    <div key={index} className={`p-4 rounded-lg border-l-4 ${
-                      date.status === 'deadline' ? 'bg-red-50 border-red-500' :
-                      date.status === 'notification' ? 'bg-yellow-50 border-yellow-500' :
-                      date.status === 'camera-ready' ? 'bg-green-50 border-green-500' :
-                      date.status === 'registration' ? 'bg-blue-50 border-blue-500' :
-                      'bg-purple-50 border-purple-500'
-                    }`}>
-                      <h4 className="font-semibold text-gray-900 mb-2">{date.event}</h4>
-                      <p className={`font-bold ${
-                        date.status === 'deadline' ? 'text-red-600' :
-                        date.status === 'notification' ? 'text-yellow-600' :
-                        date.status === 'camera-ready' ? 'text-green-600' :
-                        date.status === 'registration' ? 'text-blue-600' :
-                        'text-purple-600'
+                    <div key={index} className={`p-4 rounded-lg border-l-4 ${date.status === 'deadline' ? 'bg-red-50 border-red-500' :
+                        date.status === 'notification' ? 'bg-yellow-50 border-yellow-500' :
+                          date.status === 'camera-ready' ? 'bg-green-50 border-green-500' :
+                            date.status === 'registration' ? 'bg-blue-50 border-blue-500' :
+                              'bg-purple-50 border-purple-500'
                       }`}>
+                      <h4 className="font-semibold text-gray-900 mb-2">{date.event}</h4>
+                      <p className={`font-bold ${date.status === 'deadline' ? 'text-red-600' :
+                          date.status === 'notification' ? 'text-yellow-600' :
+                            date.status === 'camera-ready' ? 'text-green-600' :
+                              date.status === 'registration' ? 'text-blue-600' :
+                                'text-purple-600'
+                        }`}>
                         {date.date}
                       </p>
                     </div>
@@ -203,14 +201,14 @@ export default function CallForPapersPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  ICRACS 2026 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision, 
-                  and Smart Systems in emerging technologies. The conference addresses the critical integration of AI 
-                  techniques including deep learning, machine learning, pattern recognition, natural language processing, 
+                  ICRACS 2026 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision,
+                  and Smart Systems in emerging technologies. The conference addresses the critical integration of AI
+                  techniques including deep learning, machine learning, pattern recognition, natural language processing,
                   and computer vision in smart city infrastructure, industrial automation, and energy systems.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  We invite researchers, academicians, and industry professionals to share innovative AI solutions 
-                  that enhance efficiency, stability, robustness, and security of smart systems. Papers should 
+                  We invite researchers, academicians, and industry professionals to share innovative AI solutions
+                  that enhance efficiency, stability, robustness, and security of smart systems. Papers should
                   demonstrate novel contributions to the field with clear practical applications.
                 </p>
               </CardContent>
@@ -341,64 +339,6 @@ export default function CallForPapersPage() {
                       <span>Download Sample Paper</span>
                     </a>
                   </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Publication Strategy */}
-          <div className="mb-12">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Publication Strategy</CardTitle>
-                <p className="text-gray-600">IEEE CIS Technical Co-Sponsorship ensures high-quality publication venues</p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-6">
-                  <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
-                    <h4 className="font-bold text-blue-900 mb-3 text-lg">Primary Publication</h4>
-                    <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
-                        <div>
-                          <p className="font-semibold text-blue-800">IEEE Xplore Digital Library</p>
-                          <p className="text-sm text-gray-700">All accepted papers published in IEEE Conference Proceedings</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
-                        <div>
-                          <p className="font-semibold text-blue-800">SCOPUS Indexing</p>
-                          <p className="text-sm text-gray-700">Conference proceedings eligible for SCOPUS indexing</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
-                        <div>
-                          <p className="font-semibold text-blue-800">DOI Assignment</p>
-                          <p className="text-sm text-gray-700">Each paper receives a unique DOI identifier</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="p-6 bg-green-50 rounded-lg border border-green-200">
-                    <h4 className="font-bold text-green-900 mb-3 text-lg">Publication Timeline</h4>
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700">Camera-ready submissions deadline</span>
-                        <span className="font-semibold text-green-800">March 15, 2026</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700">Conference proceedings available</span>
-                        <span className="font-semibold text-green-800">Within 30 days post-conference</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-700">Final proceedings in IEEE Xplore</span>
-                        <span className="font-semibold text-green-800">By May 30, 2026</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </CardContent>
             </Card>
