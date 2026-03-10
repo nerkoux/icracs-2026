@@ -168,13 +168,13 @@ export default function ArchivePage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
                     <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2024</h4>
-                    <p className="text-gray-600 mb-2">2nd International Conference</p>
+                    <p className="text-gray-600 mb-2">1st International Conference</p>
                     <p className="text-sm text-gray-500">190+ submissions, 50+ publications</p>
                     <Badge className="mt-2 bg-green-100 text-green-800">Completed</Badge>
                   </div>
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
                     <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2025</h4>
-                    <p className="text-gray-600 mb-2">Recently Concluded</p>
+                    <p className="text-gray-600 mb-2">2nd International Conference</p>
                     <p className="text-sm text-gray-500">285+ submissions, 53+ publications</p>
                     <Badge className="mt-2 bg-blue-100 text-blue-800">Recent</Badge>
                   </div>

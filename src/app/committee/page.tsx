@@ -50,11 +50,21 @@ const committeeData = {
       name: "Dr. Shipra Bhatia",
       title: "Assistant Professor, Dept. of AI&DS, PIET",
       affiliation: ""
+    },
+    {
+      name: "Dr. Aditya Pundir",
+      title: "Assistant Professor, Dept. of AI&DS, PIET",
+      affiliation: ""
     }
   ],
   organizingCommittee: [
     {
       name: "Dr. Ajay Maurya",
+      title: "Professor, Dept. of AI&DS, PIET",
+      affiliation: ""
+    },
+    {
+      name: "Dr. Umesh Kumar",
       title: "Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     },
@@ -66,11 +76,6 @@ const committeeData = {
     {
       name: "Dr. Uday Pratap Singh",
       title: "Associate Professor, Dept of AI & DS, PIET",
-      affiliation: ""
-    },
-    {
-      name: "Dr. Sandeep Gupta",
-      title: "Associate Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     },
     {
