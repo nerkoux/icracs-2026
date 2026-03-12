@@ -104,15 +104,15 @@ const reviewProcess = [
 const submissionGuidelines = [
   {
     title: "Paper Format",
-    description: "Papers must follow IEEE conference format and should not exceed 8 pages including references."
+    description: "Papers must follow AIP proceeding conference format and should not exceed 8 pages including references."
   },
   {
     title: "Acceptance Rate",
     description: "Target acceptance rate: 16-18% with rigorous peer review to maintain high standards."
   },
   {
-    title: "IEEE Standards",
-    description: "All submissions must comply with IEEE ethical guidelines and originality requirements."
+    title: "AIP Standards",
+    description: "All submissions must comply with AIP ethical guidelines and originality requirements."
   },
   {
     title: "Presentation Requirement",
