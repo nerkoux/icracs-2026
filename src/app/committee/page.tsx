@@ -65,7 +65,7 @@ const committeeData = {
     },
     {
       name: "Dr. Umesh Kumar",
-      title: "Professor, Dept. of AI&DS, PIET",
+      title: "Associate Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     },
     {
