@@ -41,7 +41,7 @@ const committeeData = {
   programChair: [
     {
       name: "Dr. Budesh Kanwar",
-      title: "HOD (Academics) Dept. of AI&DS, PIET",
+      title: "HOD, Dept. of AI&DS, PIET",
       affiliation: ""
     }
   ],
@@ -53,7 +53,7 @@ const committeeData = {
     },
     {
       name: "Dr. Aditya Pundir",
-      title: "Assistant Professor, Dept. of AI&DS, PIET",
+      title: "Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     }
   ],
@@ -74,12 +74,7 @@ const committeeData = {
       affiliation: ""
     },
     {
-      name: "Dr. Uday Pratap Singh",
-      title: "Associate Professor, Dept of AI & DS, PIET",
-      affiliation: ""
-    },
-    {
-      name: "Ms. Alka Rani",
+      name: "Dr. Ebtasam Ahmad Siddiqui",
       title: "Assistant Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     },
@@ -130,11 +125,6 @@ const committeeData = {
     },
     {
       name: "Mr. Bharat Thathera",
-      title: "Assistant Professor, Dept. of AI&DS, PIET",
-      affiliation: ""
-    },
-    {
-      name: "Dr. Ebtasam Ahmad Siddiqui",
       title: "Assistant Professor, Dept. of AI&DS, PIET",
       affiliation: ""
     },
