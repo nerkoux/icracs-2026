@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ICRACS 2026 - International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
-  description: "3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems organized by Poornima Institute of Engineering & Technology, Jaipur on April 15-16, 2026",
+  description: "3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems organized by Poornima Institute of Engineering & Technology, Jaipur on April 17-18, 2026",
   keywords: "ICRACS, AI, Computer Vision, Smart Systems, Conference, PIET, Jaipur, Artificial Intelligence, Machine Learning",
   authors: [{ name: "PIET ICRACS Committee" }],
   openGraph: {
