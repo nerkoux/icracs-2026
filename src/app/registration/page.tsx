@@ -44,17 +44,24 @@ const importantDates = [
   {
     event: "Paper Submission Deadline",
     date: "February 17, 2026",
-    status: "deadline"
+    status: "deadline",
+    isClosed: true
   },
   {
     event: "Notification of Acceptance",
     date: "March 10, 2026",
-    status: "notification"
+    originalDate: "March 10, 2026",
+    extendedDate: "March 17, 2026",
+    status: "notification",
+    isExtended: true
   },
   {
     event: "Camera-Ready Submission",
     date: "March 15, 2026",
-    status: "camera-ready"
+    originalDate: "March 15, 2026",
+    extendedDate: "March 22, 2026",
+    status: "camera-ready",
+    isExtended: true
   },
   {
     event: "Early Bird Registration",
@@ -105,16 +112,33 @@ export default function RegistrationPage() {
                       'bg-gray-50 border-gray-500'
                     }`}>
                       <h4 className="font-semibold text-gray-900 mb-2">{date.event}</h4>
-                      <p className={`font-bold ${
-                        date.status === 'deadline' ? 'text-red-600' :
-                        date.status === 'notification' ? 'text-yellow-600' :
-                        date.status === 'camera-ready' ? 'text-orange-600' :
-                        date.status === 'early-bird' ? 'text-green-600' :
-                        date.status === 'confirmed' ? 'text-blue-600' :
-                        'text-gray-600'
-                      }`}>
-                        {date.date}
-                      </p>
+                      {date.isClosed ? (
+                        <div>
+                          <p className="line-through text-gray-500 text-sm">{date.date}</p>
+                          <p className="font-bold text-red-600 text-lg">CLOSED</p>
+                        </div>
+                      ) : date.isExtended ? (
+                        <div>
+                          <p className="line-through text-gray-500 text-sm">{date.originalDate}</p>
+                          <p className={`font-bold ${
+                            date.status === 'notification' ? 'text-yellow-600' :
+                            date.status === 'camera-ready' ? 'text-orange-600' : ''
+                          }`}>
+                            Extended to {date.extendedDate}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className={`font-bold ${
+                          date.status === 'deadline' ? 'text-red-600' :
+                          date.status === 'notification' ? 'text-yellow-600' :
+                          date.status === 'camera-ready' ? 'text-orange-600' :
+                          date.status === 'early-bird' ? 'text-green-600' :
+                          date.status === 'confirmed' ? 'text-blue-600' :
+                          'text-gray-600'
+                        }`}>
+                          {date.date}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>
