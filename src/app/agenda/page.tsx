@@ -9,7 +9,7 @@ const scheduleOverview = [
     day: "Day 1 - April 17, 2026",
     events: [
       { time: "08:30 - 09:30", event: "Registration & Welcome Coffee", type: "registration" },
-      { time: "09:30 - 10:00", event: "Opening Ceremony & IEEE CIS Welcome", type: "ceremony" },
+      { time: "09:30 - 10:00", event: "Opening Ceremony", type: "ceremony" },
       { time: "10:00 - 11:00", event: "Keynote: Dr. Brij Bhushan Gupta", type: "keynote" },
       { time: "11:00 - 11:15", event: "Coffee Break", type: "break" },
       { time: "11:15 - 12:30", event: "Track 1: Neural Networks & Deep Learning", type: "technical" },
