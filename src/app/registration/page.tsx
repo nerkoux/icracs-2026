@@ -170,13 +170,19 @@ export default function RegistrationPage() {
                   <Button asChild className="flex items-center space-x-2">
                     <a href="https://cmt3.research.microsoft.com/ICRACS2026/Submission/Index" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
-                      <span>CMT Link: ICRACS2026</span>
+                      <span>CMT Link: ICRACS 2026</span>
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="flex items-center space-x-2">
-                    <a href="/templates/samplepaper.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/templates/cameraready.docx">
                       <Download className="h-4 w-4" />
-                      <span>Download Sample Paper</span>
+                      <span>Camera-Ready Format (Word)</span>
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" className="flex items-center space-x-2">
+                    <a href="/templates/cameraready.pdf" target="_blank" rel="noopener noreferrer">
+                      <Download className="h-4 w-4" />
+                      <span>Camera-Ready Format (PDF)</span>
                     </a>
                   </Button>
                 </div>
@@ -270,6 +276,20 @@ export default function RegistrationPage() {
                     </div>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Visa Information */}
+          <div className="mb-12">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Visa Information</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  For the visa process, we also confirm that no participant is from Afghanistan, China, Iran, Pakistan, Iraq, Sudan, foreigners of Pakistan origin and stateless persons and Participants of the Conference not going to visit any restricted or protected area in India or area affected by terrorism, militancy and extremism etc. in best of our knowledge.
+                </p>
               </CardContent>
             </Card>
           </div>
