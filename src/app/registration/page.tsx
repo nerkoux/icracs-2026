@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Download, ExternalLink, Phone, Mail, MapPin } from "lucide-react";
+import { DownloadDropdown } from "@/components/ui/download-dropdown";
 
 const feeStructure = [
   {
@@ -173,18 +174,13 @@ export default function RegistrationPage() {
                       <span>CMT Link: ICRACS 2026</span>
                     </a>
                   </Button>
-                  <Button asChild variant="outline" className="flex items-center space-x-2">
-                    <a href="/templates/cameraready.docx">
-                      <Download className="h-4 w-4" />
-                      <span>Camera-Ready Format (Word)</span>
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline" className="flex items-center space-x-2">
-                    <a href="/templates/cameraready.pdf" target="_blank" rel="noopener noreferrer">
-                      <Download className="h-4 w-4" />
-                      <span>Camera-Ready Format (PDF)</span>
-                    </a>
-                  </Button>
+                  <DownloadDropdown
+                    label="Download Camera-Ready Format"
+                    options={[
+                      { label: "Download as Word (.docx)", href: "/templates/cameraready.docx", icon: "word" },
+                      { label: "Download as PDF (.pdf)", href: "/templates/cameraready.pdf", icon: "pdf" },
+                    ]}
+                  />
                 </div>
               </CardContent>
             </Card>
