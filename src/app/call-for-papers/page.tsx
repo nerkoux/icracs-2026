@@ -80,12 +80,12 @@ const reviewProcess = [
     description: "All submissions undergo three-layer peer review: editorial review, TPC review, and external expert review with conflict of interest declarations."
   },
   {
-    title: "IEEE CIS STANDARDS",
-    description: "Review criteria aligned with IEEE CIS standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
+    title: "AIP STANDARDS",
+    description: "Review criteria aligned with AIP standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
   },
   {
     title: "EXPERT REVIEWERS",
-    description: "200+ qualified reviewers from IEEE CIS community with automated expertise matching and performance tracking."
+    description: "200+ qualified reviewers from AIP community with automated expertise matching and performance tracking."
   },
   {
     title: "PLAGIARISM DETECTION",
@@ -243,7 +243,7 @@ export default function CallForPapersPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Conference Tracks</CardTitle>
-                <p className="text-gray-600">ICRACS2026 features six specialized tracks aligned with IEEE CIS focus areas:</p>
+                <p className="text-gray-600">ICRACS 2026 features six specialized tracks aligned with AIP focus areas:</p>
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
@@ -289,7 +289,7 @@ export default function CallForPapersPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Quality Assurance & Review Process</CardTitle>
-                <p className="text-gray-600">Rigorous peer review system aligned with IEEE CIS standards</p>
+                <p className="text-gray-600">Rigorous peer review system aligned with AIP standards</p>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
