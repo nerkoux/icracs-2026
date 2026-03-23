@@ -48,11 +48,9 @@ const importantDates = [
     status: "deadline",
     isClosed: true
   },
-  {
+   {
     event: "Notification of Acceptance",
-    date: "March 10, 2026",
-    originalDate: "March 10, 2026",
-    extendedDate: "March 17, 2026",
+    date: "March 17, 2026",
     status: "notification",
     isClosed: true
   },
