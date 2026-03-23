@@ -54,19 +54,19 @@ const importantDates = [
     originalDate: "March 10, 2026",
     extendedDate: "March 17, 2026",
     status: "notification",
-    isExtended: true
+    isClosed: true
   },
   {
     event: "Camera-Ready Submission",
     date: "March 15, 2026",
     originalDate: "March 15, 2026",
-    extendedDate: "March 22, 2026",
+    extendedDate: "March 26, 2026",
     status: "camera-ready",
     isExtended: true
   },
   {
     event: "Early Bird Registration",
-    date: "March 21, 2026",
+    date: "March 22, 2026",
     status: "early-bird"
   },
   {
