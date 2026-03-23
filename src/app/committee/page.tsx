@@ -266,7 +266,7 @@ const committeeData = {
     },
     {
       name: "Dr. Pradeep Singh Bhati",
-      title: "Professor Department of AI & DS, PIET",
+      title: "Lecturer Selection Grade, GPC Kota, PIET",
       affiliation: ""
     }
   ],
