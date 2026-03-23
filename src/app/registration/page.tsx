@@ -67,7 +67,8 @@ const importantDates = [
   {
     event: "Early Bird Registration",
     date: "March 22, 2026",
-    status: "early-bird"
+    status: "early-bird",
+    isClosed: true
   },
   {
     event: "Regular Registration",
