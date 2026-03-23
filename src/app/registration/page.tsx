@@ -72,7 +72,7 @@ const importantDates = [
   },
   {
     event: "Registration with Late Fee",
-    date: "March 22, 2026",
+    date: "March 26, 2026",
     status: "regular"
   },
   {
