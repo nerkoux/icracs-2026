@@ -148,6 +148,11 @@ const importantDates = [
     isClosed: true
   },
   {
+    event: "Registration with Late Fee",
+    date: "March 22, 2026",
+    status: "regular"
+  },
+  {
     event: "Conference Dates",
     date: "April 17-18, 2026",
     status: "conference"
