@@ -71,8 +71,8 @@ const importantDates = [
     isClosed: true
   },
   {
-    event: "Regular Registration",
-    date: "April 10, 2026",
+    event: "Registration with Late Fee",
+    date: "March 22, 2026",
     status: "regular"
   },
   {
