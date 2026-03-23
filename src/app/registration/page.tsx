@@ -58,8 +58,8 @@ const importantDates = [
   },
   {
     event: "Camera-Ready Submission",
-    date: "March 15, 2026",
-    originalDate: "March 15, 2026",
+    date: "March 22, 2026",
+    originalDate: "March 22, 2026",
     extendedDate: "March 26, 2026",
     status: "camera-ready",
     isExtended: true
