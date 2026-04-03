@@ -12,6 +12,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 interface Reviewer {
   id: number;
@@ -19,10 +20,14 @@ interface Reviewer {
   affiliation: string;
 }
 
+const ITEMS_PER_PAGE = 10;
+
 export default function ReviewerPage() {
-  const [reviewers, setReviewers] = useState<Reviewer[]>([]);
+  const [allReviewers, setAllReviewers] = useState<Reviewer[]>([]);
+  const [displayedReviewers, setDisplayedReviewers] = useState<Reviewer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     const fetchReviewers = async () => {
@@ -30,7 +35,8 @@ export default function ReviewerPage() {
         const response = await fetch("/api/reviewers");
         if (!response.ok) throw new Error("Failed to fetch reviewers");
         const data = await response.json();
-        setReviewers(data.reviewers);
+        setAllReviewers(data.reviewers);
+        setDisplayedReviewers(data.reviewers.slice(0, ITEMS_PER_PAGE));
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
       } finally {
@@ -40,6 +46,23 @@ export default function ReviewerPage() {
 
     fetchReviewers();
   }, []);
+
+  const loadMore = () => {
+    const nextPage = currentPage + 1;
+    const endIndex = nextPage * ITEMS_PER_PAGE;
+    setDisplayedReviewers(allReviewers.slice(0, endIndex));
+    setCurrentPage(nextPage);
+  };
+
+  const goToPage = (page: number) => {
+    const startIndex = (page - 1) * ITEMS_PER_PAGE;
+    const endIndex = page * ITEMS_PER_PAGE;
+    setDisplayedReviewers(allReviewers.slice(startIndex, endIndex));
+    setCurrentPage(page);
+  };
+
+  const totalPages = Math.ceil(allReviewers.length / ITEMS_PER_PAGE);
+  const hasMoreReviewers = currentPage < totalPages;
   return (
     <>
       <Navbar />
@@ -58,6 +81,9 @@ export default function ReviewerPage() {
             <CardHeader>
               <CardTitle className="text-2xl text-center">List of Reviewers</CardTitle>
               <p className="text-gray-600 text-center mt-2">ICRACS 2026 Review Panel</p>
+              <p className="text-sm text-gray-500 text-center mt-1">
+                Showing {displayedReviewers.length} of {allReviewers.length} reviewers
+              </p>
             </CardHeader>
             <CardContent>
               {loading ? (
@@ -68,54 +94,83 @@ export default function ReviewerPage() {
                 <div className="text-center py-8">
                   <p className="text-red-600">Error: {error}</p>
                 </div>
-              ) : reviewers.length === 0 ? (
+              ) : allReviewers.length === 0 ? (
                 <div className="text-center py-8">
                   <p className="text-gray-600">No reviewers found.</p>
                 </div>
               ) : (
-                <div className="overflow-x-auto">
-                  <div className="hidden md:block">
-                    <Table>
-                      <TableHeader>
-                        <TableRow className="bg-blue-600 hover:bg-blue-600">
-                          <TableHead className="w-12 text-white text-center font-bold">#</TableHead>
-                          <TableHead className="min-w-[250px] text-white font-bold">Name</TableHead>
-                          <TableHead className="text-white font-bold">Affiliation</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {reviewers.map((reviewer, index) => (
-                          <TableRow key={reviewer.id} className="hover:bg-blue-50 border-b">
-                            <TableCell className="text-center font-semibold text-gray-700 w-12 bg-gray-100">{index + 1}</TableCell>
-                            <TableCell className="font-semibold text-gray-900">{reviewer.name}</TableCell>
-                            <TableCell className="text-gray-700">{reviewer.affiliation}</TableCell>
+                <>
+                  <div className="overflow-x-auto">
+                    <div className="hidden md:block">
+                      <Table>
+                        <TableHeader>
+                          <TableRow className="bg-blue-600 hover:bg-blue-600">
+                            <TableHead className="w-12 text-white text-center font-bold">#</TableHead>
+                            <TableHead className="min-w-[250px] text-white font-bold">Name</TableHead>
+                            <TableHead className="text-white font-bold">Affiliation</TableHead>
                           </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                        </TableHeader>
+                        <TableBody>
+                          {displayedReviewers.map((reviewer, index) => (
+                            <TableRow key={reviewer.id} className="hover:bg-blue-50 border-b">
+                              <TableCell className="text-center font-semibold text-gray-700 w-12 bg-gray-100">{index + 1}</TableCell>
+                              <TableCell className="font-semibold text-gray-900">{reviewer.name}</TableCell>
+                              <TableCell className="text-gray-700">{reviewer.affiliation}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </div>
+
+                    {/* Mobile View */}
+                    <div className="md:hidden space-y-4">
+                      {displayedReviewers.map((reviewer, index) => (
+                        <div key={reviewer.id} className="bg-white border border-blue-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                          <div className="flex items-start gap-3 mb-3">
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                              {index + 1}
+                            </div>
+                            <div className="flex-grow">
+                              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Name</p>
+                              <h3 className="font-semibold text-gray-900">{reviewer.name}</h3>
+                            </div>
+                          </div>
+                          <div className="pl-11">
+                            <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Affiliation</p>
+                            <p className="text-sm text-gray-600">{reviewer.affiliation}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
-                  {/* Mobile View */}
-                  <div className="md:hidden space-y-4">
-                    {reviewers.map((reviewer, index) => (
-                      <div key={reviewer.id} className="bg-white border border-blue-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3 mb-3">
-                          <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                            {index + 1}
-                          </div>
-                          <div className="flex-grow">
-                            <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Name</p>
-                            <h3 className="font-semibold text-gray-900">{reviewer.name}</h3>
-                          </div>
-                        </div>
-                        <div className="pl-11">
-                          <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Affiliation</p>
-                          <p className="text-sm text-gray-600">{reviewer.affiliation}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                  {/* Pagination Controls */}
+                  {totalPages > 1 && (
+                    <div className="flex justify-center mt-8 gap-2 flex-wrap">
+                      {Array.from({ length: totalPages }, (_, index) => (
+                        <button
+                          key={index + 1}
+                          onClick={() => goToPage(index + 1)}
+                          className={`px-4 py-2 rounded-lg font-semibold transition-colors ${
+                            currentPage === index + 1
+                              ? 'bg-blue-600 text-white shadow-md'
+                              : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                          }`}
+                        >
+                          {index + 1}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
+                  {displayedReviewers.length > 0 && (
+                    <div className="text-center mt-6 py-4">
+                      <p className="text-gray-600 text-sm">
+                        Showing page {currentPage} of {totalPages} ({displayedReviewers.length} reviewers)
+                      </p>
+                    </div>
+                  )}
+                </>
               )}
             </CardContent>
           </Card>
