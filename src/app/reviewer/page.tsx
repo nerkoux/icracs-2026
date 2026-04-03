@@ -1,9 +1,45 @@
+'use client';
+
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, UserCheck, Shield, Clock } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { useEffect, useState } from "react";
+
+interface Reviewer {
+  id: number;
+  name: string;
+  affiliation: string;
+}
 
 export default function ReviewerPage() {
+  const [reviewers, setReviewers] = useState<Reviewer[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchReviewers = async () => {
+      try {
+        const response = await fetch("/api/reviewers");
+        if (!response.ok) throw new Error("Failed to fetch reviewers");
+        const data = await response.json();
+        setReviewers(data.reviewers);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "An error occurred");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReviewers();
+  }, []);
   return (
     <>
       <Navbar />
@@ -17,121 +53,70 @@ export default function ReviewerPage() {
         </section>
 
         <div className="container mx-auto px-4 py-12">
-          {/* Introduction */}
-          <Card className="mb-8">
-            <CardContent className="p-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The Organizing Committee of <span className="font-semibold">ICRACS 2026</span> cordially invites 
-                academicians, researchers, and industry professionals to serve as <span className="font-semibold">Reviewers</span> for 
-                the conference.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Reviewers will play a vital role in ensuring the technical quality and academic integrity of the 
-                conference by evaluating submitted manuscripts based on <span className="font-semibold">originality</span>, 
-                <span className="font-semibold"> technical soundness</span>, <span className="font-semibold">relevance</span>, and 
-                <span className="font-semibold"> clarity</span>.
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Eligibility Section */}
-          <div className="mb-8">
-            <Card className="bg-blue-50 border-blue-200">
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-900 flex items-center">
-                  <UserCheck className="h-6 w-6 mr-2" />
-                  Eligibility
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">PhD holders or senior researchers</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Faculty members, researchers, or industry experts</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Expertise in relevant conference tracks</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Responsibilities Section */}
-          <div className="mb-8">
-            <Card className="bg-green-50 border-green-200">
-              <CardHeader>
-                <CardTitle className="text-2xl text-green-900 flex items-center">
-                  <Shield className="h-6 w-6 mr-2" />
-                  Reviewer Responsibilities
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Review assigned papers within the stipulated timeline</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Provide constructive and unbiased feedback</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <Shield className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Maintain confidentiality and ethical standards</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Registration Form Section */}
-          <Card className="mb-8">
+          {/* Reviewers List */}
+          <Card>
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900 text-center">
-                Reviewer Registration Form
-              </CardTitle>
+              <CardTitle className="text-2xl text-center">List of Reviewers</CardTitle>
+              <p className="text-gray-600 text-center mt-2">ICRACS 2026 Review Panel</p>
             </CardHeader>
             <CardContent>
-              <p className="text-center text-gray-700 mb-6">
-                Interested experts are requested to register as reviewers by completing the Reviewer Registration Form below.
-              </p>
-              <div className="w-full">
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSfLmUocx-lNk7w6CwbgBCEUuUKkwdZzIBcvjGFvYUWgkZHfwA/viewform?embedded=true"
-                  width="100%" 
-                  height="800"
-                  className="border-0 rounded-lg shadow-sm"
-                  title="Reviewer Registration Form"
-                >
-                  Loading form...
-                </iframe>
-                <div className="text-center mt-4">
-                  <a 
-                    href="https://forms.gle/VLKJxMtK3mB2iSDbA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    Open Form in New Tab
-                  </a>
+              {loading ? (
+                <div className="text-center py-8">
+                  <p className="text-gray-600">Loading reviewers...</p>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              ) : error ? (
+                <div className="text-center py-8">
+                  <p className="text-red-600">Error: {error}</p>
+                </div>
+              ) : reviewers.length === 0 ? (
+                <div className="text-center py-8">
+                  <p className="text-gray-600">No reviewers found.</p>
+                </div>
+              ) : (
+                <div className="overflow-x-auto">
+                  <div className="hidden md:block">
+                    <Table>
+                      <TableHeader>
+                        <TableRow className="bg-blue-600 hover:bg-blue-600">
+                          <TableHead className="w-12 text-white text-center font-bold">#</TableHead>
+                          <TableHead className="min-w-[250px] text-white font-bold">Name</TableHead>
+                          <TableHead className="text-white font-bold">Affiliation</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {reviewers.map((reviewer, index) => (
+                          <TableRow key={reviewer.id} className="hover:bg-blue-50 border-b">
+                            <TableCell className="text-center font-semibold text-gray-700 w-12 bg-gray-100">{index + 1}</TableCell>
+                            <TableCell className="font-semibold text-gray-900">{reviewer.name}</TableCell>
+                            <TableCell className="text-gray-700">{reviewer.affiliation}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
 
-          {/* Closing Message */}
-          <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
-            <CardContent className="p-8 text-center">
-              <p className="text-lg text-gray-800 font-medium">
-                We look forward to your valuable contribution in making <span className="font-bold text-blue-600">ICRACS 2026</span> a 
-                successful and high-quality academic event.
-              </p>
+                  {/* Mobile View */}
+                  <div className="md:hidden space-y-4">
+                    {reviewers.map((reviewer, index) => (
+                      <div key={reviewer.id} className="bg-white border border-blue-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3 mb-3">
+                          <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                            {index + 1}
+                          </div>
+                          <div className="flex-grow">
+                            <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Name</p>
+                            <h3 className="font-semibold text-gray-900">{reviewer.name}</h3>
+                          </div>
+                        </div>
+                        <div className="pl-11">
+                          <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Affiliation</p>
+                          <p className="text-sm text-gray-600">{reviewer.affiliation}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>

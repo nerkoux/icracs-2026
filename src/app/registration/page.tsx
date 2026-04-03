@@ -60,7 +60,8 @@ const importantDates = [
     originalDate: "March 22, 2026",
     extendedDate: "March 26, 2026",
     status: "camera-ready",
-    isExtended: true
+    isExtended: true,
+    isClosed: true
   },
   {
     event: "Early Bird Registration",
@@ -71,7 +72,8 @@ const importantDates = [
   {
     event: "Registration with Late Fee",
     date: "March 26, 2026",
-    status: "regular"
+    status: "regular",
+    isClosed: true
   },
   {
     event: "Conference Dates",

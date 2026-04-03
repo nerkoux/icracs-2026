@@ -1,0 +1,794 @@
+{
+  "reviewers": [
+    {
+      "id": 1,
+      "name": "Abhishek Dadhich",
+      "affiliation": "Poornima Institute of Engineering and Technology, Jaipur"
+    },
+    {
+      "id": 2,
+      "name": "Abhishek Dodda",
+      "affiliation": "Centific.com"
+    },
+    {
+      "id": 3,
+      "name": "Adithya Padthe",
+      "affiliation": "University of the cumberlands"
+    },
+    {
+      "id": 4,
+      "name": "Ahona Ghosh",
+      "affiliation": "University of Engineering and Management, Kolkata"
+    },
+    {
+      "id": 5,
+      "name": "Aisha Rafi",
+      "affiliation": "Poornima Institute of Engineering & Technology"
+    },
+    {
+      "id": 6,
+      "name": "Akoramurthy Balasubramaniam",
+      "affiliation": "National Institute of Technology Puducherry"
+    },
+    {
+      "id": 7,
+      "name": "Amit Rathi",
+      "affiliation": "MUJ"
+    },
+    {
+      "id": 8,
+      "name": "AMIT TIWARI",
+      "affiliation": "Department of Mechanical Engineering, Suresh Gyan Vihar University, Jaipur"
+    },
+    {
+      "id": 9,
+      "name": "ANIL LAMBA",
+      "affiliation": "MMEC, Maharishi Markandeshwar Deemed to be University"
+    },
+    {
+      "id": 10,
+      "name": "Anitha R",
+      "affiliation": "Nehru Arts and Science College"
+    },
+    {
+      "id": 11,
+      "name": "Ankita Mandal",
+      "affiliation": "Institute of Engineering & Management"
+    },
+    {
+      "id": 12,
+      "name": "Ankur Saxena",
+      "affiliation": "Bharat Institute of Engineering & Technology"
+    },
+    {
+      "id": 13,
+      "name": "Anurag Duvey",
+      "affiliation": "PIET"
+    },
+    {
+      "id": 14,
+      "name": "Aparna Krishna Bhat",
+      "affiliation": "EY (Ernst & Young), USA"
+    },
+    {
+      "id": 15,
+      "name": "Arulanantham Dhandapani",
+      "affiliation": "Kangeyam Institute of Technology"
+    },
+    {
+      "id": 16,
+      "name": "Ashish Manwatkar",
+      "affiliation": "Suman Ramesh Tulsiani Technical Campus, Kamshet, Pune"
+    },
+    {
+      "id": 17,
+      "name": "Ashly Joseph",
+      "affiliation": "Cisco Systems"
+    },
+    {
+      "id": 18,
+      "name": "ASHOK P",
+      "affiliation": "SYMBIOSIS INSTITUTE OF DIGITAL AND TELECOM MANAGEMENT"
+    },
+    {
+      "id": 19,
+      "name": "AYYASAMY A",
+      "affiliation": "Annamalai University"
+    },
+    {
+      "id": 20,
+      "name": "Babita Verma",
+      "affiliation": "Bhilai Institute of Technology Durg"
+    },
+    {
+      "id": 21,
+      "name": "BALAKRISHNAN D",
+      "affiliation": "K.S.Rangasamy College of Technology"
+    },
+    {
+      "id": 22,
+      "name": "BASAVARAJU N.M",
+      "affiliation": "JSSATE Bangalore"
+    },
+    {
+      "id": 23,
+      "name": "Bersha Kumari",
+      "affiliation": "Poornima Institute of engineering and technology"
+    },
+    {
+      "id": 24,
+      "name": "Bhagyashree Hambarde",
+      "affiliation": "St. Vincent Pallotti College of Engineering and Technology, Nagpur"
+    },
+    {
+      "id": 25,
+      "name": "Bharat Thathera",
+      "affiliation": "Poornima Institute of Engineering and Technology"
+    },
+    {
+      "id": 26,
+      "name": "Bhawana Kumari",
+      "affiliation": "Poornima institute of engineering and technology"
+    },
+    {
+      "id": 27,
+      "name": "Bhawana Purohit",
+      "affiliation": "poornima institute of engineering and technology"
+    },
+    {
+      "id": 28,
+      "name": "Bhupendra soni",
+      "affiliation": "GEETANJALI INSTITUTE OF TECHNICAL STUDIES UDAIPUR RAJASTHAN INDIA"
+    },
+    {
+      "id": 29,
+      "name": "Biswadip Basu Mallik",
+      "affiliation": "Institute of Engineering & Management, Kolkata, India"
+    },
+    {
+      "id": 30,
+      "name": "Boopathi Raja G",
+      "affiliation": "Velalar College of Engineering and Technology"
+    },
+    {
+      "id": 31,
+      "name": "Botlagunta Preethish Nandan",
+      "affiliation": "ASML"
+    },
+    {
+      "id": 32,
+      "name": "D.S. Jayalakshmi",
+      "affiliation": "Sathyabama Institute of Science and Technology"
+    },
+    {
+      "id": 33,
+      "name": "Dahlia Sam",
+      "affiliation": "Dr. M.G.R. Educational and Research Institute"
+    },
+    {
+      "id": 34,
+      "name": "Debyanshu Tiwari",
+      "affiliation": "Thapar Institute of Engineering & Technology"
+    },
+    {
+      "id": 35,
+      "name": "Deepika Paturu",
+      "affiliation": "SAP"
+    },
+    {
+      "id": 36,
+      "name": "Dipesh Vaya",
+      "affiliation": "Poornima University"
+    },
+    {
+      "id": 37,
+      "name": "Divya L",
+      "affiliation": "RV College of Engineering"
+    },
+    {
+      "id": 38,
+      "name": "Dr Aditya Pundir",
+      "affiliation": "Poornima Institute of Engineering and Technology"
+    },
+    {
+      "id": 39,
+      "name": "Dr Anurag Soni",
+      "affiliation": "Poornima University"
+    },
+    {
+      "id": 40,
+      "name": "Dr Bhadrappa Haralayya",
+      "affiliation": "Lingaraj Appa Engineering College Bidar"
+    },
+    {
+      "id": 41,
+      "name": "Dr Rashmi Pandey",
+      "affiliation": "Vedica Institute of Technology"
+    },
+    {
+      "id": 42,
+      "name": "Dr T Bhaskar",
+      "affiliation": "CMR College of Engineering & Technology"
+    },
+    {
+      "id": 43,
+      "name": "Dr Uday Pratap Singh",
+      "affiliation": "Poornima Institute of Engineering and Technology JAIPUR"
+    },
+    {
+      "id": 44,
+      "name": "Dr. Ghosh",
+      "affiliation": "Supreme Knowledge Foundation Group of Institutions"
+    },
+    {
+      "id": 45,
+      "name": "Dr. Blessy Thankachan",
+      "affiliation": "JECRC University, Jaipur"
+    },
+    {
+      "id": 46,
+      "name": "Dr. Gajanan Uttam Patil",
+      "affiliation": "HSM'S, SSGBCOE&T, BHUSAWAL"
+    },
+    {
+      "id": 47,
+      "name": "Dr. Hemalatha K N",
+      "affiliation": "Dr.Ambedkar Institute of Technology"
+    },
+    {
+      "id": 48,
+      "name": "Dr. Lalita Kumari",
+      "affiliation": "Amity University Patna"
+    },
+    {
+      "id": 49,
+      "name": "Dr. Neelam Srivastava",
+      "affiliation": "IET Lucknow"
+    },
+    {
+      "id": 50,
+      "name": "Dr. Parul Chhabra",
+      "affiliation": "GJUST"
+    },
+    {
+      "id": 51,
+      "name": "Dr. Priya K",
+      "affiliation": "Marudhar Kesari Jain College for Women (Autonomous ), Vaniyambadi"
+    },
+    {
+      "id": 52,
+      "name": "Dr. Rahul Soni",
+      "affiliation": "Navrachana University, Vadodara, Gujarat, India"
+    },
+    {
+      "id": 53,
+      "name": "Dr. RAJASEKARAN S",
+      "affiliation": "University of Technology and Applied Sciences, Ibri"
+    },
+    {
+      "id": 54,
+      "name": "Dr. Rakesh Kumar",
+      "affiliation": "Texila American University"
+    },
+    {
+      "id": 55,
+      "name": "Dr. Saleem Tevaramani",
+      "affiliation": "KSIT Bengaluru"
+    },
+    {
+      "id": 56,
+      "name": "Dr. Sanjay Sinha",
+      "affiliation": "Poornima Institute of Engineering & Technology"
+    },
+    {
+      "id": 57,
+      "name": "Dr. Shefali Parihar",
+      "affiliation": "Indus University"
+    },
+    {
+      "id": 58,
+      "name": "Dr. Tarun Kumar Vashishth",
+      "affiliation": "Department of Computer Applications, Vidya University, Meerut, U.P, India"
+    },
+    {
+      "id": 59,
+      "name": "Dr.Anitha R",
+      "affiliation": "SVCE"
+    },
+    {
+      "id": 60,
+      "name": "Dr.Vinita Mathur",
+      "affiliation": "Amity University Rajasthan"
+    },
+    {
+      "id": 61,
+      "name": "Ebtasam Siddiqui",
+      "affiliation": "Poornima Institute of Engineering & Technology, Jaipur"
+    },
+    {
+      "id": 62,
+      "name": "Gaurav Sarraf",
+      "affiliation": "Lumen Technologies"
+    },
+    {
+      "id": 63,
+      "name": "Girdhari Lal",
+      "affiliation": "Poornima Institute of Technology"
+    },
+    {
+      "id": 64,
+      "name": "Gokulram Krishnan",
+      "affiliation": "IEEE Senior"
+    },
+    {
+      "id": 65,
+      "name": "Gurvir Kaur",
+      "affiliation": "Gulzar Group of Institutes"
+    },
+    {
+      "id": 66,
+      "name": "Harish Jardawala",
+      "affiliation": "Parul University"
+    },
+    {
+      "id": 67,
+      "name": "Hitesh chugani",
+      "affiliation": "Independent Researcher"
+    },
+    {
+      "id": 68,
+      "name": "Janardhan Saikumar Palepu",
+      "affiliation": "Narayana Engineering College, Gudur"
+    },
+    {
+      "id": 69,
+      "name": "Jaspreet Srivastava",
+      "affiliation": "IET Lucknow"
+    },
+    {
+      "id": 70,
+      "name": "Jeevani Singireddy",
+      "affiliation": "Intuit Inc."
+    },
+    {
+      "id": 71,
+      "name": "Jessy John",
+      "affiliation": "BSSS Institute of Advanced Studies Bhopal"
+    },
+    {
+      "id": 72,
+      "name": "Jithu Paulose",
+      "affiliation": "Cisco"
+    },
+    {
+      "id": 73,
+      "name": "Jyotirmay Jena",
+      "affiliation": "HCL Tech"
+    },
+    {
+      "id": 74,
+      "name": "Kamal Saini",
+      "affiliation": "Kamal saini"
+    },
+    {
+      "id": 75,
+      "name": "Kaushik Adhikary",
+      "affiliation": "JIS UNIVERSITY"
+    },
+    {
+      "id": 76,
+      "name": "Krishna Gupta",
+      "affiliation": "Poornima Institute of Engineering and Technology, Jaipur"
+    },
+    {
+      "id": 77,
+      "name": "Krishnaveni Musku",
+      "affiliation": "Absolute Assistance"
+    },
+    {
+      "id": 78,
+      "name": "Lakshmojee Koduru",
+      "affiliation": "Google"
+    },
+    {
+      "id": 79,
+      "name": "Mahesh Recharla",
+      "affiliation": "Biogen"
+    },
+    {
+      "id": 80,
+      "name": "Mallikharjuna Rakesh Manepalli",
+      "affiliation": "Raymond James And Associates INC"
+    },
+    {
+      "id": 81,
+      "name": "manali Pareek",
+      "affiliation": "poornima university, Jaipur"
+    },
+    {
+      "id": 82,
+      "name": "Mayuree Katara",
+      "affiliation": "Vivekananda Global University"
+    },
+    {
+      "id": 83,
+      "name": "Mohammed Salim Khan",
+      "affiliation": "Parul Institute of Law"
+    },
+    {
+      "id": 84,
+      "name": "Mohit Dhawan",
+      "affiliation": "Microsoft"
+    },
+    {
+      "id": 85,
+      "name": "Mohnish Sachdeva",
+      "affiliation": "piet"
+    },
+    {
+      "id": 86,
+      "name": "Monoj Muchahari",
+      "affiliation": "Institute of Engineering & Management, Kolkata"
+    },
+    {
+      "id": 87,
+      "name": "MUDASSIR KHAN",
+      "affiliation": "King Khalid University"
+    },
+    {
+      "id": 88,
+      "name": "Mugunth Chandran",
+      "affiliation": "Echostar"
+    },
+    {
+      "id": 89,
+      "name": "Nahid Fatima",
+      "affiliation": "Prince Sultan University Riyadh"
+    },
+    {
+      "id": 90,
+      "name": "Omprakash Sikhwal",
+      "affiliation": "Poornima Institute of Engineering and Technology"
+    },
+    {
+      "id": 91,
+      "name": "Padmaloshani Palanisamy",
+      "affiliation": "Selvam College of Technology, Namakkal, Namakkal"
+    },
+    {
+      "id": 92,
+      "name": "prachi goel",
+      "affiliation": "ggsipu"
+    },
+    {
+      "id": 93,
+      "name": "Pragya sinha",
+      "affiliation": "Poornima Institute of Engineering and Technology"
+    },
+    {
+      "id": 94,
+      "name": "Praveen Kumar Myakala",
+      "affiliation": "Independent Researcher"
+    },
+    {
+      "id": 95,
+      "name": "Priya Mathur",
+      "affiliation": "Poornima Institute Of Engineering and Technology"
+    },
+    {
+      "id": 96,
+      "name": "punit kumar",
+      "affiliation": "Poornima Institute of Engineering & Technology"
+    },
+    {
+      "id": 97,
+      "name": "Rabina Bagga",
+      "affiliation": "CGC mohali"
+    },
+    {
+      "id": 98,
+      "name": "Raghavendar Nellikondi",
+      "affiliation": "Tekorg Inc"
+    },
+    {
+      "id": 99,
+      "name": "rahul thakur",
+      "affiliation": "medi-caps university"
+    },
+    {
+      "id": 100,
+      "name": "Rahul Garg",
+      "affiliation": "University of Engineering & Management Jaipur"
+    },
+    {
+      "id": 101,
+      "name": "Rajesh G",
+      "affiliation": "New Horizon College of Engineering"
+    },
+    {
+      "id": 102,
+      "name": "Ramesh Somayajula",
+      "affiliation": "T-Mobile USA Inc"
+    },
+    {
+      "id": 103,
+      "name": "Ramesh Kumar",
+      "affiliation": "Chitkara University"
+    },
+    {
+      "id": 104,
+      "name": "RANJIT SINGH",
+      "affiliation": "NITTTR"
+    },
+    {
+      "id": 105,
+      "name": "Ravi Mishra",
+      "affiliation": "GHRIET"
+    },
+    {
+      "id": 106,
+      "name": "Raviteja Guntupalli",
+      "affiliation": "Deloitte Consulting"
+    },
+    {
+      "id": 107,
+      "name": "Reetika Kerketta",
+      "affiliation": "MIT ADT University Pune"
+    },
+    {
+      "id": 108,
+      "name": "Ritam Dutta",
+      "affiliation": "Poornima Institue Engineering & Technology"
+    },
+    {
+      "id": 109,
+      "name": "Rohit Dhawan",
+      "affiliation": "Amazon.com"
+    },
+    {
+      "id": 110,
+      "name": "Rohit Muthyala",
+      "affiliation": "Zoominfo Technologies LLC"
+    },
+    {
+      "id": 111,
+      "name": "ROHIT KUMAR",
+      "affiliation": "PIET JAIPUR"
+    },
+    {
+      "id": 112,
+      "name": "Rupal Gupta",
+      "affiliation": "Teerthanker Mahaveer University"
+    },
+    {
+      "id": 113,
+      "name": "Sai Vinod Vangavolu",
+      "affiliation": "CVS Pharmacy"
+    },
+    {
+      "id": 114,
+      "name": "saket chaudhari",
+      "affiliation": "TriNet"
+    },
+    {
+      "id": 115,
+      "name": "Sandeep Gupta",
+      "affiliation": "PIET"
+    },
+    {
+      "id": 116,
+      "name": "Santosh Gupta",
+      "affiliation": "Jodhpur Institute of Engineering & Technology (JIET), Jodhpur"
+    },
+    {
+      "id": 117,
+      "name": "Satrughan Kumar",
+      "affiliation": "Koneru Lakshmaiah Education Foundation, Vijayawada, India"
+    },
+    {
+      "id": 118,
+      "name": "Saurabh Kumar",
+      "affiliation": "Institute of Engineering and Rural Technology (IERT), Prayagraj"
+    },
+    {
+      "id": 119,
+      "name": "Seshendranath Balla Venkata",
+      "affiliation": "Comcast Cable"
+    },
+    {
+      "id": 120,
+      "name": "Shailja Gupta",
+      "affiliation": "Carnegie Mellon University"
+    },
+    {
+      "id": 121,
+      "name": "Shalom Akhai",
+      "affiliation": "Department of Mechanical Engineering, Maharishi Markandeshwar Engineering College, Maharishi Markandeshwar (Deemed to be University), Mullana, Ambala, Haryana – 133207, India."
+    },
+    {
+      "id": 122,
+      "name": "Shasanka Rout",
+      "affiliation": "GLA University"
+    },
+    {
+      "id": 123,
+      "name": "Shradhesh Marve",
+      "affiliation": "Rajiv Gandhi College of Engineering Research & Technology, Chandrapur, M.S. India"
+    },
+    {
+      "id": 124,
+      "name": "Shreelekha Ramabadran",
+      "affiliation": "Candescent"
+    },
+    {
+      "id": 125,
+      "name": "Shreyan Bakshi",
+      "affiliation": "Meta"
+    },
+    {
+      "id": 126,
+      "name": "Shruti Jain",
+      "affiliation": "Jaypee University of Information Technology,Solan"
+    },
+    {
+      "id": 127,
+      "name": "Shruti Thapar",
+      "affiliation": "PIET"
+    },
+    {
+      "id": 128,
+      "name": "SHUBHAM MAHAJAN",
+      "affiliation": "AMITY UNIVERSITY HARYANA"
+    },
+    {
+      "id": 129,
+      "name": "Sneha Singireddy",
+      "affiliation": "CSAA Insurance"
+    },
+    {
+      "id": 130,
+      "name": "SOMASUNDARAM S",
+      "affiliation": "COIMBATORE INSTITUTE OF TECHNOLOGY, COIMBATORE, TAMILNADU"
+    },
+    {
+      "id": 131,
+      "name": "Somnath Banerjee",
+      "affiliation": "AWS"
+    },
+    {
+      "id": 132,
+      "name": "Sonia Verma",
+      "affiliation": "ABES Engineering college"
+    },
+    {
+      "id": 133,
+      "name": "Sowjanya Karri",
+      "affiliation": "Oracle America Inc"
+    },
+    {
+      "id": 134,
+      "name": "Srinivas Kalyan Yellanki",
+      "affiliation": "Expedia Group"
+    },
+    {
+      "id": 135,
+      "name": "Subrata Paul",
+      "affiliation": "Brainware University"
+    },
+    {
+      "id": 136,
+      "name": "Sudhir Rai",
+      "affiliation": "Indian Institute of Information Technology Vadodara"
+    },
+    {
+      "id": 137,
+      "name": "suman ghanghas",
+      "affiliation": "guru jambheshwar university hisar"
+    },
+    {
+      "id": 138,
+      "name": "Sumit Bumbak",
+      "affiliation": "Parul Institute of Engineering & Technology ,Parul University, Vadodara"
+    },
+    {
+      "id": 139,
+      "name": "Sunil Sharma",
+      "affiliation": "University of Engineering and Management, Jaipur."
+    },
+    {
+      "id": 140,
+      "name": "Sunita Sharma",
+      "affiliation": "UNIVERSITY OF GEORGIA"
+    },
+    {
+      "id": 141,
+      "name": "surbhi maheshwari",
+      "affiliation": "JK Lakshmipat university"
+    },
+    {
+      "id": 142,
+      "name": "Swapan Arora",
+      "affiliation": "Deloitte & Touche LLP"
+    },
+    {
+      "id": 143,
+      "name": "Swarnamouli Majumdar",
+      "affiliation": "Concordia University"
+    },
+    {
+      "id": 144,
+      "name": "Tejaskumar Patel",
+      "affiliation": "CVM University, V.V. Nagar"
+    },
+    {
+      "id": 145,
+      "name": "Thamilselvan P",
+      "affiliation": "KL (Deemed to be) University"
+    },
+    {
+      "id": 146,
+      "name": "Thangaraj Kesavan",
+      "affiliation": "Sona College of Technology"
+    },
+    {
+      "id": 147,
+      "name": "UMAR BASHIR",
+      "affiliation": "University of jammu"
+    },
+    {
+      "id": 148,
+      "name": "Umesh Kumar",
+      "affiliation": "Poornima Institute of Engineering & Technology"
+    },
+    {
+      "id": 149,
+      "name": "UMME HABIBA MAGINMANI",
+      "affiliation": "SECAB INSTITUTE OF INSTITUTE OF ENGINEERING AND TECHNOLOGY"
+    },
+    {
+      "id": 150,
+      "name": "Vaibhav Shekhawat",
+      "affiliation": "Poornima Institute of Engineering & Technology"
+    },
+    {
+      "id": 151,
+      "name": "Varun Kumar Muppidi",
+      "affiliation": "Texas Capital Bank"
+    },
+    {
+      "id": 152,
+      "name": "Vasu Velaga",
+      "affiliation": "Cintas Corporation"
+    },
+    {
+      "id": 153,
+      "name": "VIJAYA KAMBLE",
+      "affiliation": "G H RAISONI COLLEGE OF ENGINEERING AND MANAGEMENT"
+    },
+    {
+      "id": 154,
+      "name": "Vijaya Kittu Manda",
+      "affiliation": "PBMEIT"
+    },
+    {
+      "id": 155,
+      "name": "Vikas Kumar",
+      "affiliation": "Poornima Institute of Engineering and Technology, Jaipur, Rajasthan"
+    },
+    {
+      "id": 156,
+      "name": "Vivek Saxena",
+      "affiliation": "poornima institute of engineering and technology jaipur"
+    },
+    {
+      "id": 157,
+      "name": "Weiwei Jiang",
+      "affiliation": "Beijing University of Posts and Telecommunications"
+    },
+    {
+      "id": 158,
+      "name": "Yuvaraj S",
+      "affiliation": "Sri Eshwar College of Engineering"
+    }
+  ]
+}
