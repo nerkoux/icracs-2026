@@ -2,6 +2,13 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
 const publicationPartners = [
+  
+  {
+    name: "IET Conference Proceedings",
+    logo: "/publications-technical/iet.svg",
+    description: "Institution of Engineering and Technology"
+  },
+
   {
     name: "AIP Publishing",
     logo: "/publications-technical/AIP.png",
@@ -48,8 +55,8 @@ export default function PublicationTechnicalPartners() {
                     <Image
                       src={partner.logo}
                       alt={partner.name}
-                      width={120}
-                      height={80}
+                      width={partner.name === "IET Conference Proceedings" ? 140 : 120}
+                      height={partner.name === "IET Conference Proceedings" ? 90 : 80}
                       className="object-contain max-h-full"
                     />
                   </div>
