@@ -6,13 +6,15 @@ const publicationPartners = [
   {
     name: "IET Conference Proceedings",
     logo: "/publications-technical/iet.svg",
-    description: "Institution of Engineering and Technology"
+    description: "Institution of Engineering and Technology",
+    proceedingsUrl: "https://digital-library.theiet.org/journal/icp"
   },
 
   {
     name: "AIP Publishing",
     logo: "/publications-technical/AIP.png",
-    description: "American Institute of Physics Publishing"
+    description: "American Institute of Physics Publishing",
+    proceedingsUrl: "https://pubs.aip.org/aip/acp"
   }
 ];
 
@@ -66,6 +68,14 @@ export default function PublicationTechnicalPartners() {
                   <p className="text-sm text-gray-600">
                     {partner.description}
                   </p>
+                  <a
+                    href={partner.proceedingsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-block break-all text-sm text-blue-700 underline-offset-2 hover:underline"
+                  >
+                    {partner.proceedingsUrl}
+                  </a>
                 </CardContent>
               </Card>
             ))}
