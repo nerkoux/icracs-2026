@@ -53,26 +53,26 @@ export default function PublicationTechnicalPartners() {
             {publicationPartners.map((partner, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200 w-full md:w-80">
               <CardContent className="p-8">
-                  <div className="relative h-24 mb-6 flex items-center justify-center">
+                  <div className="relative h-32 mb-6 flex items-center justify-center">
                     <Image
                       src={partner.logo}
                       alt={partner.name}
-                      width={partner.name === "IET Conference Proceedings" ? 140 : 120}
-                      height={partner.name === "IET Conference Proceedings" ? 90 : 80}
+                      width={partner.name === "IET Conference Proceedings" ? 180 : 160}
+                      height={partner.name === "IET Conference Proceedings" ? 110 : 100}
                       className="object-contain max-h-full"
                     />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 text-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2 text-base">
                     {partner.name}
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-xs text-gray-600">
                     {partner.description}
                   </p>
                   <a
                     href={partner.proceedingsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block break-all text-sm text-blue-700 underline-offset-2 hover:underline"
+                    className="mt-3 inline-block break-all text-xs text-blue-700 underline-offset-2 hover:underline"
                   >
                     {partner.proceedingsUrl}
                   </a>
