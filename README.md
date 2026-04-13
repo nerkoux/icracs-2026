@@ -4,7 +4,7 @@
 
 Official website for the **International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems (ICRACS 2026)**, hosted by Poornima Institute of Engineering and Technology, Jaipur, Rajasthan.
 
-## 🎯 About the Conference
+## 🎯 About the ICARCS Conference
 
 ICRACS 2026 is the 3rd International Conference focusing on cutting-edge research and innovations in:
 - **Artificial Intelligence** - Neural networks, deep learning, and machine learning applications
