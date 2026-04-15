@@ -7,12 +7,176 @@ import { Building, Award } from "lucide-react";
 
 const keynoteSpeakers = [
   {
+    name: "Dr. Rajveer Singh Shekhawat",
+    title: "Professor",
+    affiliation: "Uka Tarsadia University (UTU), Gujarat, India",
+    expertise: ["Computer Science", "Engineering", "Research"],
+    bio: "Professor at Uka Tarsadia University with expertise in advanced computing and engineering research.",
+    category: "keynote"
+  },
+  {
+    name: "Mr. Hitesh Chugani",
+    title: "Principal Engineering Manager",
+    affiliation: "Microsoft",
+    expertise: ["Software Engineering", "Cloud Computing", "Engineering Management"],
+    bio: "Principal Engineering Manager at Microsoft, driving large-scale software solutions and engineering excellence.",
+    category: "keynote"
+  },
+  {
+    name: "Prof. (Dr.) Jimmy Singla",
+    title: "Professor",
+    affiliation: "Lovely Professional University",
+    expertise: ["Computer Science", "Artificial Intelligence", "Machine Learning"],
+    bio: "Distinguished professor at Lovely Professional University with research spanning AI and computer science.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Yogesh Kumar Sharma",
+    title: "Professor",
+    affiliation: "K L Deemed to be University, Guntur, AP",
+    expertise: ["Computer Science", "Data Science", "Engineering"],
+    bio: "Professor at K L Deemed to be University with research focus on data science and computing systems.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Anshuman Kalla",
+    title: "Professor & Deputy Director",
+    affiliation: "Amity University Rajasthan, Jaipur",
+    expertise: ["Computer Networks", "IoT", "Communication Systems"],
+    bio: "Professor and Deputy Director at Amity University Rajasthan, specializing in networking and IoT research.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Rajiv Gandhi",
+    title: "Professor",
+    affiliation: "Research & Academia",
+    expertise: ["Engineering", "Research", "Academic Leadership"],
+    bio: "Distinguished academic with significant contributions to engineering and research domains.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Adithya Padthe",
+    title: "Research Scientist",
+    affiliation: "Apple Inc.",
+    expertise: ["Machine Learning", "Research Science", "Applied AI"],
+    bio: "Research Scientist at Apple Inc., contributing to cutting-edge AI and machine learning research.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Vugar Abdullayev",
+    title: "Assistant Professor",
+    affiliation: "Azerbaijan University of Architecture and Construction",
+    expertise: ["Computer Science", "Architecture", "Smart Systems"],
+    bio: "Assistant Professor at Azerbaijan University of Architecture and Construction with expertise in smart computing systems.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Narendra Khatri",
+    title: "Associate Professor",
+    affiliation: "Manav Rachna Institute, Haryana",
+    expertise: ["Computer Science", "Software Engineering", "Data Analytics"],
+    bio: "Associate Professor at Manav Rachna Institute with strong research credentials in computer science.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Priyanka Dadheech",
+    title: "Advisor",
+    affiliation: "Persius Ou, Tallinn, Estonia",
+    expertise: ["Technology Management", "AI Research", "Innovation"],
+    bio: "Technology Advisor at Persius Ou in Tallinn, Estonia, with expertise in AI research and innovation management.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Bhupesh Kumar Singh",
+    title: "Principal Software Engineer",
+    affiliation: "Oracle Cloud Infrastructure, North Carolina, USA",
+    expertise: ["Cloud Infrastructure", "Software Engineering", "Distributed Systems"],
+    bio: "Principal Software Engineer at Oracle Cloud Infrastructure, specializing in large-scale cloud systems.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Puneet Sharma",
+    title: "Professor and Dean",
+    affiliation: "Karnavati University",
+    expertise: ["Engineering", "Academic Administration", "Research"],
+    bio: "Professor and Dean at Karnavati University with extensive experience in academic leadership and research.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Dipti Durgesh Patil",
+    title: "Professor",
+    affiliation: "Cummins College of Engineering for Women, Pune",
+    expertise: ["Computer Engineering", "Data Science", "Women in STEM"],
+    bio: "Professor at Cummins College of Engineering for Women, Pune, promoting excellence in engineering education.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Anita",
+    title: "Associate Professor",
+    affiliation: "Shree Vaishnav Vidyapeeth Vishwavidyalaya, Indore",
+    expertise: ["Computer Science", "Information Technology", "Research"],
+    bio: "Associate Professor at Shree Vaishnav Vidyapeeth Vishwavidyalaya with contributions to IT and computer science.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Tanmay Kasbe",
+    title: "Assistant Professor",
+    affiliation: "LNMIIT, Jaipur",
+    expertise: ["Computer Science", "Engineering", "Applied Research"],
+    bio: "Assistant Professor at LNMIIT Jaipur, engaged in cutting-edge research in computing and engineering.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Nirmal Kumar Sivaraman",
+    title: "Associate Professor",
+    affiliation: "Dayananda Sagar College of Engineering",
+    expertise: ["Computer Science", "Networking", "IoT"],
+    bio: "Associate Professor at Dayananda Sagar College of Engineering with expertise in networking and IoT.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Rudresh M",
+    title: "Professor & Vice President",
+    affiliation: "University of Engineering and Management, Kolkata",
+    expertise: ["Engineering", "Academic Leadership", "Technology Management"],
+    bio: "Professor and Vice President at University of Engineering and Management, Kolkata, driving institutional excellence.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Anirban Das",
+    title: "Professor and Dean",
+    affiliation: "Phenikaa University, Hanoi, Vietnam",
+    expertise: ["Computer Science", "International Research", "Engineering"],
+    bio: "Professor and Dean at Phenikaa University in Hanoi, Vietnam, fostering international research collaborations.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Duc-Tan Tran",
+    title: "Professor (CSE) & University Director, Research & Publications",
+    affiliation: "Phenikaa University, Hanoi, Vietnam",
+    expertise: ["Computer Science", "Research Management", "Engineering"],
+    bio: "University Director of Research & Publications and CSE Professor at Phenikaa University, Hanoi, Vietnam.",
+    category: "keynote"
+  },
+  {
+    name: "Dr. Debajyoty Banik",
+    title: "Professor",
+    affiliation: "Research & Academia",
+    expertise: ["Computer Science", "Research", "Academic Collaboration"],
+    bio: "Distinguished researcher with significant contributions to computer science and academic research.",
+    category: "keynote"
+  }
+];
+
+const pastSpeakers = [
+  {
     name: "Prof. Brij Gupta",
     title: "Distinguished Professor",
     affiliation: "Director, Center for AI and Cyber Security | Board of Governors, IEEE CT Society",
     expertise: ["Cybersecurity", "AI Security", "Network Security"],
     bio: "Editor-in-Chief of SCIE Indexed journal and Clarivate Highly Cited Researcher (0.1%).",
-    category: "keynote",
+    category: "past",
+    year: "ICRACS 2025",
     image: "/speakers/brij-gupta.jpg"
   },
   {
@@ -21,7 +185,8 @@ const keynoteSpeakers = [
     affiliation: "Namibia University of Science and Technology (NUST)",
     expertise: ["Computer Science", "Software Engineering", "Distributed Systems"],
     bio: "Experienced professor with extensive research in computer science and software engineering.",
-    category: "keynote",
+    category: "past",
+    year: "ICRACS 2025",
     image: "/speakers/dharmsingh.jpg"
   },
   {
@@ -30,12 +195,10 @@ const keynoteSpeakers = [
     affiliation: "University of Arad, Romania",
     expertise: ["Automatics Software", "Applied Software", "Computational Intelligence"],
     bio: "Experienced professor with extensive research in Applied Software and Computational Intelligence.",
-    category: "keynote",
+    category: "past",
+    year: "ICRACS 2025",
     image: "/speakers/valentina-balas.jpg"
-  }
-];
-
-const pastSpeakers = [
+  },
   {
     name: "Dr. Akash Saxena",
     title: "Professor",
