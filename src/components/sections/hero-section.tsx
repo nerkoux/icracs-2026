@@ -8,10 +8,10 @@ import { Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const images = [
+  "/highresimages/10.jpg",
   "/highresimages/1.jpeg",
   "/highresimages/2.jpeg",
   "/highresimages/3.jpeg",
-  "/highresimages/10.jpg",
   "/highresimages/4.jpeg",
   "/highresimages/5.jpeg",
   "/highresimages/6.jpeg",
