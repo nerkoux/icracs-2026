@@ -7,164 +7,84 @@ import { Building, Award } from "lucide-react";
 
 const keynoteSpeakers = [
   {
-    name: "Dr. Rajveer Singh Shekhawat",
+    name: "Prof. Atulya K. Nagar",
+    title: "Pro Vice-Chancellor (Research)",
+    affiliation: "Liverpool Hope University",
+    expertise: ["Computing", "Research Leadership", "Advanced Computing"],
+    bio: "Pro Vice-Chancellor (Research) at Liverpool Hope University, providing strategic leadership for research and innovation across the institution.",
+    category: "keynote",
+    eventDate: "April 17, 2026",
+    image: "/speakers/atulya-nagar.jpg"
+  },
+  {
+    name: "Dr. Rajnish Sharma",
+    title: "Vice-Chancellor",
+    affiliation: "Chitkara University Himachal Pradesh",
+    expertise: ["Higher Education", "Technology", "Academic Leadership"],
+    bio: "Vice-Chancellor of Chitkara University Himachal Pradesh, driving academic excellence and research innovation in the Himalayan region.",
+    category: "keynote",
+    eventDate: "April 17, 2026",
+    image: "/speakers/rajnish-sharma.jpg"
+  },
+  {
+    name: "Dr. Marcin Paprzycki",
+    title: "Associate Professor",
+    affiliation: "Polish Academy of Sciences, Poland",
+    expertise: ["Artificial Intelligence", "Multi-Agent Systems", "Computer Science"],
+    bio: "Associate Professor at the Polish Academy of Sciences with extensive research contributions in artificial intelligence and distributed computing.",
+    category: "keynote",
+    eventDate: "April 18, 2026",
+    image: "/speakers/marcin-paprzycki.jpg"
+  },
+  {
+    name: "Prof. Ghanshyam Singh",
+    title: "Professor & Director",
+    affiliation: "University of Johannesburg, South Africa",
+    expertise: ["Electronics", "Photonics", "Communication Systems"],
+    bio: "Professor and Director at the University of Johannesburg, South Africa, leading cutting-edge research in electronics and photonic systems.",
+    category: "keynote",
+    eventDate: "April 17, 2026",
+    image: "/speakers/ghanshyam-singh.jpg"
+  },
+  {
+    name: "Dr. Jagdish Chand Bansal",
     title: "Professor",
-    affiliation: "Uka Tarsadia University (UTU), Gujarat, India",
-    expertise: ["Computer Science", "Engineering", "Research"],
-    bio: "Professor at Uka Tarsadia University with expertise in advanced computing and engineering research.",
-    category: "keynote"
+    affiliation: "South Asian University",
+    expertise: ["Swarm Intelligence", "Optimization", "Machine Learning"],
+    bio: "Professor at South Asian University with pioneering contributions to swarm intelligence, nature-inspired computing, and optimization algorithms.",
+    category: "keynote",
+    eventDate: "April 18, 2026",
+    image: "/speakers/jagdish-bansal.jpg"
   },
   {
-    name: "Mr. Hitesh Chugani",
-    title: "Principal Engineering Manager",
-    affiliation: "Microsoft",
-    expertise: ["Software Engineering", "Cloud Computing", "Engineering Management"],
-    bio: "Principal Engineering Manager at Microsoft, driving large-scale software solutions and engineering excellence.",
-    category: "keynote"
+    name: "Dr. Jai Gopal Pandey",
+    title: "Scientist-F",
+    affiliation: "CSIR Central Electronics Engineering Research Institute, Pilani, India",
+    expertise: ["VLSI Design", "Embedded Systems", "Electronic Circuits"],
+    bio: "Scientist-F at CSIR-CEERI Pilani, specializing in VLSI design, embedded systems, and advanced electronic circuit research.",
+    category: "keynote",
+    eventDate: "April 18, 2026",
+    image: "/speakers/jai-gopal-pandey.jpg"
   },
   {
-    name: "Prof. (Dr.) Jimmy Singla",
-    title: "Professor",
-    affiliation: "Lovely Professional University",
-    expertise: ["Computer Science", "Artificial Intelligence", "Machine Learning"],
-    bio: "Distinguished professor at Lovely Professional University with research spanning AI and computer science.",
-    category: "keynote"
+    name: "M. Santosh Kumar",
+    title: "Scientist-F",
+    affiliation: "CSIR Central Electronics Engineering Research Institute, Pilani, India",
+    expertise: ["Micro-electronics", "Sensors", "MEMS"],
+    bio: "Scientist-F at CSIR-CEERI Pilani, contributing to cutting-edge research in micro-electronics, sensors, and MEMS technology.",
+    category: "keynote",
+    eventDate: "April 18, 2026",
+    image: "/speakers/santosh-kumar.jpg"
   },
   {
-    name: "Dr. Yogesh Kumar Sharma",
-    title: "Professor",
-    affiliation: "K L Deemed to be University, Guntur, AP",
-    expertise: ["Computer Science", "Data Science", "Engineering"],
-    bio: "Professor at K L Deemed to be University with research focus on data science and computing systems.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Anshuman Kalla",
-    title: "Professor & Deputy Director",
-    affiliation: "Amity University Rajasthan, Jaipur",
-    expertise: ["Computer Networks", "IoT", "Communication Systems"],
-    bio: "Professor and Deputy Director at Amity University Rajasthan, specializing in networking and IoT research.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Rajiv Gandhi",
-    title: "Professor",
-    affiliation: "Research & Academia",
-    expertise: ["Engineering", "Research", "Academic Leadership"],
-    bio: "Distinguished academic with significant contributions to engineering and research domains.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Adithya Padthe",
-    title: "Research Scientist",
-    affiliation: "Apple Inc.",
-    expertise: ["Machine Learning", "Research Science", "Applied AI"],
-    bio: "Research Scientist at Apple Inc., contributing to cutting-edge AI and machine learning research.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Vugar Abdullayev",
+    name: "Dr. Ashwin C Gowda",
     title: "Assistant Professor",
-    affiliation: "Azerbaijan University of Architecture and Construction",
-    expertise: ["Computer Science", "Architecture", "Smart Systems"],
-    bio: "Assistant Professor at Azerbaijan University of Architecture and Construction with expertise in smart computing systems.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Narendra Khatri",
-    title: "Associate Professor",
-    affiliation: "Manav Rachna Institute, Haryana",
-    expertise: ["Computer Science", "Software Engineering", "Data Analytics"],
-    bio: "Associate Professor at Manav Rachna Institute with strong research credentials in computer science.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Priyanka Dadheech",
-    title: "Advisor",
-    affiliation: "Persius Ou, Tallinn, Estonia",
-    expertise: ["Technology Management", "AI Research", "Innovation"],
-    bio: "Technology Advisor at Persius Ou in Tallinn, Estonia, with expertise in AI research and innovation management.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Bhupesh Kumar Singh",
-    title: "Principal Software Engineer",
-    affiliation: "Oracle Cloud Infrastructure, North Carolina, USA",
-    expertise: ["Cloud Infrastructure", "Software Engineering", "Distributed Systems"],
-    bio: "Principal Software Engineer at Oracle Cloud Infrastructure, specializing in large-scale cloud systems.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Puneet Sharma",
-    title: "Professor and Dean",
-    affiliation: "Karnavati University",
-    expertise: ["Engineering", "Academic Administration", "Research"],
-    bio: "Professor and Dean at Karnavati University with extensive experience in academic leadership and research.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Dipti Durgesh Patil",
-    title: "Professor",
-    affiliation: "Cummins College of Engineering for Women, Pune",
-    expertise: ["Computer Engineering", "Data Science", "Women in STEM"],
-    bio: "Professor at Cummins College of Engineering for Women, Pune, promoting excellence in engineering education.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Anita",
-    title: "Associate Professor",
-    affiliation: "Shree Vaishnav Vidyapeeth Vishwavidyalaya, Indore",
-    expertise: ["Computer Science", "Information Technology", "Research"],
-    bio: "Associate Professor at Shree Vaishnav Vidyapeeth Vishwavidyalaya with contributions to IT and computer science.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Tanmay Kasbe",
-    title: "Assistant Professor",
-    affiliation: "LNMIIT, Jaipur",
-    expertise: ["Computer Science", "Engineering", "Applied Research"],
-    bio: "Assistant Professor at LNMIIT Jaipur, engaged in cutting-edge research in computing and engineering.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Nirmal Kumar Sivaraman",
-    title: "Associate Professor",
-    affiliation: "Dayananda Sagar College of Engineering",
-    expertise: ["Computer Science", "Networking", "IoT"],
-    bio: "Associate Professor at Dayananda Sagar College of Engineering with expertise in networking and IoT.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Rudresh M",
-    title: "Professor & Vice President",
-    affiliation: "University of Engineering and Management, Kolkata",
-    expertise: ["Engineering", "Academic Leadership", "Technology Management"],
-    bio: "Professor and Vice President at University of Engineering and Management, Kolkata, driving institutional excellence.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Anirban Das",
-    title: "Professor and Dean",
-    affiliation: "Phenikaa University, Hanoi, Vietnam",
-    expertise: ["Computer Science", "International Research", "Engineering"],
-    bio: "Professor and Dean at Phenikaa University in Hanoi, Vietnam, fostering international research collaborations.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Duc-Tan Tran",
-    title: "Professor (CSE) & University Director, Research & Publications",
-    affiliation: "Phenikaa University, Hanoi, Vietnam",
-    expertise: ["Computer Science", "Research Management", "Engineering"],
-    bio: "University Director of Research & Publications and CSE Professor at Phenikaa University, Hanoi, Vietnam.",
-    category: "keynote"
-  },
-  {
-    name: "Dr. Debajyoty Banik",
-    title: "Professor",
-    affiliation: "Research & Academia",
-    expertise: ["Computer Science", "Research", "Academic Collaboration"],
-    bio: "Distinguished researcher with significant contributions to computer science and academic research.",
-    category: "keynote"
+    affiliation: "Visvesvaraya Technological University, Bengaluru Region, India",
+    expertise: ["Signal Processing", "Communication", "VLSI"],
+    bio: "Assistant Professor at Visvesvaraya Technological University, Bengaluru, with active research in signal processing and communication systems.",
+    category: "keynote",
+    eventDate: "April 18, 2026",
+    image: "/speakers/ashwin-gowda.jpg"
   }
 ];
 
@@ -261,6 +181,7 @@ interface Speaker {
   bio: string;
   category: string;
   year?: string;
+  eventDate?: string;
   image?: string;
 }
 
@@ -333,6 +254,11 @@ function SpeakerCard({ speaker, colorScheme }: SpeakerCardProps) {
             {speaker.year && (
               <Badge variant="outline" className={colors.badge}>
                 {speaker.year}
+              </Badge>
+            )}
+            {speaker.eventDate && (
+              <Badge variant="outline" className={`mt-1 ${colors.badge}`}>
+                📅 {speaker.eventDate}
               </Badge>
             )}
           </div>
