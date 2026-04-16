@@ -14,7 +14,7 @@ const keynoteSpeakers = [
     bio: "Pro Vice-Chancellor (Research) at Liverpool Hope University, providing strategic leadership for research and innovation across the institution.",
     category: "keynote",
     eventDate: "April 17, 2026",
-    image: "/speakers/atulya-nagar.jpg"
+    image: "/speakers/atulya-nagar.png"
   },
   {
     name: "Dr. Rajnish Sharma",
@@ -24,7 +24,7 @@ const keynoteSpeakers = [
     bio: "Vice-Chancellor of Chitkara University Himachal Pradesh, driving academic excellence and research innovation in the Himalayan region.",
     category: "keynote",
     eventDate: "April 17, 2026",
-    image: "/speakers/rajnish-sharma.jpg"
+    image: "/speakers/rajnish-sharma.png"
   },
   {
     name: "Dr. Marcin Paprzycki",
@@ -233,8 +233,8 @@ function SpeakerCard({ speaker, colorScheme }: SpeakerCardProps) {
           <div className="relative">
             <Avatar className="h-20 w-20">
               {speaker.image ? (
-                <AvatarImage 
-                  src={speaker.image} 
+                <AvatarImage
+                  src={speaker.image}
                   alt={speaker.name}
                   className="object-cover"
                 />
@@ -263,7 +263,7 @@ function SpeakerCard({ speaker, colorScheme }: SpeakerCardProps) {
             )}
           </div>
         </div>
-        
+
         <div className="mb-4">
           <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
             <Award className={`h-4 w-4 mr-2 ${colors.text}`} />
@@ -277,7 +277,7 @@ function SpeakerCard({ speaker, colorScheme }: SpeakerCardProps) {
             ))}
           </div>
         </div>
-        
+
         <div>
           <h4 className="font-semibold text-gray-900 mb-2">Biography</h4>
           <p className="text-sm text-gray-700 leading-relaxed">{speaker.bio}</p>
@@ -307,12 +307,12 @@ export default function SpeakersPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Keynote Speakers</h2>
               <p className="text-lg text-gray-600">Leading researchers and industry experts</p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {keynoteSpeakers.map((speaker, index) => (
-                <SpeakerCard 
-                  key={index} 
-                  speaker={speaker} 
+                <SpeakerCard
+                  key={index}
+                  speaker={speaker}
                   colorScheme="blue"
                 />
               ))}
@@ -326,12 +326,12 @@ export default function SpeakersPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Invited Speakers</h2>
                 <p className="text-lg text-gray-600">Special invited talks from renowned experts</p>
               </div>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {invitedSpeakers.map((speaker, index) => (
-                  <SpeakerCard 
-                    key={index} 
-                    speaker={speaker} 
+                  <SpeakerCard
+                    key={index}
+                    speaker={speaker}
                     colorScheme="green"
                   />
                 ))}
@@ -345,12 +345,12 @@ export default function SpeakersPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Past Speakers</h2>
               <p className="text-lg text-gray-600">Distinguished speakers from previous ICRACS conferences</p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {pastSpeakers.map((speaker, index) => (
-                <SpeakerCard 
-                  key={index} 
-                  speaker={speaker} 
+                <SpeakerCard
+                  key={index}
+                  speaker={speaker}
                   colorScheme="purple"
                 />
               ))}
@@ -405,12 +405,12 @@ export default function SpeakersPage() {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-white p-4 rounded-lg border border-blue-200">
                 <h4 className="font-semibold text-blue-900 mb-2">Speaking Opportunities</h4>
                 <p className="text-sm text-gray-700">
-                  We welcome proposals from distinguished researchers and industry leaders who would like to 
-                  share their expertise at ICRACS 2026. Please contact our organizing committee for speaking 
+                  We welcome proposals from distinguished researchers and industry leaders who would like to
+                  share their expertise at ICRACS 2026. Please contact our organizing committee for speaking
                   opportunities and collaboration possibilities.
                 </p>
               </div>
