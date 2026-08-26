@@ -11,7 +11,7 @@ ICRACS 2026 is the 3rd International Conference focusing on cutting-edge researc
 - **Computer Vision** - Pattern recognition, image processing, and visual systems
 - **Smart Systems** - IoT applications, smart cities, and cyber-physical systems
 
-**Conference Dates:** April 17-18, 2026  
+**Conference Dates:** August 27-28, 2027  
 **Location:** Poornima Institute of Engineering and Technology, Sitapura, Jaipur, Rajasthan
 
 ## 🚀 Tech Stack

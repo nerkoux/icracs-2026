@@ -6,7 +6,7 @@ import { ExternalLink, Calendar, Clock, MapPin, Users } from "lucide-react";
 
 const scheduleOverview = [
   {
-    day: "Day 1 - April 17, 2027",
+    day: "Day 1 - August 27, 2027",
     events: [
       { time: "08:30 - 09:30", event: "Registration & Welcome Coffee", type: "registration" },
       { time: "09:30 - 10:00", event: "Opening Ceremony", type: "ceremony" },
@@ -19,7 +19,7 @@ const scheduleOverview = [
     ]
   },
   {
-    day: "Day 2 - April 18, 2027", 
+    day: "Day 2 - August 28, 2027", 
     events: [
       { time: "09:00 - 09:30", event: "Registration & Morning Coffee", type: "registration" },
       { time: "09:30 - 10:30", event: "Keynote: Dr. Dharm Singh", type: "keynote" },
@@ -38,7 +38,7 @@ const scheduleOverview = [
 const workshopDetails = {
   title: "Computational Intelligence for Sustainable Energy Systems",
   duration: "Full Day Workshop",
-  date: "April 17, 2027",
+  date: "August 27, 2027",
   topics: [
     "Intelligent Optimization for Smart Grids",
     "Renewable Energy Forecasting with Machine Learning", 
@@ -51,7 +51,7 @@ const workshopDetails = {
 const panelDetails = {
   title: "Neural Networks for Computer Vision",
   duration: "60 minutes",
-  date: "April 18, 2027",
+  date: "August 28, 2027",
   topics: [
     "Deep Convolutional Architectures",
     "Transfer Learning Applications",
@@ -97,7 +97,7 @@ export default function AgendaPage() {
                   <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
                     <Calendar className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                     <h4 className="font-semibold text-blue-900">Dates</h4>
-                    <p className="text-sm text-gray-700">April 17-18, 2027</p>
+                    <p className="text-sm text-gray-700">August 27-28, 2027</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
                     <MapPin className="h-8 w-8 text-green-600 mx-auto mb-2" />

@@ -123,40 +123,40 @@ const submissionGuidelines = [
 const importantDates = [
   {
     event: "Paper Submission Deadline",
-    date: "February 17, 2026",
+    date: "April 30, 2027",
     status: "deadline",
-    isClosed: true
+    isClosed: false
   },
   {
     event: "Notification of Acceptance",
-    date: "March 17, 2026",
+    date: "June 30, 2027",
     status: "notification",
-    isClosed: true
+    isClosed: false
   },
   {
     event: "Camera-Ready Submission",
-    date: "March 22, 2026",
-    originalDate: "March 22, 2026",
-    extendedDate: "March 26, 2026",
+    date: "July 30, 2027",
+    originalDate: "July 30, 2027",
+    extendedDate: "July 30, 2027",
     status: "camera-ready",
     isExtended: true,
-    isClosed: true
+    isClosed: false
   },
   {
     event: "Early Bird Registration",
-    date: "March 22, 2026",
+    date: "July 15, 2027",
     status: "registration",
-    isClosed: true
+    isClosed: false
   },
   {
     event: "Registration with Late Fee",
-    date: "March 26, 2026",
+    date: "August 20, 2027",
     status: "regular",
-    isClosed: true
+    isClosed: false
   },
   {
     event: "Conference Dates",
-    date: "April 17-18, 2027",
+    date: "August 27-28, 2027",
     status: "conference"
   }
 ];

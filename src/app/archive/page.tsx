@@ -181,7 +181,7 @@ export default function ArchivePage() {
                   <div className="text-center p-6 bg-white rounded-lg border border-purple-200">
                     <h4 className="font-bold text-xl text-purple-900 mb-2">ICRACS 2027</h4>
                     <p className="text-gray-600 mb-2">4th International Conference</p>
-                    <p className="text-sm text-gray-500">April 17-18, 2027</p>
+                    <p className="text-sm text-gray-500">August 27-28, 2027</p>
                     <Badge className="mt-2 bg-purple-100 text-purple-800">Upcoming</Badge>
                   </div>
                 </div>

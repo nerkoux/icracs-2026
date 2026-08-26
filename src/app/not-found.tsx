@@ -46,7 +46,7 @@ export default function NotFound() {
               Artificial Intelligence, Computer Vision & Smart Systems
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-gray-300">
-              <span>April 17-18, 2027</span>
+              <span>August 27-28, 2027</span>
               <span className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full"></span>
               <span className="text-center">Poornima Institute of Engineering & Technology</span>
               <span className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full"></span>

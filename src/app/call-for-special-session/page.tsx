@@ -147,7 +147,7 @@ export default function CallForSpecialSessionPage() {
                   <Calendar className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Date</h3>
-                    <p className="text-gray-700">17–18 April 2027</p>
+                    <p className="text-gray-700">27–28 August 2027</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
