@@ -5,15 +5,17 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Building, Award } from "lucide-react";
 
-const keynoteSpeakers = [
+const upcomingSpeakers: any[] = [];
+
+const pastSpeakers = [
   {
     name: "Prof. Atulya K. Nagar",
     title: "Pro Vice-Chancellor (Research)",
     affiliation: "Liverpool Hope University",
     expertise: ["Computing", "Research Leadership", "Advanced Computing"],
     bio: "Pro Vice-Chancellor (Research) at Liverpool Hope University, providing strategic leadership for research and innovation across the institution.",
-    category: "keynote",
-    eventDate: "April 17, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/atulya-nagar.png"
   },
   {
@@ -22,8 +24,8 @@ const keynoteSpeakers = [
     affiliation: "Chitkara University Himachal Pradesh",
     expertise: ["Higher Education", "Technology", "Academic Leadership"],
     bio: "Vice-Chancellor of Chitkara University Himachal Pradesh, driving academic excellence and research innovation in the Himalayan region.",
-    category: "keynote",
-    eventDate: "April 17, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/rajnish-sharma.png"
   },
   {
@@ -32,8 +34,8 @@ const keynoteSpeakers = [
     affiliation: "Polish Academy of Sciences, Poland",
     expertise: ["Artificial Intelligence", "Multi-Agent Systems", "Computer Science"],
     bio: "Associate Professor at the Polish Academy of Sciences with extensive research contributions in artificial intelligence and distributed computing.",
-    category: "keynote",
-    eventDate: "April 18, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/marcin-paprzycki.jpg"
   },
   {
@@ -42,8 +44,8 @@ const keynoteSpeakers = [
     affiliation: "University of Johannesburg, South Africa",
     expertise: ["Electronics", "Photonics", "Communication Systems"],
     bio: "Professor and Director at the University of Johannesburg, South Africa, leading cutting-edge research in electronics and photonic systems.",
-    category: "keynote",
-    eventDate: "April 17, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/ghanshyam-singh.jpg"
   },
   {
@@ -52,8 +54,8 @@ const keynoteSpeakers = [
     affiliation: "South Asian University",
     expertise: ["Swarm Intelligence", "Optimization", "Machine Learning"],
     bio: "Professor at South Asian University with pioneering contributions to swarm intelligence, nature-inspired computing, and optimization algorithms.",
-    category: "keynote",
-    eventDate: "April 18, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/jagdish-bansal.jpg"
   },
   {
@@ -62,8 +64,8 @@ const keynoteSpeakers = [
     affiliation: "CSIR Central Electronics Engineering Research Institute, Pilani, India",
     expertise: ["VLSI Design", "Embedded Systems", "Electronic Circuits"],
     bio: "Scientist-F at CSIR-CEERI Pilani, specializing in VLSI design, embedded systems, and advanced electronic circuit research.",
-    category: "keynote",
-    eventDate: "April 18, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/jai-gopal-pandey.jpg"
   },
   {
@@ -72,8 +74,8 @@ const keynoteSpeakers = [
     affiliation: "CSIR Central Electronics Engineering Research Institute, Pilani, India",
     expertise: ["Micro-electronics", "Sensors", "MEMS"],
     bio: "Scientist-F at CSIR-CEERI Pilani, contributing to cutting-edge research in micro-electronics, sensors, and MEMS technology.",
-    category: "keynote",
-    eventDate: "April 18, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/santosh-kumar.jpg"
   },
   {
@@ -82,13 +84,10 @@ const keynoteSpeakers = [
     affiliation: "Visvesvaraya Technological University, Bengaluru Region, India",
     expertise: ["Signal Processing", "Communication", "VLSI"],
     bio: "Assistant Professor at Visvesvaraya Technological University, Bengaluru, with active research in signal processing and communication systems.",
-    category: "keynote",
-    eventDate: "April 18, 2026",
+    category: "past",
+    year: "ICRACS 2026",
     image: "/speakers/ashwin-gowda.jpg"
-  }
-];
-
-const pastSpeakers = [
+  },
   {
     name: "Prof. Brij Gupta",
     title: "Distinguished Professor",
@@ -295,21 +294,21 @@ export default function SpeakersPage() {
         {/* Hero Section */}
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Keynote Speakers</h1>
-            <p className="text-xl opacity-90">Distinguished experts sharing their insights at ICRACS 2026</p>
+            <h1 className="text-4xl font-bold mb-4">Upcoming Speakers</h1>
+            <p className="text-xl opacity-90">Distinguished experts sharing their insights at ICRACS 2027</p>
           </div>
         </section>
 
         <div className="container mx-auto px-4 py-12">
-          {/* Keynote Speakers Section */}
+          {/* Upcoming Speakers Section */}
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Keynote Speakers</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Upcoming Speakers</h2>
               <p className="text-lg text-gray-600">Leading researchers and industry experts</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {keynoteSpeakers.map((speaker, index) => (
+              {upcomingSpeakers.map((speaker, index) => (
                 <SpeakerCard
                   key={index}
                   speaker={speaker}
@@ -367,7 +366,7 @@ export default function SpeakersPage() {
             <CardContent className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold text-blue-900 mb-3">Keynote Sessions</h4>
+                  <h4 className="font-semibold text-blue-900 mb-3">Upcoming Sessions</h4>
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
@@ -410,7 +409,7 @@ export default function SpeakersPage() {
                 <h4 className="font-semibold text-blue-900 mb-2">Speaking Opportunities</h4>
                 <p className="text-sm text-gray-700">
                   We welcome proposals from distinguished researchers and industry leaders who would like to
-                  share their expertise at ICRACS 2026. Please contact our organizing committee for speaking
+                  share their expertise at ICRACS 2027. Please contact our organizing committee for speaking
                   opportunities and collaboration possibilities.
                 </p>
               </div>

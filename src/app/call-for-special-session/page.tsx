@@ -133,8 +133,8 @@ export default function CallForSpecialSessionPage() {
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Special Sessions</h1>
-            <p className="text-xl opacity-90 mb-2">ICRACS-2026</p>
-            <p className="text-lg opacity-80">3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
+            <p className="text-xl opacity-90 mb-2">ICRACS-2027</p>
+            <p className="text-lg opacity-80">4th International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
           </div>
         </section>
 
@@ -147,7 +147,7 @@ export default function CallForSpecialSessionPage() {
                   <Calendar className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Date</h3>
-                    <p className="text-gray-700">17–18 April 2026</p>
+                    <p className="text-gray-700">17–18 April 2027</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -228,7 +228,7 @@ export default function CallForSpecialSessionPage() {
                 <span className="font-semibold">Dear Sir/Madam,</span>
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We are delighted to invite <span className="font-semibold">Special Session proposals</span> from active researchers and domain experts for <span className="font-semibold">3rd ICRACS-2026</span>. Special Sessions should address emerging, advanced, and niche topics across Artificial Intelligence, Machine Learning, Computer Vision, Smart Systems, Data Science, Robotics, and related areas.
+                We are delighted to invite <span className="font-semibold">Special Session proposals</span> from active researchers and domain experts for <span className="font-semibold">4th ICRACS-2027</span>. Special Sessions should address emerging, advanced, and niche topics across Artificial Intelligence, Machine Learning, Computer Vision, Smart Systems, Data Science, Robotics, and related areas.
               </p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
                 <p className="text-sm text-gray-700">
@@ -299,7 +299,7 @@ export default function CallForSpecialSessionPage() {
                     className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-6 text-lg"
                   >
                     <a
-                      href="/templates/ICRACS 2026_Sample_Call_for_Special_Session.pdf"
+                      href="/templates/ICRACS 2027_Sample_Call_for_Special_Session.pdf"
                       download
                     >
                       <Download className="h-5 w-5 mr-2" />
@@ -312,7 +312,7 @@ export default function CallForSpecialSessionPage() {
               <div className="w-full mt-8">
                 <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 text-center mb-4">
                   <p className="text-lg font-semibold text-blue-900 mb-2">
-                    📋 Fill the Invitation Form for Special Session to ICRACS 2026
+                    📋 Fill the Invitation Form for Special Session to ICRACS 2027
                   </p>
                   <p className="text-sm text-gray-700">
                     Kindly fill all the necessary details for being a session chair

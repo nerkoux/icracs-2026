@@ -82,7 +82,7 @@ export default function HeroSection() {
               </div>
               <div className="flex items-center space-x-2 mb-3">
                 <Calendar className="h-5 w-5 text-blue-400" />
-                <span className="text-lg">April 17-18, 2026</span>
+                <span className="text-lg">April 17-18, 2027</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400" />

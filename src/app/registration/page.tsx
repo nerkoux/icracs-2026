@@ -77,7 +77,7 @@ const importantDates = [
   },
   {
     event: "Conference Dates",
-    date: "April 17-18, 2026",
+    date: "April 17-18, 2027",
     status: "confirmed"
   }
 ];
@@ -91,7 +91,7 @@ export default function RegistrationPage() {
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Registration</h1>
-            <p className="text-xl opacity-90">ICRACS 2026 - Join us for cutting-edge research presentations</p>
+            <p className="text-xl opacity-90">ICRACS 2027 - Join us for cutting-edge research presentations</p>
           </div>
         </section>
 
@@ -170,9 +170,9 @@ export default function RegistrationPage() {
                 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="flex items-center space-x-2">
-                    <a href="https://cmt3.research.microsoft.com/ICRACS2026/Submission/Index" target="_blank" rel="noopener noreferrer">
+                    <a href="https://cmt3.research.microsoft.com/ICRACS2027/Submission/Index" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
-                      <span>CMT Link: ICRACS 2026</span>
+                      <span>CMT Link: ICRACS 2027</span>
                     </a>
                   </Button>
                   <DownloadDropdown

@@ -71,7 +71,7 @@ export default function ReviewerPage() {
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Become a Reviewer</h1>
-            <p className="text-xl opacity-90">Join us in ensuring academic excellence at ICRACS 2026</p>
+            <p className="text-xl opacity-90">Join us in ensuring academic excellence at ICRACS 2027</p>
           </div>
         </section>
 
@@ -80,7 +80,7 @@ export default function ReviewerPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl text-center">List of Reviewers</CardTitle>
-              <p className="text-gray-600 text-center mt-2">ICRACS 2026 Review Panel</p>
+              <p className="text-gray-600 text-center mt-2">ICRACS 2027 Review Panel</p>
               <p className="text-sm text-gray-500 text-center mt-1">
                 Showing {displayedReviewers.length} of {allReviewers.length} reviewers
               </p>

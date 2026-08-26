@@ -37,7 +37,7 @@ export default function NotFound() {
           {/* Conference Information */}
           <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 sm:p-8 mb-12">
             <h3 className="text-xl sm:text-2xl font-bold text-blue-400 mb-4">
-              ICRACS 2026
+              ICRACS 2027
             </h3>
             <p className="text-gray-200 text-base sm:text-lg mb-2">
               International Conference on Recent Advances in
@@ -46,7 +46,7 @@ export default function NotFound() {
               Artificial Intelligence, Computer Vision & Smart Systems
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-gray-300">
-              <span>April 17-18, 2026</span>
+              <span>April 17-18, 2027</span>
               <span className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full"></span>
               <span className="text-center">Poornima Institute of Engineering & Technology</span>
               <span className="hidden sm:block w-1 h-1 bg-gray-400 rounded-full"></span>

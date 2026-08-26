@@ -389,7 +389,7 @@ export default function CommitteePage() {
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Organizing Committee</h1>
-            <p className="text-xl opacity-90">Meet the distinguished leaders organizing ICRACS 2026</p>
+            <p className="text-xl opacity-90">Meet the distinguished leaders organizing ICRACS 2027</p>
           </div>
         </section>
 

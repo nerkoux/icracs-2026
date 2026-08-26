@@ -74,7 +74,7 @@ export default function AboutICRACS() {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                ICRACS2026 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision, and 
+                ICRACS2027 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision, and 
                 Smart Systems in emerging technologies. The conference addresses the critical integration of AI techniques 
                 including deep learning, machine learning, pattern recognition, natural language processing, and computer 
                 vision in smart city infrastructure, industrial automation, and energy systems.
@@ -82,7 +82,7 @@ export default function AboutICRACS() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 The conference serves as a premier platform for researchers, academicians, and industry professionals 
                 to share innovative AI solutions that enhance efficiency, stability, robustness, and security of smart 
-                systems through computational intelligence paradigms. ICRACS2026 
+                systems through computational intelligence paradigms. ICRACS2027 
                 maintains the highest standards of technical excellence and global reach.
               </p>
               <p className="text-gray-700 leading-relaxed">
@@ -159,12 +159,12 @@ export default function AboutICRACS() {
             </CardContent>
           </Card>
 
-          {/* ICRACS 2026 Projections */}
+          {/* ICRACS 2027 Projections */}
           <Card className="border-blue-200 bg-blue-50">
             <CardHeader>
               <CardTitle className="text-xl text-blue-800 flex items-center space-x-2">
                 <Users className="h-5 w-5" />
-                <span>ICRACS 2026 Projections</span>
+                <span>ICRACS 2027 Projections</span>
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -104,7 +104,7 @@ export default function Navbar() {
                         className="object-contain"
                       />
                       <div>
-                        <h2 className="text-lg font-bold text-gray-900">ICRACS 2026</h2>
+                        <h2 className="text-lg font-bold text-gray-900">ICRACS 2027</h2>
                         <p className="text-sm text-gray-600">AI, Computer Vision & Smart Systems</p>
                       </div>
                     </div>

@@ -55,7 +55,7 @@ export default function ArchivePage() {
         {/* Hero Section */}
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">ICRACS 2024 Archive</h1>
+            <h1 className="text-4xl font-bold mb-4">ICRACS 2026 Archive</h1>
             <p className="text-xl opacity-90">Relive the moments from our groundbreaking conference</p>
           </div>
         </section>
@@ -167,21 +167,21 @@ export default function ArchivePage() {
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
-                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2024</h4>
-                    <p className="text-gray-600 mb-2">1st International Conference</p>
+                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2026</h4>
+                    <p className="text-gray-600 mb-2">3rd International Conference</p>
                     <p className="text-sm text-gray-500">190+ submissions, 50+ publications</p>
                     <Badge className="mt-2 bg-green-100 text-green-800">Completed</Badge>
                   </div>
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
-                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2025</h4>
-                    <p className="text-gray-600 mb-2">2nd International Conference</p>
+                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2026</h4>
+                    <p className="text-gray-600 mb-2">3rd International Conference</p>
                     <p className="text-sm text-gray-500">285+ submissions, 53+ publications</p>
                     <Badge className="mt-2 bg-blue-100 text-blue-800">Recent</Badge>
                   </div>
                   <div className="text-center p-6 bg-white rounded-lg border border-purple-200">
-                    <h4 className="font-bold text-xl text-purple-900 mb-2">ICRACS 2026</h4>
-                    <p className="text-gray-600 mb-2">3rd International Conference</p>
-                    <p className="text-sm text-gray-500">April 17-18, 2026</p>
+                    <h4 className="font-bold text-xl text-purple-900 mb-2">ICRACS 2027</h4>
+                    <p className="text-gray-600 mb-2">4th International Conference</p>
+                    <p className="text-sm text-gray-500">April 17-18, 2027</p>
                     <Badge className="mt-2 bg-purple-100 text-purple-800">Upcoming</Badge>
                   </div>
                 </div>
@@ -189,13 +189,13 @@ export default function ArchivePage() {
             </Card>
           </div>
 
-          {/* Join ICRACS 2026 CTA */}
+          {/* Join ICRACS 2027 CTA */}
           <div className="text-center">
             <Card className="bg-blue-600 text-white border-blue-600">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Join ICRACS 2026</h3>
+                <h3 className="text-2xl font-bold mb-4">Join ICRACS 2027</h3>
                 <p className="text-blue-100 mb-6 text-lg">
-                  Be part of the next chapter in AI and smart systems research. Submit your papers and register for ICRACS 2026.
+                  Be part of the next chapter in AI and smart systems research. Submit your papers and register for ICRACS 2027.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <LinkButton 

@@ -156,7 +156,7 @@ const importantDates = [
   },
   {
     event: "Conference Dates",
-    date: "April 17-18, 2026",
+    date: "April 17-18, 2027",
     status: "conference"
   }
 ];
@@ -170,7 +170,7 @@ export default function CallForPapersPage() {
         <section className="bg-blue-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Call for Papers</h1>
-            <p className="text-xl opacity-90">Submit your cutting-edge research to ICRACS 2026</p>
+            <p className="text-xl opacity-90">Submit your cutting-edge research to ICRACS 2027</p>
           </div>
         </section>
 
@@ -230,7 +230,7 @@ export default function CallForPapersPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  ICRACS 2026 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision,
+                  ICRACS 2027 focuses on the revolutionary applications of Artificial Intelligence, Computer Vision,
                   and Smart Systems in emerging technologies. The conference addresses the critical integration of AI
                   techniques including deep learning, machine learning, pattern recognition, natural language processing,
                   and computer vision in smart city infrastructure, industrial automation, and energy systems.
@@ -249,7 +249,7 @@ export default function CallForPapersPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Conference Tracks</CardTitle>
-                <p className="text-gray-600">ICRACS 2026 features six specialized tracks aligned with AIP focus areas:</p>
+                <p className="text-gray-600">ICRACS 2027 features six specialized tracks aligned with AIP focus areas:</p>
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
@@ -345,7 +345,7 @@ export default function CallForPapersPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700">
-                    <a href="https://cmt3.research.microsoft.com/ICRACS2026/Submission/Index" target="_blank" rel="noopener noreferrer">
+                    <a href="https://cmt3.research.microsoft.com/ICRACS2027/Submission/Index" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
                       <span>Submit via CMT Portal</span>
                     </a>

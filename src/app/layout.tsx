@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ICRACS 2026 - International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
-  description: "3rd International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems organized by Poornima Institute of Engineering & Technology, Jaipur on April 17-18, 2026",
+  title: "ICRACS 2027 - International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
+  description: "4th International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems organized by Poornima Institute of Engineering & Technology, Jaipur on April 17-18, 2027",
   keywords: "ICRACS, AI, Computer Vision, Smart Systems, Conference, PIET, Jaipur, Artificial Intelligence, Machine Learning",
   authors: [{ name: "PIET ICRACS Committee" }],
   openGraph: {
-    title: "ICRACS 2026",
+    title: "ICRACS 2027",
     description: "International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
     url: "https://icracs.poornima.org",
-    siteName: "ICRACS 2026",
+    siteName: "ICRACS 2027",
     locale: "en_US",
     type: "website",
     images: [
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
         url: "/piet.jpg",
         width: 1200,
         height: 630,
-        alt: "ICRACS 2026 - International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
+        alt: "ICRACS 2027 - International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ICRACS 2026",
+    title: "ICRACS 2027",
     description: "International Conference on Recent Advances in AI, Computer Vision & Smart Systems",
     images: ["/piet.jpg"],
     creator: "@PIET_ICRACS",
