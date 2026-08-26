@@ -72,7 +72,7 @@ export default function Footer() {
             This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
           <p className="text-gray-300 text-sm">
-            © 2026 ICRACS. All rights reserved. | Designed & Developed by{" "}
+            © 2027 ICRACS. All rights reserved. | Designed & Developed by{" "}
             <Tooltip>
               <TooltipTrigger asChild>
                 <a 

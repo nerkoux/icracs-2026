@@ -49,7 +49,7 @@ const stats2025 = [
   { label: "Countries Represented", value: "8", color: "orange" }
 ];
 
-const projections2026 = [
+const projections2027 = [
   { label: "Expected Submissions", value: "1500+", color: "blue" },
   { label: "Target Accepted Papers", value: "250", color: "green" },
   { label: "Target Acceptance Rate", value: "16-18%", color: "purple" },
@@ -169,7 +169,7 @@ export default function AboutICRACS() {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                {projections2026.map((projection, index) => (
+                {projections2027.map((projection, index) => (
                   <div key={index} className="text-center p-4 bg-white rounded-lg border border-blue-200">
                     <div className={`text-2xl font-bold text-${projection.color}-600 mb-1`}>
                       {projection.value}

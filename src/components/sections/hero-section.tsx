@@ -65,7 +65,7 @@ export default function HeroSection() {
           <div className="text-white">
             <div className="mb-6">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                <span className="text-blue-400">ICRACS</span> 2026
+                <span className="text-blue-400">ICRACS</span> 2027
               </h1>
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
                 International Conference on Recent Advances in
