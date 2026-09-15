@@ -51,8 +51,15 @@ export default function PublicationTechnicalPartners() {
           </h3>
           <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
             {publicationPartners.map((partner, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200 w-full md:w-80">
-              <CardContent className="p-8">
+              <Card key={index} className="relative text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200 w-full md:w-80 overflow-hidden">
+                {/* Approval Pending Box */}
+                <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-10 flex items-center justify-center pointer-events-none">
+                  <div className="bg-red-100/90 border-2 border-red-500 text-red-700 font-extrabold px-6 py-2 rounded-lg shadow-lg text-sm uppercase tracking-widest transform -rotate-12">
+                    Approval Pending
+                  </div>
+                </div>
+                
+                <CardContent className="p-8">
                   <div className="relative h-32 mb-6 flex items-center justify-center">
                     <Image
                       src={partner.logo}
@@ -89,7 +96,14 @@ export default function PublicationTechnicalPartners() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {technicalPartners.map((partner, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200">
+              <Card key={index} className="relative overflow-hidden text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200">
+                {/* Approval Pending Box */}
+                <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-10 flex items-center justify-center pointer-events-none">
+                  <div className="bg-red-100/90 border-2 border-red-500 text-red-700 font-extrabold px-6 py-2 rounded-lg shadow-lg text-sm uppercase tracking-widest transform -rotate-12">
+                    Approval Pending
+                  </div>
+                </div>
+
                 <CardContent className="p-8">
                   <div className="relative h-24 mb-6 flex items-center justify-center">
                     <Image
