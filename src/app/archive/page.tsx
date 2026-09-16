@@ -8,12 +8,12 @@ import Image from "next/image";
 import { Calendar, Users, FileText, Award, MapPin, Eye } from "lucide-react";
 
 const conferenceStats = [
-  { label: "Date", value: "April 24-25, 2024", icon: Calendar },
+  { label: "Date", value: "April 2026", icon: Calendar },
   { label: "Venue", value: "PIET, Jaipur", icon: MapPin },
-  { label: "Attendees", value: "100+ professionals", icon: Users },
-  { label: "Speakers", value: "5 experts", icon: Users },
-  { label: "Papers Received", value: "190+ research papers", icon: FileText },
-  { label: "Papers Published", value: "50+ cutting-edge papers", icon: Award }
+  { label: "Total Submissions", value: "1095 papers", icon: FileText },
+  { label: "Accepted Papers", value: "131 papers", icon: Award },
+  { label: "Acceptance Rate", value: "12%", icon: Award },
+  { label: "Countries Represented", value: "8", icon: MapPin }
 ];
 
 const publications = [
@@ -138,7 +138,7 @@ export default function ArchivePage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl text-center">Key Takeaways</CardTitle>
-                <p className="text-center text-gray-600">Major insights and discoveries from ICRACS 2024</p>
+                <p className="text-center text-gray-600">Major insights and discoveries from ICRACS 2026</p>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -165,22 +165,28 @@ export default function ArchivePage() {
                 <p className="text-center text-blue-700">Building a legacy of excellence in AI and smart systems research</p>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
-                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2026</h4>
-                    <p className="text-gray-600 mb-2">3rd International Conference</p>
-                    <p className="text-sm text-gray-500">190+ submissions, 50+ publications</p>
+                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2024</h4>
+                    <p className="text-gray-600 mb-2">1st Edition</p>
+                    <p className="text-sm text-gray-500">190+ submissions</p>
+                    <Badge className="mt-2 bg-green-100 text-green-800">Completed</Badge>
+                  </div>
+                  <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
+                    <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2025</h4>
+                    <p className="text-gray-600 mb-2">2nd Edition</p>
+                    <p className="text-sm text-gray-500">831 submissions</p>
                     <Badge className="mt-2 bg-green-100 text-green-800">Completed</Badge>
                   </div>
                   <div className="text-center p-6 bg-white rounded-lg border border-blue-200">
                     <h4 className="font-bold text-xl text-blue-900 mb-2">ICRACS 2026</h4>
-                    <p className="text-gray-600 mb-2">3rd International Conference</p>
-                    <p className="text-sm text-gray-500">285+ submissions, 53+ publications</p>
+                    <p className="text-gray-600 mb-2">3rd Edition</p>
+                    <p className="text-sm text-gray-500">1095 submissions</p>
                     <Badge className="mt-2 bg-blue-100 text-blue-800">Recent</Badge>
                   </div>
                   <div className="text-center p-6 bg-white rounded-lg border border-purple-200">
                     <h4 className="font-bold text-xl text-purple-900 mb-2">ICRACS 2027</h4>
-                    <p className="text-gray-600 mb-2">4th International Conference</p>
+                    <p className="text-gray-600 mb-2">4th Edition</p>
                     <p className="text-sm text-gray-500">August 27-28, 2027</p>
                     <Badge className="mt-2 bg-purple-100 text-purple-800">Upcoming</Badge>
                   </div>

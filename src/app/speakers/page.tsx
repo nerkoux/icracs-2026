@@ -308,13 +308,20 @@ export default function SpeakersPage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {upcomingSpeakers.map((speaker, index) => (
-                <SpeakerCard
-                  key={index}
-                  speaker={speaker}
-                  colorScheme="blue"
-                />
-              ))}
+              {upcomingSpeakers.length > 0 ? (
+                upcomingSpeakers.map((speaker, index) => (
+                  <SpeakerCard
+                    key={index}
+                    speaker={speaker}
+                    colorScheme="blue"
+                  />
+                ))
+              ) : (
+                <div className="col-span-1 lg:col-span-2 text-center py-16 bg-white rounded-xl border border-gray-200 shadow-sm">
+                  <h3 className="text-2xl font-semibold text-gray-600 mb-2">To be updated soon</h3>
+                  <p className="text-gray-500">We are finalizing our speaker lineup. Please check back later!</p>
+                </div>
+              )}
             </div>
           </div>
 

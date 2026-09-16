@@ -42,10 +42,10 @@ const topics = [
   "Brain-Computer Interfaces"
 ];
 
-const stats2025 = [
-  { label: "Total Submissions", value: "831", color: "blue" },
-  { label: "Accepted Papers", value: "202", color: "green" },
-  { label: "Acceptance Rate", value: "24%", color: "purple" },
+const stats2026 = [
+  { label: "Total Submissions", value: "1095", color: "blue" },
+  { label: "Accepted Papers", value: "131", color: "green" },
+  { label: "Acceptance Rate", value: "12%", color: "purple" },
   { label: "Countries Represented", value: "8", color: "orange" }
 ];
 
@@ -137,17 +137,17 @@ export default function AboutICRACS() {
 
         {/* Conference Statistics */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* ICRACS 2025 Stats */}
+          {/* ICRACS 2026 Stats */}
           <Card className="border-green-200 bg-green-50">
             <CardHeader>
               <CardTitle className="text-xl text-green-800 flex items-center space-x-2">
                 <TrendingUp className="h-5 w-5" />
-                <span>ICRACS 2025 Achievement</span>
+                <span>ICRACS 2026 Achievement</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                {stats2025.map((stat, index) => (
+                {stats2026.map((stat, index) => (
                   <div key={index} className="text-center p-4 bg-white rounded-lg border border-green-200">
                     <div className={`text-2xl font-bold text-${stat.color}-600 mb-1`}>
                       {stat.value}

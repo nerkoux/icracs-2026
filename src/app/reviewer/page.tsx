@@ -80,7 +80,7 @@ export default function ReviewerPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl text-center">List of Reviewers</CardTitle>
-              <p className="text-gray-600 text-center mt-2">ICRACS 2027 Review Panel</p>
+              <p className="text-gray-600 text-center mt-2">ICRACS 2026 Review Panel</p>
               <p className="text-sm text-gray-500 text-center mt-1">
                 Showing {displayedReviewers.length} of {allReviewers.length} reviewers
               </p>
