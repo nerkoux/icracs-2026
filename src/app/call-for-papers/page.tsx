@@ -80,16 +80,16 @@ const reviewProcess = [
     description: "All submissions undergo three-layer peer review: editorial review, TPC review, and external expert review with conflict of interest declarations."
   },
   {
-    title: "AIP STANDARDS",
-    description: "Review criteria aligned with AIP standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
+    title: "REVIEW STANDARDS",
+    description: "Review criteria aligned with Conference standards: Technical Quality (40%), CIS Relevance (25%), Clarity (20%), Impact (15%)."
   },
   {
     title: "EXPERT REVIEWERS",
-    description: "200+ qualified reviewers from AIP community with automated expertise matching and performance tracking."
+    description: "200+ qualified reviewers from Research community with automated expertise matching and performance tracking."
   },
   {
     title: "PLAGIARISM DETECTION",
-    description: "All submissions screened using Turnitin with maximum 15% similarity threshold and self-plagiarism verification."
+    description: "All submissions screened using Turnitin with maximum 10% similarity threshold and self-plagiarism verification."
   },
   {
     title: "MULTI-STAGE PROCESS",
@@ -101,24 +101,6 @@ const reviewProcess = [
   }
 ];
 
-const submissionGuidelines = [
-  {
-    title: "Paper Format",
-    description: "Papers must follow AIP proceeding conference format and should not exceed 8 pages including references."
-  },
-  {
-    title: "Acceptance Rate",
-    description: "Target acceptance rate: 16-18% with rigorous peer review to maintain high standards."
-  },
-  {
-    title: "AIP Standards",
-    description: "All submissions must comply with AIP ethical guidelines and originality requirements."
-  },
-  {
-    title: "Presentation Requirement",
-    description: "At least one author must register and present the paper at the conference if accepted."
-  }
-];
 
 const importantDates = [
   {
@@ -278,13 +260,66 @@ export default function CallForPapersPage() {
                 <CardTitle className="text-2xl">Submission Guidelines</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {submissionGuidelines.map((guideline, index) => (
-                    <div key={index} className="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                      <h4 className="font-semibold text-blue-900 mb-2">{guideline.title}</h4>
-                      <p className="text-gray-700 text-sm">{guideline.description}</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {/* Box 1: Author Guidelines */}
+                  <div className="p-5 md:p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500 flex flex-col">
+                    <h4 className="font-semibold text-blue-900 mb-4 text-base md:text-lg">Author Guidelines</h4>
+                    <div className="space-y-3 text-gray-700 text-sm leading-relaxed">
+                      <p>
+                        All papers must be original and not simultaneously submitted to another journal or conference.
+                      </p>
+                      <p>
+                        All the manuscripts should be submitted using the Microsoft CMT submission link in PDF format without the author name and affiliation as per the format.
+                      </p>
+                      <p>
+                        The minimum number of pages allowed will be 10 (Ten).
+                      </p>
+                      <p>
+                        Authors should ensure that the similarity score of their research paper is not above 10 %. Manuscripts having a similarity score of more than 10 % shall not be processed.
+                      </p>
                     </div>
-                  ))}
+                  </div>
+
+                  {/* Box 2: Review Process & Oral Presentation */}
+                  <div className="p-5 md:p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500 flex flex-col">
+                    <h4 className="font-semibold text-blue-900 mb-4 text-base md:text-lg">Review Process & Oral Presentation</h4>
+                    <div className="space-y-3 text-gray-700 text-sm leading-relaxed">
+                      <p>
+                        The paper having a similarity score of less than 10 % shall be processed for double-blind review.
+                      </p>
+                      <p>
+                        The papers will be peer-reviewed by the technical committee of the conference.
+                      </p>
+                      <p>
+                        Based on the review the authors are informed about their paper status:
+                      </p>
+                      <div className="space-y-1 pl-2">
+                        <p>(a) Accepted for oral presentation</p>
+                        <p>(b) Accepted with minor corrections for Oral Presentation</p>
+                        <p>(c) Rejected.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Box 3: Paper Submission link */}
+                  <div className="p-5 md:p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500 flex flex-col justify-between">
+                    <div>
+                      <h4 className="font-semibold text-blue-900 mb-4 text-base md:text-lg">Paper Submission link</h4>
+                      <p className="text-gray-700 text-sm leading-relaxed">
+                        For paper submission, the author should need to follow the below link and have to create his own free account on Microsoft CMT. After the creation of an account, he must choose his role as an Author and select &ldquo;enter as an author&rdquo; for paper submission.
+                      </p>
+                    </div>
+                    <div className="mt-4 pt-2">
+                      <a
+                        href="https://cmt3.research.microsoft.com/ICRACS2027"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700 hover:text-blue-900 font-semibold underline underline-offset-4 break-all text-sm transition-colors"
+                      >
+                        https://cmt3.research.microsoft.com/ICRACS2027
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -295,7 +330,7 @@ export default function CallForPapersPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Quality Assurance & Review Process</CardTitle>
-                <p className="text-gray-600">Rigorous peer review system aligned with AIP standards</p>
+                <p className="text-gray-600">Rigorous peer review system aligned with Review standards</p>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -322,7 +357,7 @@ export default function CallForPapersPage() {
                   <ol className="space-y-3">
                     <li className="flex items-start space-x-3">
                       <Badge className="bg-green-600">1</Badge>
-                      <span className="text-gray-700">Download and follow the paper template provided below</span>
+                      <span className="text-gray-700">Download and follow the paper template (for review only) provided below</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <Badge className="bg-green-600">2</Badge>
@@ -387,7 +422,7 @@ export default function CallForPapersPage() {
                       <div>
                         <p className="font-semibold">Dr. Budesh Kanwar</p>
                         <p className="text-gray-600">Program Chair</p>
-                        <p className="text-gray-600">9460503316</p>
+                        
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
@@ -401,19 +436,49 @@ export default function CallForPapersPage() {
                     <div className="flex items-start space-x-3">
                       <Phone className="h-5 w-5 text-blue-600 mt-1" />
                       <div>
-                        <p className="font-semibold">Dr. Shipra Bhatia</p>
+                        <p className="font-semibold">Dr. Aditya Pundir</p>
                         <p className="text-gray-600">Organizing Chair</p>
-                        <p className="text-gray-600">7568645848</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <Mail className="h-5 w-5 text-blue-600 mt-1" />
                       <div>
-                        <p className="text-gray-600">shipra.bhatia@poornima.org</p>
+                        <p className="text-gray-600">aditya.pundir@poornima.org</p>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Student Coordinators */}
+                <div className="mt-8 pt-8 border-t">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-6">Student Coordinators</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-base text-gray-900"> Paarth Khandelwal</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <Phone className="h-5 w-5 text-blue-600 mt-1" />
+                        <div>
+                          <p className="text-gray-600">+91 8529969479</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-base text-gray-900"> Siddharth Dhankani</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <Phone className="h-5 w-5 text-blue-600 mt-1" />
+                        <div>
+                          <p className="text-gray-600">+91 9950085074</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="mt-6 pt-6 border-t text-center">
                   <p className="text-gray-600">
                     General Inquiries: <a href="mailto:icracs@poornima.org" className="text-blue-600 hover:underline">icracs@poornima.org</a>

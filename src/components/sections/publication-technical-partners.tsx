@@ -1,32 +1,15 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
-const publicationPartners = [
-  
-  {
-    name: "IET Conference Proceedings",
-    logo: "/publications-technical/iet.svg",
-    description: "Institution of Engineering and Technology",
-    proceedingsUrl: "https://digital-library.theiet.org/journal/icp"
-  },
-
-  {
-    name: "AIP Publishing",
-    logo: "/publications-technical/AIP.png",
-    description: "American Institute of Physics Publishing",
-    proceedingsUrl: "https://pubs.aip.org/aip/acp"
-  }
-];
-
 const technicalPartners = [
   {
-    name: "IEEE",
-    logo: "/publications-technical/ieee.png",
+    name: "PIET IEEE STUDENT CHAPTER",
+    logo: "/images/piet-ieee.png",
     description: "Institute of Electrical and Electronics Engineers"
   },
   {
-    name: "ACM",
-    logo: "/publications-technical/acm.png",
+    name: "PIET ACM STUDENT CHAPTER",
+    logo: "/images/piet-acm.png",
     description: "Association for Computing Machinery"
   }
 ];
@@ -49,43 +32,14 @@ export default function PublicationTechnicalPartners() {
           <h3 className="text-2xl font-bold text-center text-blue-900 mb-8">
             *Publication Partners
           </h3>
-          <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
-            {publicationPartners.map((partner, index) => (
-              <Card key={index} className="relative text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200 w-full md:w-80 overflow-hidden">
-                {/* Approval Pending Box */}
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-10 flex items-center justify-center pointer-events-none">
-                  <div className="bg-red-100/90 border-2 border-red-500 text-red-700 font-extrabold px-6 py-2 rounded-lg shadow-lg text-sm uppercase tracking-widest transform -rotate-12">
-                    Approval Pending
-                  </div>
-                </div>
-                
-                <CardContent className="p-8">
-                  <div className="relative h-32 mb-6 flex items-center justify-center">
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      width={partner.name === "IET Conference Proceedings" ? 180 : 160}
-                      height={partner.name === "IET Conference Proceedings" ? 110 : 100}
-                      className="object-contain max-h-full"
-                    />
-                  </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 text-base">
-                    {partner.name}
-                  </h4>
-                  <p className="text-xs text-gray-600">
-                    {partner.description}
-                  </p>
-                  <a
-                    href={partner.proceedingsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-block break-all text-xs text-blue-700 underline-offset-2 hover:underline"
-                  >
-                    {partner.proceedingsUrl}
-                  </a>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex justify-center max-w-xl mx-auto">
+            <Card className="w-full text-center hover:shadow-lg transition-shadow border-2 hover:border-blue-200">
+              <CardContent className="p-8 flex items-center justify-center min-h-[140px]">
+                <p className="text-lg md:text-xl font-medium text-gray-600">
+                  Will be updated soon
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
@@ -96,28 +50,18 @@ export default function PublicationTechnicalPartners() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {technicalPartners.map((partner, index) => (
-              <Card key={index} className="relative overflow-hidden text-center hover:shadow-lg transition-shadow border-2 hover:border-green-200">
-                {/* Approval Pending Box */}
-                <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-10 flex items-center justify-center pointer-events-none">
-                  <div className="bg-red-100/90 border-2 border-red-500 text-red-700 font-extrabold px-6 py-2 rounded-lg shadow-lg text-sm uppercase tracking-widest transform -rotate-12">
-                    Approval Pending
-                  </div>
-                </div>
-
-                <CardContent className="p-8">
-                  <div className="relative h-24 mb-6 flex items-center justify-center">
+              <Card key={index} className="overflow-hidden text-center hover:shadow-lg transition-shadow border-2 hover:border-blue-200">
+                <CardContent className="p-8 flex flex-col items-center justify-center min-h-[180px] md:min-h-[200px]">
+                  <div className="relative w-full h-28 md:h-32 flex items-center justify-center mb-4">
                     <Image
                       src={partner.logo}
                       alt={partner.name}
-                      width={120}
-                      height={80}
-                      className="object-contain max-h-full"
+                      width={320}
+                      height={128}
+                      className="object-contain max-h-full max-w-full"
                     />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 text-lg">
-                    {partner.name}
-                  </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 text-center">
                     {partner.description}
                   </p>
                 </CardContent>
