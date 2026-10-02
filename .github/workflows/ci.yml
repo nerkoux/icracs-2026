@@ -1,0 +1,160 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+# Cancel superseded runs on the same branch/PR
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NEXT_TELEMETRY_DISABLED: "1"
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+
+  typecheck:
+    name: Type check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Cache Next.js build cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: nextjs-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-${{ hashFiles('src/**', 'public/**', 'next.config.ts') }}
+          restore-keys: |
+            nextjs-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-
+      - run: npm ci
+      - run: npm run build
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-build
+          path: .next
+          include-hidden-files: true
+          retention-days: 3
+
+  smoke-test:
+    name: Smoke test (all pages respond)
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: next-build
+          path: .next
+      - name: Start server and check every route
+        run: |
+          npx next start -p 3000 &
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:3000/ >/dev/null && break
+            sleep 1
+          done
+          fail=0
+          for route in / /agenda /archive /call-for-papers /call-for-special-session /committee /registration /reviewer /speakers; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:3000$route")
+            echo "$code $route"
+            [ "$code" = "200" ] || fail=1
+          done
+          code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/this-page-does-not-exist)
+          echo "$code (expected 404)"
+          [ "$code" = "404" ] || fail=1
+          exit $fail
+
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fail on high/critical vulnerabilities in production deps
+        run: npm audit --omit=dev --audit-level=high
+
+  dependency-review:
+    name: Dependency review
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
+
+  secret-scan:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Single required check for branch protection. Fails if any job above failed.
+  ci-passed:
+    name: CI passed
+    if: always()
+    needs: [lint, typecheck, build, smoke-test, audit, dependency-review, secret-scan]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all jobs succeeded
+        run: |
+          echo '${{ toJSON(needs) }}'
+          if [ "${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}" = "true" ]; then
+            echo "One or more required jobs failed"; exit 1
+          fi

@@ -1,0 +1,41 @@
+name: Auto-merge
+
+# Enables auto-merge on a PR when it is labelled "automerge" (or is a
+# Dependabot patch/minor update). GitHub then merges it ONLY after every
+# required status check in branch protection has passed.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enable-automerge:
+    name: Enable auto-merge
+    runs-on: ubuntu-latest
+    if: >-
+      contains(github.event.pull_request.labels.*.name, 'automerge') ||
+      github.actor == 'dependabot[bot]'
+    steps:
+      - name: Fetch Dependabot metadata
+        id: meta
+        if: github.actor == 'dependabot[bot]'
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Skip Dependabot major updates
+        if: github.actor == 'dependabot[bot]' && steps.meta.outputs.update-type == 'version-update:semver-major'
+        run: echo "Major update, needs manual review." && exit 0
+
+      - name: Enable squash auto-merge
+        if: >-
+          github.actor != 'dependabot[bot]' ||
+          steps.meta.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
