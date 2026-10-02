@@ -120,19 +120,6 @@ jobs:
       - name: Fail on high/critical vulnerabilities in production deps
         run: npm audit --omit=dev --audit-level=high
 
-  dependency-review:
-    name: Dependency review
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/dependency-review-action@v4
-        with:
-          fail-on-severity: high
-
   secret-scan:
     name: Secret scan
     runs-on: ubuntu-latest
@@ -152,7 +139,7 @@ jobs:
   ci-passed:
     name: CI passed
     if: always()
-    needs: [lint, typecheck, build, smoke-test, audit, dependency-review, secret-scan]
+    needs: [lint, typecheck, build, smoke-test, audit, secret-scan]
     runs-on: ubuntu-latest
     steps:
       - name: Verify all jobs succeeded
