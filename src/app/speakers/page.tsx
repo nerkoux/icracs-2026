@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Building, Award } from "lucide-react";
 
-const upcomingSpeakers: any[] = [];
+const upcomingSpeakers: Speaker[] = [];
 
 const pastSpeakers = [
   {
