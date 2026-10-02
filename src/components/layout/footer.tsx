@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -44,18 +43,12 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <Phone className="h-4 w-4 mt-1 text-blue-400" />
-                <div className="text-sm">
-                  <p>Dr. Budesh Kanwar: 9460503316</p>
-                  <p>Dr. Shipra Bhatia: 7568645848</p>
-                </div>
+                <Mail className="h-4 w-4 mt-1 text-blue-400" />
+                <p className="text-sm">budesh.kanwar@poornima.org</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="h-4 w-4 mt-1 text-blue-400" />
-                <div className="text-sm">
-                  <p>budesh.kanwar@poornima.org</p>
-                  <p>icracs@poornima.org</p>
-                </div>
+                <p className="text-sm">aditya.pundir@poornima.org</p>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 mt-1 text-blue-400" />
@@ -73,73 +66,23 @@ export default function Footer() {
           </p>
           <p className="text-gray-300 text-sm">
             © 2027 ICRACS. All rights reserved. | Designed & Developed by{" "}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a 
-                  href="https://akshatmehta.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-blue-400 hover:text-blue-300 transition-colors underline-offset-4 hover:underline"
-                >
-                  Akshat Mehta
-                </a>
-              </TooltipTrigger>
-              <TooltipContent 
-                side="top" 
-                className="max-w-md bg-gray-800 text-white border border-gray-600 shadow-xl p-4"
-                sideOffset={8}
-              >
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-bold text-lg mb-2 text-blue-400">About Me</h4>
-                    <p className="text-sm leading-relaxed text-gray-200">
-                      I&apos;m a passionate full-stack developer with over 5 years of experience creating modern web applications. 
-                      I specialize in React, Next.js, Node.js, and cloud technologies.
-                    </p>
-                    <p className="text-sm leading-relaxed text-gray-200 mt-2">
-                      My journey in web development started with curiosity and grew into a passion for building exceptional digital experiences. 
-                      I enjoy working across the full stack to deliver complete solutions.
-                    </p>
-                    <p className="text-sm leading-relaxed text-gray-200 mt-2">
-                      When I&apos;m not coding, you can find me exploring new technologies, contributing to open source projects, 
-                      or sharing knowledge with the developer community.
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold text-sm mb-2 text-blue-400">Quick Facts</h5>
-                    <ul className="text-xs space-y-1 text-gray-300">
-                      <li>• 5+ years of development experience</li>
-                      <li>• 50+ successful projects delivered</li>
-                      <li>• Full-stack expertise</li>
-                      <li>• Remote-first mindset</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h5 className="font-semibold text-sm mb-2 text-blue-400">What Drives Me</h5>
-                    <div className="grid grid-cols-2 gap-3 text-xs">
-                      <div>
-                        <h6 className="font-medium text-white">Clean Code</h6>
-                        <p className="text-gray-300">Writing maintainable, scalable code that stands the test of time.</p>
-                      </div>
-                      <div>
-                        <h6 className="font-medium text-white">Innovation</h6>
-                        <p className="text-gray-300">Exploring new technologies and creative solutions to complex problems.</p>
-                      </div>
-                      <div>
-                        <h6 className="font-medium text-white">Collaboration</h6>
-                        <p className="text-gray-300">Believing in teamwork and effective communication in development.</p>
-                      </div>
-                      <div>
-                        <h6 className="font-medium text-white">Passion</h6>
-                        <p className="text-gray-300">Genuinely passionate about technology and continuous learning.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </TooltipContent>
-            </Tooltip>
+            <a 
+              href="https://www.linkedin.com/in/paarth-khandelwal-264954380/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 transition-colors underline-offset-4 hover:underline"
+            >
+              Paarth Khandelwal
+            </a>{" "}
+            &{" "}
+            <a 
+              href="https://github.com/devilsarise0338-rgb" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 transition-colors underline-offset-4 hover:underline"
+            >
+              Siddharth Dhankani
+            </a>
           </p>
         </div>
       </div>

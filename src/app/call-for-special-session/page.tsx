@@ -133,7 +133,7 @@ export default function CallForSpecialSessionPage() {
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Special Sessions</h1>
-            <p className="text-xl opacity-90 mb-2">ICRACS-2027</p>
+            <p className="text-xl opacity-90 mb-2">ICRACS 2027</p>
             <p className="text-lg opacity-80">4th International Conference on Recent Advances in Artificial Intelligence, Computer Vision & Smart Systems</p>
           </div>
         </section>
@@ -175,9 +175,25 @@ export default function CallForSpecialSessionPage() {
             </CardContent>
           </Card>
 
-          {/* Approved Special Sessions - Moved Above Introduction */}
+          {/* Special Sessions for ICRACS 2027 */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">
+              Special Sessions for ICRACS 2027
+            </h2>
+            <Card className="border border-blue-200 bg-white shadow-md max-w-2xl mx-auto">
+              <CardContent className="p-8 md:p-12 text-center">
+                <p className="text-lg md:text-xl font-medium text-gray-600">
+                  Will be updated soon
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Special Sessions for ICRACS 2026 */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">Approved Special Sessions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700">
+              Special Sessions for ICRACS 2026
+            </h2>
             <div className="grid grid-cols-1 gap-8">
               {specialSessions.map((session, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 flex flex-col hover:shadow-xl transition-shadow duration-300">
