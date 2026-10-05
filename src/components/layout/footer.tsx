@@ -67,6 +67,16 @@ export default function Footer() {
           <p className="text-gray-300 text-sm">
             © 2027 ICRACS. All rights reserved. | Designed & Developed by{" "}
             <a 
+              href="https://www.linkedin.com/in/akszt/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 transition-colors underline-offset-4 hover:underline"
+            >
+              Akshat Mehta
+            </a>
+            <br />
+            {" Co-developed by "}
+            <a 
               href="https://www.linkedin.com/in/paarth-khandelwal-264954380/" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -76,7 +86,7 @@ export default function Footer() {
             </a>{" "}
             &{" "}
             <a 
-              href="https://github.com/devilsarise0338-rgb" 
+              href="https://www.linkedin.com/in/sidharth-dhankani-b6a36a391/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-400 hover:text-blue-300 transition-colors underline-offset-4 hover:underline"
